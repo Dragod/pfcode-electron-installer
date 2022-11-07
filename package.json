@@ -4,9 +4,10 @@
   "description": "Install software using winget",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "style": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/Dragod/pfcode-electron-installer.git",
   "keywords": [
     "Electron",
     "winget",
