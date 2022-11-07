@@ -1,0 +1,27 @@
+{
+  "name": "pfcode-electron-installer",
+  "version": "1.0.0",
+  "description": "Install software using winget",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "winget",
+    "installer",
+    "pfcode"
+  ],
+  "author": "GitHub",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^21.1.1",
+    "tailwindcss": "^3.2.2"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.8",
+    "copy-to-clipboard": "^3.3.2",
+    "qrcode": "^1.5.1"
+  }
+}
