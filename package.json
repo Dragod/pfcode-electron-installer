@@ -2,6 +2,7 @@
   "name": "pfcode-electron-installer",
   "version": "1.0.0",
   "description": "Install software using winget",
+  "productName": "pfcode-electron-installer",
   "main": "main.js",
   "scripts": {
     "start": "electron .",

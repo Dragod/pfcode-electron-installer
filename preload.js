@@ -6,6 +6,10 @@
  * https://www.electronjs.org/docs/latest/tutorial/sandbox
  */
 
+const electron = require('electron')
+
+const ipc = electron.ipcRenderer
+
 const fs = require('fs')
 
 const copy = require('copy-to-clipboard');
@@ -150,6 +154,23 @@ function showOnlyChecked() {
 
 window.addEventListener('DOMContentLoaded', () => {
 
+  //const bau = document.getElementById('bau')
+
+  // bau.addEventListener('click', () => {
+  //   console.log('clicked')
+  //   ipc.send('open-error-dialog')
+  // })
+
+
+//   document.getElementById("configBtn").addEventListener("click", () => {
+
+//     console.log("configBtn clicked");
+//     //window.open('./secondary.html', 'modal')
+
+//     dialog.showMessageBoxSync({ type: "info", message: "This is a message box" });
+
+// })
+
   const apps = document.getElementById('apps')
 
   const qrc = document.getElementById('qrcode')
@@ -166,9 +187,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
             let item = itensList[i]
 
-            let valueLi = item.innerText.toLowerCase().trim()
+            let value = item.innerText.toLowerCase().trim()
 
-            item.style.display = valueLi.search(new RegExp(valueInput.replace(/\s+/, '|'))) != -1 ? '' : 'none'
+            item.style.display = value.search(new RegExp(valueInput.replace(/\s+/, '|'))) != -1 ? '' : 'none'
 
         }
 
@@ -224,6 +245,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     checkbox.addEventListener('change', () => {
+
+      uncheckAll.disabled = false
+
+      checkAll.disabled = false
 
       chkChecked()
 
@@ -304,7 +329,8 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     else {
 
-        alert('Data is too big to generate a QR Code, please select 25 or less apps.')
+        ////alert('Data is too big to generate a QR Code, please select 25 or less apps.')
+        ipc.send('open-error-dialog')
     }
 
   }
@@ -329,6 +355,44 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('code').innerHTML = ''
 
     document.getElementById('code').classList.remove('code-run')
+
+  }
+
+  let checkAll = document.getElementById('checkAll')
+
+  let uncheckAll = document.getElementById('uncheckAll')
+
+  uncheckAll.onclick = function() {
+
+    checkboxes.forEach(checkbox => {
+
+      checkbox.checked = false
+
+    })
+
+    chkChecked()
+
+    isntallBtn.innerHTML = `Install 0/${appCount} apps`
+
+    uncheckAll.disabled = true
+    checkAll.disabled = false
+
+  }
+
+  checkAll.onclick = function() {
+
+    checkboxes.forEach(checkbox => {
+
+      checkbox.checked = true
+
+    })
+
+    chkChecked()
+
+    isntallBtn.innerHTML = `Install ${appCount}/${appCount} apps`
+
+    checkAll.disabled = true
+    uncheckAll.disabled = false
 
   }
 
