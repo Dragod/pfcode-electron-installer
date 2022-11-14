@@ -1,0 +1,45 @@
+{
+    "preset": "none",
+    "last-updated": "14/08/2022",
+    "wingetInstall": "winget install -e -h --id=",
+    "wingetQuerySearch": "winget search -q",
+    "wingetApi": "https://winget.run",
+    "winget": [
+
+                {
+                    "name": "Visual Studio Code",
+                    "id": "Microsoft.VisualStudioCode",
+                    "install": false
+                },
+                {
+                    "name": "Sublime 4",
+                    "id": "SublimeHQ.SublimeText.4",
+                    "install": false
+                },
+                {
+                    "name": "Sublime 3",
+                    "id": "SublimeHQ.SublimeText.3",
+                    "install": false
+                },
+                {
+                    "name": "Notepad++",
+                    "id": "Notepad++.Notepad++",
+                    "install": false
+                },
+                {
+                    "name": "Brackets",
+                    "id": "Adobe.Brackets",
+                    "install": false
+                },
+                {
+                    "name": "Visual Studio Community 2022",
+                    "id": "Microsoft.VisualStudio.2022.Community",
+                    "install": false
+                },
+                {
+                    "name": "WebStorm",
+                    "id": "JetBrains.WebStorm",
+                    "install": false
+                }
+            ]
+        }
