@@ -533,9 +533,9 @@ h2 {
   margin: 0px;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .my-2 {
@@ -543,9 +543,9 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .mb-2 {
@@ -604,16 +604,8 @@ h2 {
   width: 50%;
 }
 
-.w-36 {
-  width: 9rem;
-}
-
 .w-1\/4 {
   width: 25%;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .w-64 {
@@ -622,6 +614,10 @@ h2 {
 
 .w-3\/4 {
   width: 75%;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .flex-1 {
@@ -757,11 +753,6 @@ h2 {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .font-medium {
@@ -988,6 +979,19 @@ button:disabled {
 
 .invisible {
   visibility: hidden;
+}
+
+.on{
+  /* background-color: red !important; */
+}
+
+.off{
+  /* background-color: green !important; */
+}
+
+checkbox:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
 }
 
 .hover\:bg-blue-700:hover {

@@ -1,6 +1,6 @@
 // Modules to control application life and create native browser window
 
-const {app, BrowserWindow,Menu, ipcMain, dialog} = require('electron')
+const {app, BrowserWindow,Menu, ipcMain, dialog, globalShortcut} = require('electron')
 const path = require('path')
 const fs = require('fs')
 
@@ -63,10 +63,7 @@ ipcMain.on('config-preset-undefined', function (event) {
 
 })
 
-// This method will be called when Electron has finished
-// initialization and is ready to create browser windows.
-// Some APIs can only be used after this event occurs.
-app.whenReady().then(() => {
+function getConfig() {
 
   ipcMain.handle('dialog:openFile', async () => {
 
@@ -80,7 +77,9 @@ app.whenReady().then(() => {
 
         buttonLabel: 'Select config file',
 
-        filters: [{ name: '*', extensions: ['json'] }]
+        filters: [{ name: '*', extensions: ['json'] }],
+
+        message: 'Select a config file'
 
       })
 
@@ -98,6 +97,14 @@ app.whenReady().then(() => {
       else if (dialogue.canceled) { return }
 
   })
+}
+
+// This method will be called when Electron has finished
+// initialization and is ready to create browser windows.
+// Some APIs can only be used after this event occurs.
+app.whenReady().then(() => {
+
+  getConfig()
 
   createWindow()
 
@@ -114,12 +121,12 @@ app.whenReady().then(() => {
 
 // const menu = [
 //   {
-//     label: 'Config',
+//     label: 'App',
 //     submenu: [
 //       {
-//         label: 'Load',
+//         label: 'Quit',
 //         accelerator: 'Ctrl+Q',
-//         click: () => getConfig()
+//         click: () => app.quit()
 //       }
 //     ]
 //   }

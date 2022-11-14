@@ -196,3 +196,16 @@ button:disabled {
 .invisible {
     visibility: hidden;
 }
+
+.on{
+    /* background-color: red !important; */
+}
+
+.off{
+    /* background-color: green !important; */
+}
+
+checkbox:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
