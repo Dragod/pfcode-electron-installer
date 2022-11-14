@@ -36,7 +36,31 @@ async function createWindow () {
 
 ipcMain.on('open-error-dialog', function (event) {
 
-  dialog.showErrorBox('Qrcode error', 'Data is too big to generate a QR Code, please select 25 or less apps.')
+  dialog.showErrorBox('Qrcode error', 'Data is too big to generate a QR Code, max 25 apps.')
+})
+
+ipcMain.on('config-winget', function (event) {
+
+  dialog.showErrorBox('Config file error', 'The config file does not contain a winget array. Please check the config file.')
+
+})
+
+ipcMain.on('config-winget-empty', function (event) {
+
+  dialog.showErrorBox('Config file error', 'The config file does not contain any app/s, the array is empty. Please check the config file.')
+
+})
+
+ipcMain.on('config-preset-empty', function (event) {
+
+  dialog.showErrorBox('Config file error', 'The config file need to specify a preset name. Please check the config file.')
+
+})
+
+ipcMain.on('config-preset-undefined', function (event) {
+
+  dialog.showErrorBox('Config file error', 'The config file need a preset. Please check the config file.')
+
 })
 
 // This method will be called when Electron has finished
@@ -66,16 +90,12 @@ app.whenReady().then(() => {
 
         catch (error) {
 
-          dialog.showErrorBox("Error", `There was an error reading from the json file: ${error}`)
+          dialog.showErrorBox("Config file error", `Either the config file is empty or there was an erro: ${error}`)
 
         }
 
       }
-      else {
-
-        dialog.showErrorBox("Error", "Invalid config file, please choose a valid json file.")
-
-      }
+      else if (dialogue.canceled) { return }
 
   })
 

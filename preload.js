@@ -14,9 +14,9 @@ contextBridge.exposeInMainWorld("QrCode", {
 
 	generate: (id,cmd) => { qrCode.toCanvas(id, cmd, function (error) {
 
-		if (error) console.error(error);
+			if(error) { ipcRenderer.send("open-error-dialog", error) }
 
-			console.log('QrCode created!');
+			console.log('QrCode created');
 
 		})
 	},
@@ -95,9 +95,20 @@ contextBridge.exposeInMainWorld("config", {
 
 	json: async () => ipcRenderer.invoke("dialog:openFile").then(result => {
 
-		if(result === undefined) { throw new Error("No file selected"); }
+		if(result.winget === undefined) { ipcRenderer.send("config-winget", "Invalid file");}
 
-		return result;
+		else if(result.winget.length === 0) { ipcRenderer.send("config-winget-empty", "Invalid file"); }
+
+		else if(result.preset === "") { ipcRenderer.send("config-preset-empty", "Invalid file"); }
+
+		else if(result.preset === undefined) { ipcRenderer.send("config-preset-undefined", "Invalid file"); }
+
+		else {
+
+			return result;
+
+		}
+
 
 	})
 
