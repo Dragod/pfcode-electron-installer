@@ -5,7 +5,8 @@
   "productName": "pfcode-electron-installer",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
+    "init": "electron .",
+    "start": "npx electronmon .",
     "style": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "repository": "https://github.com/Dragod/pfcode-electron-installer.git",
@@ -24,6 +25,7 @@
   "dependencies": {
     "@electron/remote": "^2.0.8",
     "copy-to-clipboard": "^3.3.2",
-    "qrcode": "^1.5.1"
+    "qrcode": "^1.5.1",
+    "toastify-js": "^1.12.0"
   }
 }
