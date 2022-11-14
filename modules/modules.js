@@ -302,6 +302,21 @@ function listenForChange(checkboxes) {
 
             console.log(checked);
 
+            if(checked.length === 0){
+
+                uncheckAll.disabled = true;
+
+                checkAll.disabled = false;
+
+            }
+            if(checkboxes.length === checked.length){
+
+                uncheckAll.disabled = false;
+
+                checkAll.disabled = true;
+
+            }
+
             installButton(isntallBtn, checked, appCount);
 
         });
@@ -355,5 +370,55 @@ function checkUncheck(check, checkUncheck, checkboxes) {
         }
 
     }
+
+}
+
+function showHide(installing,appCount){
+
+    if (installing.length > 0) {
+
+        install.disabled = false;
+
+        generateQr.disabled = false;
+
+        copyCmd.disabled = false;
+
+        uncheckAll.disabled = false;
+
+        checkAll.disabled = false;
+
+    }
+    else {
+
+        install.disabled = true;
+
+        generateQr.disabled = true;
+
+        copyCmd.disabled = true;
+
+        uncheckAll.disabled = true;
+
+        checkAll.disabled = false;
+
+    }
+
+    if(installing.length === appCount) {
+
+        checkAll.disabled = true;
+
+        uncheckAll.disabled = false;
+
+    }
+}
+
+function clearConsole() {
+
+    clear.onclick = function () {
+
+        code.innerHTML = "";
+
+        code.classList.remove("code-run");
+
+    };
 
 }

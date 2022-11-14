@@ -1,5 +1,5 @@
 {
-    "preset": "default",
+    "preset": "Default",
     "last-updated": "14/08/2022",
     "wingetInstall": "winget install -e -h --id=",
     "wingetQuerySearch": "winget search -q",
@@ -9,7 +9,7 @@
                 {
                     "name": "Visual Studio Code",
                     "id": "Microsoft.VisualStudioCode",
-                    "install": true
+                    "install": false
                 },
                 {
                     "name": "Sublime 4",
@@ -59,7 +59,7 @@
                 {
                     "name": "Git",
                     "id": "Git.Git",
-                    "install": true
+                    "install": false
                 },
                 {
                     "name": "Github Desktop",

@@ -10,7 +10,7 @@ const progressbar = document.getElementById("progressbar");
 
 const progressbarHtml = `
 <div class="w-full pt-4">
-    <span class="text-white">Installing software, please wait...</span>
+    <span class="text-white text-sm">Installing software, please wait...</span>
     <div class="w-full overflow-hidden">
     <div class="w-1/2 inline-block relative fluentProgressBar-waiting"></div>
     </div>
@@ -36,29 +36,15 @@ const uncheckAll = document.getElementById("uncheckAll");
 
 const preset = document.getElementById("preset");
 
+const clear = document.getElementById("clearOutput");
+
 qrc.innerHTML = qrcodeSvg;
 
 let installing, appCount, itemsList, checkboxes
 
-// Display default apps
+function loadFromConfig(configData, load=true) {
 
-let data = loadConfig()
-
-preset.innerHTML = `Default`
-
-appCount = data.winget.length;
-
-installing = data.winget.filter((app) => app.install === true);
-
-appList(apps,data.winget, "label.program")
-
-// Display apps from config file
-
-loadConfigBtn.addEventListener("click", async () => {
-
-  const configData = await window.config.json();
-
-  preset.innerHTML = configData.preset;
+  (load === true) ? preset.innerHTML = configData.preset : preset.innerHTML = "Default";
 
   apps.innerHTML = "";
 
@@ -68,40 +54,13 @@ loadConfigBtn.addEventListener("click", async () => {
 
   appList(apps, configData.winget)
 
-  if(installing.length > 0) {
+  showHide(installing, appCount);
 
-    install.disabled = false;
+  installSoftware(".install:checked");
 
-    generateQr.disabled = false;
+  generateQrCode(".install:checked", "canvas", "qrcode");
 
-    copyCmd.disabled = false;
-
-    uncheckAll.disabled = false;
-
-    checkAll.disabled = false;
-
-  }
-  else {
-
-    install.disabled = true;
-
-    generateQr.disabled = true;
-
-    copyCmd.disabled = true;
-
-    uncheckAll.disabled = true;
-
-    checkAll.disabled = false;
-
-  }
-
-  if(installing.length === appCount) {
-
-    checkAll.disabled = true;
-
-    uncheckAll.disabled = false;
-
-  }
+  copyCommand(".install:checked");
 
   installButton(isntallBtn, installing, appCount);
 
@@ -111,26 +70,20 @@ loadConfigBtn.addEventListener("click", async () => {
 
   checkUncheck(false, uncheckAll, checkboxes);
 
+  clearConsole();
+
+}
+
+let data = loadConfig()
+
+loadFromConfig(data, false);
+
+// Display apps from config file
+
+loadConfigBtn.addEventListener("click", async () => {
+
+  const configData = await window.config.json();
+
+  loadFromConfig(configData, true);
+
 });
-
-installSoftware(".install:checked");
-
-generateQrCode(".install:checked", "canvas", "qrcode");
-
-copyCommand(".install:checked");
-
-installButton(isntallBtn, installing, appCount);
-
-listenForChange(checkboxes);
-
-checkUncheck(true, checkAll, checkboxes);
-
-checkUncheck(false, uncheckAll, checkboxes);
-
-document.getElementById("clearOutput").onclick = function () {
-
-  code.innerHTML = "";
-
-  code.classList.remove("code-run");
-
-};
