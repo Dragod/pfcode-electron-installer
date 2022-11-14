@@ -360,8 +360,8 @@ document.getElementById("generateQr").onclick = function () {
   if (checked.length <= 25) {
     qrcode("canvas", "qrcode", cmdToRun);
   } else {
-    ////alert('Data is too big to generate a QR Code, please select 25 or less apps.')
-    ipcRenderer.send("open-error-dialog");
+    alert('Data is too big to generate a QR Code, please select 25 or less apps.')
+    //ipcRenderer.send("open-error-dialog");
   }
 };
 
