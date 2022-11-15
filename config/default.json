@@ -793,6 +793,12 @@
                     "category:": "tools"
                 },
                 {
+                    "name": "OpenOffice",
+                    "id": "Apache.OpenOffice",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
                     "name": "Transmission",
                     "id": "Transmission.Transmission",
                     "install": false,
