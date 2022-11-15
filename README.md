@@ -1,6 +1,10 @@
 # Pfcode Installer - Electron
 
-Functionality:
+Pfcode Installer is an electron app which allow you to install packages via the Windows package management, Winget on a GUI.
+
+The app is only meant to work on Windows 11 by default and Windows 10 (require to install winget first)
+
+### App functionality
 
 - Select from a wide range of apps 200+
 - Console Output
