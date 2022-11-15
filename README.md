@@ -47,5 +47,9 @@ npm run style
 
 npm start
 
+# Create portable executable
+
+npm run packager
+
 ```
 
