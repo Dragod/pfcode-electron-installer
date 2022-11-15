@@ -9,3 +9,8 @@
 # Filtering apps
 
 ![alt text](./assets/app-3.png)
+
+# Qrcode
+
+![alt text](./assets/app-4.png)
+
