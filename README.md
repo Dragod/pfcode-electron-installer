@@ -5,8 +5,8 @@ Functionality:
 - Select from a wide range of apps 200+
 - Console Output
 - Clear console output
-- Load custom json config
-- Generate QR code (support max 25 apps)
+- Load custom app config (json)
+- Generate QR code (maximum selected apps, 25)
 - Generate install command to clipoard to use on cmd.exe
 - Filter apps by name
 - Show only checked apps
