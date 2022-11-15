@@ -46,10 +46,6 @@ const wingetApi = document.getElementById("wingetApi");
 
 const github = document.getElementById("github");
 
-const cat = document.getElementById("cat");
-
-const backup = document.getElementById("back");
-
 qrc.innerHTML = qrcodeSvg;
 
 let installing, appCount, itemsList, checkboxes, matches, category, jsonData
