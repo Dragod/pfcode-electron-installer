@@ -56,7 +56,16 @@
 
             <div class="flex pt-4">
 
-              <button id="checkAll" class="inline-flex mr-2 px-4 py-1.5 bg-blue-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" title="Ceck all checkbox">
+              <button id="toggle" class="off inline-flex flex-row mr-4" title="Get only checked apps">
+                <span id="toggle-icon" class="inline-flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-toggle-off mr-2" viewBox="0 0 16 16">
+                    <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z"/>
+                  </svg>
+                  <span class="inline-flex self-center text-xs">Only checked</span>
+                </span>
+              </button>
+
+              <button id="checkAll" class="inline-flex mr-4 px-4 py-1.5 bg-blue-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" title="Ceck all checkbox">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-square mr-2" viewBox="0 0 16 16">
                   <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"/>
                   <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
@@ -72,22 +81,13 @@
                 <span>Uncheck All</span>
               </button>
 
-              <button id="toggle" class="off inline-flex flex-row" title="Get only checked apps">
-                <span id="toggle-icon" class="inline-flex">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-toggle-off mr-2" viewBox="0 0 16 16">
-                    <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z"/>
-                  </svg>
-                  <span class="inline-flex self-center">Only checked</span>
-                </span>
-              </button>
-
             </div>
 
           </div>
 
         </div>
 
-        <div class="flex flex-1 p-4 flex-col overflow-auto">
+        <div class="flex flex-1 px-4 flex-col overflow-auto">
 
           <div class="flex py-4 flex-row items-center">
             <span class="inline-flex">

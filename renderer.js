@@ -10,7 +10,7 @@ const progressbar = document.getElementById("progressbar");
 
 const progressbarHtml = `
 <div class="w-full pt-4">
-    <span class="text-white text-sm">Installing software, please wait...</span>
+    <span class="text-white text-xs">Installing software, please wait...</span>
     <div class="w-full overflow-hidden">
     <div class="w-1/2 inline-block relative fluentProgressBar-waiting"></div>
     </div>
@@ -123,10 +123,15 @@ toggle.addEventListener('click', function(e) {
   if (toggle.classList.contains('on')) {
 
       toggle.classList.remove('on');
+
       toggle.classList.add('off');
 
+      checkAll.classList.remove("hidden");
+
+      uncheckAll.classList.remove("hidden");
+
       document.getElementById('toggle-icon').innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-toggle-off mr-2" viewBox="0 0 16 16">
-      <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z"/><span class="inline-flex self-center">Only checked</span>
+      <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z"/><span class="inline-flex self-center text-xs">Only checked</span>
     </svg>`
 
       checkboxes.forEach((checkbox) => {
@@ -148,11 +153,16 @@ toggle.addEventListener('click', function(e) {
   } else if(toggle.classList.contains('off')) {
 
       toggle.classList.remove('off');
+
       toggle.classList.add('on');
+
+      checkAll.classList.add("hidden");
+
+      uncheckAll.classList.add("hidden");
 
       document.getElementById('toggle-icon').innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-toggle-on mr-2" viewBox="0 0 16 16">
       <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
-    </svg><span class="inline-flex self-center">Only checked</span>
+    </svg><span class="inline-flex self-center text-xs">Only checked</span>
     `
 
       checkboxes.forEach((checkbox) => {

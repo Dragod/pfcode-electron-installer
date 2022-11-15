@@ -157,7 +157,7 @@ function appList(id, data) {
 
     data.forEach(app => {
 
-        id.innerHTML += ` <label class="program mb-2 pb-2 text-gray-800" for="${app.id}">
+        id.innerHTML += ` <label class="program mb-2 py-2 text-gray-800" for="${app.id}">
         <input
         class="install form-check-label inline-block text-gray-800"
         type="checkbox"
