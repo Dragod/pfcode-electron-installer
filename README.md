@@ -31,3 +31,21 @@ The app is only meant to work on Windows 11 by default and Windows 10 (require t
 
 ![alt text](./assets/app-4.png)
 
+# How to use
+
+```shell
+
+# Install node dependencies
+
+npm i
+
+# Run app styles
+
+npm run style
+
+# Run the app
+
+npm start
+
+```
+
