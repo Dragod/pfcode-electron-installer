@@ -10,8 +10,8 @@ Functionality:
 - Generate install command to clipoard to use on cmd.exe
 - Filter apps by name
 - Show only checked apps
-- Check all apps
-- Unchecl all apps
+- Check all apps with one click
+- Uncheck all apps with one click
 
 ![alt text](./assets/app-1.png)
 
