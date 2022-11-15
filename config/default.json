@@ -272,6 +272,26 @@
                     "install": false
                 },
                 {
+                    "name": "Yubikey Manager",
+                    "id": "Yubico.YubikeyManager",
+                    "install": false
+                },
+                {
+                    "name": "Yubiko Authenticator",
+                    "id": "Yubico.Authenticator",
+                    "install": false
+                },
+                {
+                    "name": "YubiKey Personalization Tool",
+                    "id": "Yubico.YubiKeyPersonalizationTool",
+                    "install": false
+                },
+                {
+                    "name": "AdGuard",
+                    "id": "AdGuard.AdGuard",
+                    "install": false
+                },
+                {
                     "name": "ShareX",
                     "id": "ShareX.ShareX",
                     "install": false

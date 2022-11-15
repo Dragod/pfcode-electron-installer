@@ -42,6 +42,10 @@ let toggle = document.querySelector('#toggle');
 
 const undo = document.getElementById("undoOnly");
 
+const wingetApi = document.getElementById("wingetApi");
+
+const github = document.getElementById("github");
+
 qrc.innerHTML = qrcodeSvg;
 
 let installing, appCount, itemsList, checkboxes, matches
@@ -76,10 +80,6 @@ function loadFromConfig(configData, load=true) {
 
   clearConsole();
 
-  //toggleOnlyChecked();
-
-  //removeChecked(checkboxes);
-
 }
 
 let data = loadConfig()
@@ -93,6 +93,18 @@ loadConfigBtn.addEventListener("click", async () => {
   const configData = await window.config.json();
 
   loadFromConfig(configData, true);
+
+});
+
+wingetApi.addEventListener("click", () => {
+
+  link.wingetRun();
+
+});
+
+github.addEventListener("click", () => {
+
+  link.github();
 
 });
 
@@ -113,6 +125,12 @@ document.addEventListener('keydown',async (event) => {
       loadFromConfig(configData, true);
 
   }
+
+  if (event.ctrlKey && event.key === 'l') {
+
+    link.wingetRun();
+
+}
 
 }, false);
 

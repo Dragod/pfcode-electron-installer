@@ -564,6 +564,10 @@ h2 {
   margin-bottom: 0px;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -935,7 +939,7 @@ canvas{
 } */
 
 button:disabled {
-  cursor: not-allowed;
+  cursor: default;
   opacity: 0.6;
 }
 
@@ -994,7 +998,7 @@ button:disabled {
 }
 
 checkbox:disabled {
-  cursor: not-allowed;
+  cursor: default;
   opacity: 0.6;
 }
 

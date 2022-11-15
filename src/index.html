@@ -11,6 +11,7 @@
     <div class="flex  flex-1 flex-column h-screen w-full">
       <div class="flex p-4 vscode">
         <nav class="text-white flex flex-col flex-1">
+
           <button id="loadConfig" class="button button-icon flex flex-col items-center px-4 py-2 bg-blue-600 text-white font-medium text-xs leading-normal rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-ripple-light="true" title="Load json configuration file">
             <span>Load config</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
@@ -19,8 +20,16 @@
             </svg>
             <span>CTRL+O</span>
           </button>
-          <!-- <button id="bau">only checked</button>
-          <button id="bauino">back</button> -->
+
+          <button id="wingetApi" class=" mt-4 button button-icon flex flex-col items-center px-4 py-2 bg-blue-600 text-white font-medium text-xs leading-normal rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-ripple-light="true" title="Open Winget.run website">
+            <span>Winget.api</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+              <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+              <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+            </svg>
+            <span>CTRL+L</span>
+          </button>
+
         </nav>
       </div>
 
@@ -28,7 +37,16 @@
 
         <div class="flex px-4 flex-col">
 
-          <h1 id="title" class="title prose prose-h2">Install software using Winget</h1>
+          <div class="flex flex-1">
+
+          <h1 id="title" class="title prose prose-h2 flex-1">Install Winget Packages</h1>
+          <a href="#" id="github" title="Open on Github" class="inline-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github self-center" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
+
+          </div>
 
           <hr class="my-4 h-px bg-gray-200 border-0 dark:bg-gray-700">
 
@@ -38,7 +56,7 @@
               Filter list
             </label>
 
-            <input type="text" id="myInput" placeholder="Start by typing the app name.." class="form-control
+            <input type="text" id="myInput" placeholder="Type app name.." class="form-control
             block
             w-full
             px-3
@@ -65,7 +83,7 @@
                 </span>
               </button>
 
-              <button id="checkAll" class="inline-flex mr-4 px-4 py-1.5 bg-blue-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" title="Ceck all checkbox">
+              <button id="checkAll" class="inline-flex px-4 py-1.5  text-white font-medium text-xs leading-tight rounded shadow-md focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out" title="Ceck all checkbox">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-square mr-2" viewBox="0 0 16 16">
                   <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"/>
                   <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
@@ -73,7 +91,7 @@
                 <span>Check All</span>
               </button>
 
-              <button id="uncheckAll" class="inline-flex mr-2 px-4 py-1.5 bg-blue-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" title="Unceck all checkbox">
+              <button id="uncheckAll" class="inline-flex mr-2 px-4 py-1.5 text-white font-medium text-xs leading-tight rounded shadow-md  hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out" title="Unceck all checkbox">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-square mr-2" viewBox="0 0 16 16">
                   <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
                   <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
@@ -89,7 +107,9 @@
 
         <div class="flex flex-1 px-4 flex-col overflow-auto">
 
-          <div class="flex py-4 flex-row items-center">
+          <hr class="my-2 h-px bg-gray-200 border-0 dark:bg-gray-700">
+
+          <div class="flex py-2 flex-row items-center">
             <span class="inline-flex">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle self-center mr-2" viewBox="0 0 16 16">
                 <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>

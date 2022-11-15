@@ -1,4 +1,4 @@
-const { contextBridge, ipcRenderer } = require("electron");
+const { contextBridge, ipcRenderer, shell } = require("electron");
 
 const fs = require("fs");
 
@@ -9,6 +9,25 @@ let spawn = require("child_process").spawn,child;
 const Toastify = require('toastify-js');
 
 const qrCode = require("qrcode");
+
+contextBridge.exposeInMainWorld("link", {
+
+	wingetRun: () => {
+
+		let url = "https://winget.run/";
+
+		shell.openExternal(url);
+
+	},
+
+	github: () => {
+
+		let url = "https://github.com/Dragod/pfcode-electron-installer"
+
+		shell.openExternal(url);
+
+	},
+});
 
 contextBridge.exposeInMainWorld("QrCode", {
 

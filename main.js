@@ -1,6 +1,6 @@
 // Modules to control application life and create native browser window
 
-const {app, BrowserWindow,Menu, ipcMain, dialog, globalShortcut} = require('electron')
+const {app, BrowserWindow, Menu, ipcMain, dialog, shell} = require('electron')
 const path = require('path')
 const fs = require('fs')
 
