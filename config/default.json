@@ -9,467 +9,1288 @@
                 {
                     "name": "Visual Studio Code",
                     "id": "Microsoft.VisualStudioCode",
-                    "install": false
+                    "install": false,
+                    "category:": "editor"
                 },
                 {
                     "name": "Sublime 4",
                     "id": "SublimeHQ.SublimeText.4",
-                    "install": false
+                    "install": false,
+                    "category:": "editor"
                 },
                 {
                     "name": "Sublime 3",
                     "id": "SublimeHQ.SublimeText.3",
-                    "install": false
+                    "install": false,
+                    "category:": "editor"
                 },
                 {
                     "name": "Notepad++",
                     "id": "Notepad++.Notepad++",
-                    "install": false
+                    "install": false,
+                    "category:": "editor"
                 },
                 {
                     "name": "Brackets",
                     "id": "Adobe.Brackets",
-                    "install": false
+                    "install": false,
+                    "category:": "editor"
+                },
+                {
+                    "name": "Vim",
+                    "id": "vim.vim",
+                    "install": false,
+                    "category:": "editor"
+                },
+                {
+                    "name": "Neovim",
+                    "id": "Neovim.Neovim",
+                    "install": false,
+                    "category:": "editor"
+                },
+                {
+                    "name": "Bluefish",
+                    "id": "Bluefish.Bluefish",
+                    "install": false,
+                    "category:": "editor"
+                },
+                {
+                    "name": "Visual Studio Community 2019",
+                    "id": "Microsoft.VisualStudio.2019.Community",
+                    "install": false,
+                    "category:": "ide"
+                },
+                {
+                    "name": "Visual Studio Professional 2019",
+                    "id": "Microsoft.VisualStudio.2019.Professional",
+                    "install": false,
+                    "category:": "ide"
                 },
                 {
                     "name": "Visual Studio Community 2022",
                     "id": "Microsoft.VisualStudio.2022.Community",
-                    "install": false
+                    "install": false,
+                    "category:": "ide"
+                },
+                {
+                    "name": "Visual Studio Professional 2022",
+                    "id": "Microsoft.VisualStudio.2022.Professional",
+                    "install": false,
+                    "category:": "ide"
+                },
+                {
+                    "name": "PSpad editor",
+                    "id": "JanFiala.PSpad",
+                    "install": false,
+                    "category:": "editor"
                 },
                 {
                     "name": "WebStorm",
                     "id": "JetBrains.WebStorm",
-                    "install": false
+                    "install": false,
+                    "category:": "ide"
+                },
+                {
+                    "name": "CLion",
+                    "id": "JetBrains.CLion",
+                    "install": false,
+                    "category:": "editor"
+                },
+                {
+                    "name": "IntelliJ IDEA Community Edition",
+                    "id": "JetBrains.IntelliJIDEA.Community",
+                    "install": false,
+                    "category:": "editor"
+                },
+                {
+                    "name": "IntelliJ IDEA Ultimate Edition",
+                    "id": "JetBrains.IntelliJIDEA.Ultimate",
+                    "install": false,
+                    "category:": "editor"
+                },
+                {
+                    "name": "PhpStorm",
+                    "id": "JetBrains.PHPStorm",
+                    "install": false,
+                    "category:": "editor"
+                },
+                {
+                    "name": "PyCharm Professional Edition",
+                    "id": "JetBrains.PyCharm.Professional",
+                    "install": false,
+                    "category:": "editor"
+                },
+                {
+                    "name": "GoLand",
+                    "id": "JetBrains.GoLand",
+                    "install": false,
+                    "category:": "editor"
+                },
+                {
+                    "name": "RubyMine",
+                    "id": "JetBrains.RubyMine",
+                    "install": false,
+                    "category:": "editor"
+                },
+                {
+                    "name": "JetBrains Rider",
+                    "id": "JetBrains.Rider",
+                    "install": false,
+                    "category:": "editor"
                 },
                 {
                     "name": "Windows Terminal",
                     "id": "Microsoft.WindowsTerminal",
-                    "install": false
+                    "install": false,
+                    "category:": "terminal"
+                },
+                {
+                    "name": "PowerShell 7",
+                    "id": "Microsoft.PowerShell",
+                    "install": false,
+                    "category:": "terminal"
                 },
                 {
                     "name": "Hyper",
                     "id": "Zeit.Hyper",
-                    "install": false
+                    "install": false,
+                    "category:": "terminal"
                 },
                 {
                     "name": "Nu",
                     "id": "Nushell.Nushell",
-                    "install": false
+                    "install": false,
+                    "category:": "terminal"
+                },
+                {
+                    "name": "WezTerm",
+                    "id": "wez.wezterm",
+                    "install": false,
+                    "category:": "terminal"
+                },
+                {
+                    "name": "Cygwin",
+                    "id": "Cygwin.Cygwin",
+                    "install": false,
+                    "category:": "terminal"
+                },
+                {
+                    "name": "ConEmu",
+                    "id": "Maximus5.ConEmu",
+                    "install": false,
+                    "category:": "terminal"
                 },
                 {
                     "name": "Git",
                     "id": "Git.Git",
-                    "install": false
+                    "install": false,
+                    "category:": "development"
+                },
+                {
+                    "name": "WinMerge",
+                    "id": "WinMerge.WinMerge",
+                    "install": false,
+                    "category:": "development"
+                },
+                {
+                    "name": "Git Extensions",
+                    "id": "GitExtensionsTeam.GitExtensions",
+                    "install": false,
+                    "category:": "development"
+                },
+                {
+                    "name": "TortoiseGit",
+                    "id": "TortoiseGit.TortoiseGit",
+                    "install": false,
+                    "category:": "development"
+                },
+                {
+                    "name": "TortoiseHg",
+                    "id": "TortoiseHg.TortoiseHg",
+                    "install": false,
+                    "category:": "development"
+                },
+                {
+                    "name": "Mercurial",
+                    "id": "Mercurial.Mercurial",
+                    "install": false,
+                    "category:": "development"
                 },
                 {
                     "name": "Github Desktop",
                     "id": "GitHub.GitHubDesktop",
-                    "install": false
+                    "install": false,
+                    "category:": "development"
                 },
                 {
                     "name": "GitKraken",
                     "id": "Axosoft.GitKraken",
-                    "install": false
+                    "install": false,
+                    "category:": "development"
                 },
                 {
                     "name": "Sublime Merge",
                     "id": "SublimeHQ.SublimeMerge",
-                    "install": false
+                    "install": false,
+                    "category:": "development"
                 },
                 {
                     "name": "NVM for Windows",
                     "id": "CoreyButler.NVMforWindows",
-                    "install": false
+                    "install": false,
+                    "category:": "development"
                 },
                 {
                     "name": "NodeJS LTS",
                     "id": "OpenJS.NodeJS.LTS",
-                    "install": false
+                    "install": false,
+                    "category:": "development"
                 },
                 {
-                    "name": "Ruby",
-                    "id": "RubyInstallerTeam.Ruby.3.1",
-                    "install": false
+                    "name": "JetBrains Toolbox",
+                    "id": "JetBrains.Toolbox",
+                    "install": false,
+                    "category:": "development"
+                },
+                {
+                    "name": "JetBrains TeamCity",
+                    "id": "JetBrains.TeamCity",
+                    "install": false,
+                    "category:": "development"
+                },
+                {
+                    "name": "JetBrains Space",
+                    "id": "JetBrains.Space",
+                    "install": false,
+                    "category:": "development"
+                },
+                {
+                    "name": "JetBrains YouTrack",
+                    "id": "JetBrains.YouTrack",
+                    "install": false,
+                    "category:": "development"
+                },
+                {
+                    "name": "Android Studio",
+                    "id": "Google.AndroidStudio",
+                    "install": false,
+                    "category:": "development"
                 },
                 {
                     "name": "Java",
                     "id": "Oracle.JavaRuntimeEnvironment",
-                    "install": false
+                    "install": false,
+                    "category:": "development"
                 },
                 {
-                    "name": "Python 3",
-                    "id": "Python.Python.3",
-                    "install": false
-                },
-                {
-                    "name": "AutoHotkey",
-                    "id": "Lexikos.AutoHotkey",
-                    "install": false
+                    "name": "Ms Build Tools 2019",
+                    "id": "Microsoft.VisualStudio.2019.BuildTools",
+                    "install": false,
+                    "category:": "development"
                 },
                 {
                     "name": "Ms Build Tools 2022",
                     "id": "Microsoft.VisualStudio.2022.BuildTools",
-                    "install": false
-                },
-                {
-                    "name": "Postman",
-                    "id": "Postman.Postman",
-                    "install": false
-                },
-                {
-                    "name": "PowerShell",
-                    "id": "Microsoft.PowerShell",
-                    "install": false
-                },
-                {
-                    "name": "MongoDB Compass",
-                    "id": "MongoDB.Compass.Full",
-                    "install": false
-                },
-                {
-                    "name": "Rustup: the Rust toolchain installer",
-                    "id": "Rustlang.Rustup",
-                    "install": false
+                    "install": false,
+                    "category:": "development"
                 },
                 {
                     "name": "Docker Desktop",
                     "id": "Docker.DockerDesktop",
-                    "install": false
+                    "install": false,
+                    "category:": "development"
+                },
+                {
+                    "name": "NuGet",
+                    "id": "Microsoft.NuGet",
+                    "install": false,
+                    "category:": "development"
+                },
+                {
+                    "name": "Vagrant",
+                    "id": "Hashicorp.Vagrant",
+                    "install": false,
+                    "category:": "development"
+                },
+                {
+                    "name": "PuTTY",
+                    "id": "PuTTY.PuTTY",
+                    "install": false,
+                    "category:": "development"
+                },
+                {
+                    "name": "Unity",
+                    "id": "UnityTechnologies.Unity.2020",
+                    "install": false,
+                    "category:": "development"
+                },
+                {
+                    "name": "Unity 2021",
+                    "id": "UnityTechnologies.Unity.2021",
+                    "install": false,
+                    "category:": "development"
+                },
+                {
+                    "name": "Google Cloud SDK",
+                    "id": "Google.CloudSDK",
+                    "install": false,
+                    "category:": "development"
+                },
+                {
+                    "name": "ILSpy",
+                    "id": "icsharpcode.ILSpy",
+                    "install": false,
+                    "category:": "development"
+                },
+                {
+                    "name": "JetBrains ReSharper",
+                    "id": "JetBrains.ReSharper",
+                    "install": false,
+                    "category:": "development"
+                },
+                {
+                    "name": "Ruby",
+                    "id": "RubyInstallerTeam.Ruby.3.1",
+                    "install": false,
+                    "category:": "language"
+                },
+                {
+                    "name": "Python 3",
+                    "id": "Python.Python.3",
+                    "install": false,
+                    "category:": "language"
+                },
+                {
+                    "name": "Go 1.19",
+                    "id": "GoLang.Go.1.19",
+                    "install": false,
+                    "category:": "language"
+                },
+                {
+                    "name": "Rustup: the Rust toolchain installer",
+                    "id": "Rustlang.Rustup",
+                    "install": false,
+                    "category:": "language"
+                },
+                {
+                    "name": "Postman",
+                    "id": "Postman.Postman",
+                    "install": false,
+                    "category:": "api"
+                },
+                {
+                    "name": "Insomnia",
+                    "id": "Insomnia.Insomnia",
+                    "install": false,
+                    "category:": "api"
                 },
                 {
                     "name": "Nmap",
                     "id": "Insecure.Nmap",
-                    "install": false
+                    "install": false,
+                    "category:": "devOps"
                 },
                 {
                     "name": "Wireshark",
                     "id": "WiresharkFoundation.Wireshark",
-                    "install": false
+                    "install": false,
+                    "category:": "devOps"
                 },
                 {
                     "name": "Advanced Port Scanner",
                     "id": "Famatech.AdvancedPortScanner",
-                    "install": false
+                    "install": false,
+                    "category:": "devOps"
+                },
+                {
+                    "name": "Wget",
+                    "id": "JernejSimoncic.Wget",
+                    "install": false,
+                    "category:": "devOps"
                 },
                 {
                     "name": "WinDirStat",
                     "id": "WinDirStat.WinDirStat",
-                    "install": false
+                    "install": false,
+                    "category:": "devOps"
                 },
                 {
                     "name": "Angry IP Scanner",
                     "id": "angryziber.AngryIPScanner",
-                    "install": false
+                    "install": false,
+                    "category:": "devOps"
                 },
                 {
                     "name": "Npcap",
                     "id": "NpcapInst",
-                    "install": false
+                    "install": false,
+                    "category:": "devOps"
                 },
                 {
                     "name": "USBPcap",
                     "id": "USBPcap",
-                    "install": false
+                    "install": false,
+                    "category:": "devOps"
                 },
                 {
                     "name": "Google Chrome",
                     "id": "Google.Chrome",
-                    "install": false
+                    "install": false,
+                    "category:": "browser"
                 },
                 {
                     "name": "Mozilla Firefox",
                     "id": "Mozilla.Firefox",
-                    "install": false
+                    "install": false,
+                    "category:": "browser"
                 },
                 {
                     "name": "LibreWolf",
                     "id": "LibreWolf.LibreWolf",
-                    "install": false
+                    "install": false,
+                    "category:": "browser"
                 },
                 {
                     "name": "Firefox Developer Edition",
                     "id": "Mozilla.Firefox.DeveloperEdition",
-                    "install": false
+                    "install": false,
+                    "category:": "browser"
+                },
+                {
+                    "name": "Waterfox",
+                    "id": "Waterfox.Waterfox",
+                    "install": false,
+                    "category:": "browser"
                 },
                 {
                     "name": "Brave",
                     "id": "BraveSoftware.BraveBrowser",
-                    "install": false
+                    "install": false,
+                    "category:": "browser"
+                },
+                {
+                    "name": "Brave Dev",
+                    "id": "BraveSoftware.BraveBrowser.Dev",
+                    "install": false,
+                    "category:": "browser"
                 },
                 {
                     "name": "Edge",
                     "id": "Microsoft.Edge",
-                    "install": false
+                    "install": false,
+                    "category:": "browser"
+                },
+                {
+                    "name": "Tor Browser",
+                    "id": "TorProject.TorBrowser",
+                    "install": false,
+                    "category:": "browser"
+                },
+                {
+                    "name": "Vivaldi",
+                    "id": "VivaldiTechnologies.Vivaldi",
+                    "install": false,
+                    "category:": "browser"
+                },
+                {
+                    "name": "Opera Stable",
+                    "id": "Opera.Opera",
+                    "install": false,
+                    "category:": "browser"
                 },
                 {
                     "name": "WhatsApp Desktop",
                     "id": "WhatsApp.WhatsApp",
-                    "install": false
+                    "install": false,
+                    "category:": "communication"
                 },
                 {
                     "name": "Telegram Desktop",
                     "id": "Telegram.TelegramDesktop",
-                    "install": false
+                    "install": false,
+                    "category:": "communication"
                 },
                 {
                     "name": "Signal Desktop",
                     "id": "OpenWhisperSystems.Signal",
-                    "install": false
+                    "install": false,
+                    "category:": "communication"
                 },
                 {
                     "name": "Element",
                     "id": "Element.Element",
-                    "install": false
+                    "install": false,
+                    "category:": "communication"
                 },
                 {
                     "name": "Skype",
                     "id": "Microsoft.Skype",
-                    "install": false
+                    "install": false,
+                    "category:": "communication"
                 },
                 {
                     "name": "Microsoft Teams",
                     "id": "Microsoft.Teams",
-                    "install": false
+                    "install": false,
+                    "category:": "communication"
                 },
                 {
                     "name": "Slack",
                     "id": "SlackTechnologies.Slack",
-                    "install": false
+                    "install": false,
+                    "category:": "communication"
                 },
                 {
                     "name": "Discord",
                     "id": "Discord.Discord",
-                    "install": false
+                    "install": false,
+                    "category:": "communication"
                 },
                 {
-                    "name": "Everything",
-                    "id": "voidtools.Everything",
-                    "install": false
+                    "name": "Mumble Client",
+                    "id": "Mumble.Mumble.Client",
+                    "install": false,
+                    "category:": "communication"
                 },
                 {
-                    "name": "EverythingToolbar",
-                    "id": "stnkl.EverythingToolbar",
-                    "install": false
+                    "name": "Mumble Server",
+                    "id": "Mumble.Mumble.Server",
+                    "install": false,
+                    "category:": "communication"
                 },
                 {
-                    "name": "KeePass Password Safe 2",
-                    "id": "DominikReichl.KeePass",
-                    "install": false
-                },
-                {
-                    "name": "Bitwarden",
-                    "id": "Bitwarden.Bitwarden",
-                    "install": false
-                },
-                {
-                    "name": "1Password",
-                    "id": "AgileBits.1Password",
-                    "install": false
-                },
-                {
-                    "name": "LastPass",
-                    "id": "LogMeIn.LastPass",
-                    "install": false
-                },
-                {
-                    "name": "Yubikey Manager",
-                    "id": "Yubico.YubikeyManager",
-                    "install": false
-                },
-                {
-                    "name": "Yubiko Authenticator",
-                    "id": "Yubico.Authenticator",
-                    "install": false
-                },
-                {
-                    "name": "YubiKey Personalization Tool",
-                    "id": "Yubico.YubiKeyPersonalizationTool",
-                    "install": false
-                },
-                {
-                    "name": "AdGuard",
-                    "id": "AdGuard.AdGuard",
-                    "install": false
-                },
-                {
-                    "name": "ShareX",
-                    "id": "ShareX.ShareX",
-                    "install": false
-                },
-                {
-                    "name": "GIMP",
-                    "id": "GIMP.GIMP",
-                    "install": false
-                },
-                {
-                    "name": "Inkscape",
-                    "id": "Inkscape.Inkscape",
-                    "install": false
-                },
-                {
-                    "name": "SyncTrayzor",
-                    "id": "SyncTrayzor.SyncTrayzor",
-                    "install": false
-                },
-                {
-                    "name": "7-Zip",
-                    "id": "7zip.7zip",
-                    "install": false
+                    "name": "GoToMeeting",
+                    "id": "LogMeIn.GoToMeeting",
+                    "install": false,
+                    "category:": "communication"
                 },
                 {
                     "name": "Mozilla Thunderbird",
                     "id": "Mozilla.Thunderbird",
-                    "install": false
+                    "install": false,
+                    "category:": "communication"
+                },
+                {
+                    "name": "Spotify",
+                    "id": "Spotify.Spotify",
+                    "install": false,
+                    "category:": "communication"
+                },
+                {
+                    "name": "Mattermost",
+                    "id": "Mattermost.MattermostDesktop",
+                    "install": false,
+                    "category:": "communication"
+                },
+                {
+                    "name": "TeamViewer",
+                    "id": "TeamViewer.TeamViewer",
+                    "install": false,
+                    "category:": "communication"
+                },
+                {
+                    "name": "TeamViewer Host",
+                    "id": "TeamViewer.TeamViewer.Host",
+                    "install": false,
+                    "category:": "communication"
+                },
+                {
+                    "name": "KeePass Password Safe 2",
+                    "id": "DominikReichl.KeePass",
+                    "install": false,
+                    "category:": "security"
+                },
+                {
+                    "name": "Bitwarden",
+                    "id": "Bitwarden.Bitwarden",
+                    "install": false,
+                    "category:": "security"
+                },
+                {
+                    "name": "1Password",
+                    "id": "AgileBits.1Password",
+                    "install": false,
+                    "category:": "security"
+                },
+                {
+                    "name": "LastPass",
+                    "id": "LogMeIn.LastPass",
+                    "install": false,
+                    "category:": "security"
+                },
+                {
+                    "name": "Dashlane",
+                    "id": "Dashlane.Dashlane",
+                    "install": false,
+                    "category:": "security"
+                },
+                {
+                    "name": "KeeWeb",
+                    "id": "KeeWeb.KeeWeb",
+                    "install": false,
+                    "category:": "security"
+                },
+                {
+                    "name": "KeePassXC",
+                    "id": "KeePassXCTeam.KeePassXC",
+                    "install": false,
+                    "category:": "security"
+                },
+                {
+                    "name": "Yubikey Manager",
+                    "id": "Yubico.YubikeyManager",
+                    "install": false,
+                    "category:": "security"
+                },
+                {
+                    "name": "Yubiko Authenticator",
+                    "id": "Yubico.Authenticator",
+                    "install": false,
+                    "category:": "security"
+                },
+                {
+                    "name": "YubiKey Personalization Tool",
+                    "id": "Yubico.YubiKeyPersonalizationTool",
+                    "install": false,
+                    "category:": "security"
+                },
+                {
+                    "name": "AdGuard",
+                    "id": "AdGuard.AdGuard",
+                    "install": false,
+                    "category:": "security"
+                },
+                {
+                    "name": "Malwarebytes",
+                    "id": "Malwarebytes.Malwarebytes",
+                    "install": false,
+                    "category:": "security"
+                },
+                {
+                    "name": "GIMP",
+                    "id": "GIMP.GIMP",
+                    "install": false,
+                    "category:": "design"
+                },
+                {
+                    "name": "Inkscape",
+                    "id": "Inkscape.Inkscape",
+                    "install": false,
+                    "category:": "design"
+                },
+                {
+                    "name": "Blender",
+                    "id": "BlenderFoundation.Blender",
+                    "install": false,
+                    "category:": "design"
+                },
+                {
+                    "name": "Figma",
+                    "id": "Figma.Figma",
+                    "install": false,
+                    "category:": "design"
+                },
+                {
+                    "name": "Everything",
+                    "id": "voidtools.Everything",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "EverythingToolbar",
+                    "id": "stnkl.EverythingToolbar",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "Calibre",
+                    "id": "calibre.calibre",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "Ubuntu 22.04 LTS",
+                    "id": "Canonical.Ubuntu.2204",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "NTLite",
+                    "id": "Nlitesoft.NTLite",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "Jq",
+                    "id": "stedolan.jq",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "Process Explorer",
+                    "id": "Microsoft.Sysinternals.ProcessExplorer",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "Process Monitor",
+                    "id": "Microsoft.Sysinternals.ProcessMonitor",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "Autoruns",
+                    "id": "Microsoft.Sysinternals.Autoruns",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "PowerToys (Preview)",
+                    "id": "Microsoft.PowerToys",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "SyncTrayzor",
+                    "id": "SyncTrayzor.SyncTrayzor",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "7-Zip",
+                    "id": "7zip.7zip",
+                    "install": false,
+                    "category:": "tools"
                 },
                 {
                     "name": "SumatraPDF",
                     "id": "SumatraPDF.SumatraPDF",
-                    "install": false
+                    "install": false,
+                    "category:": "tools"
                 },
                 {
                     "name": "VNC Viewer",
                     "id": "RealVNC.VNCViewer",
-                    "install": false
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "VNC Server",
+                    "id": "RealVNC.VNCServer",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "TigerVNC",
+                    "id": "TigerVNCproject.TigerVNC",
+                    "install": false,
+                    "category:": "tools"
                 },
                 {
                     "name": "LibreOffice",
                     "id": "TheDocumentFoundation.LibreOffice",
-                    "install": false
+                    "install": false,
+                    "category:": "tools"
                 },
                 {
-                    "name": "Obsidian",
-                    "id": "Obsidian.Obsidian",
-                    "install": false
+                    "name": "Transmission",
+                    "id": "Transmission.Transmission",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "QBittorrent",
+                    "id": "qBittorrent.qBittorrent",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "HWiNFO",
+                    "id": "REALiX.HWiNFO",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "Rufus",
+                    "id": "Rufus.Rufus",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "BalenaEtcher",
+                    "id": "Balena.Etcher",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "Audacity",
+                    "id": "Audacity.Audacity",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "HandBrake",
+                    "id": "HandBrake.HandBrake",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "Streamlink",
+                    "id": "Streamlink.Streamlink",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "WinSCP",
+                    "id": "WinSCP.WinSCP",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "yt-dlp",
+                    "id": "yt-dlp.yt-dlp",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "Feeder",
+                    "id": "knoopx.feeder",
+                    "install": false,
+                    "category:": "tools"
                 },
                 {
                     "name": "Oracle VM VirtualBox",
                     "id": "Oracle.VirtualBox",
-                    "install": false
+                    "install": false,
+                    "category:": "tools"
                 },
                 {
-                    "name": "Pandoc",
-                    "id": "JohnMacFarlane.Pandoc",
-                    "install": false
+                    "name": "ShareX",
+                    "id": "ShareX.ShareX",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "Greenshot",
+                    "id": "Greenshot.Greenshot",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "Bandicam",
+                    "id": "BandicamCompany.Bandicam",
+                    "install": false,
+                    "category:": "tools"
+                },
+                {
+                    "name": "Obsidian",
+                    "id": "Obsidian.Obsidian",
+                    "install": false,
+                    "category:": "notes"
+                },
+                {
+                    "name": "Notion",
+                    "id": "Notion.Notion",
+                    "install": false,
+                    "category:": "notes"
+                },
+                {
+                    "name": "Joplin",
+                    "id": "Joplin.Joplin",
+                    "install": false,
+                    "category:": "notes"
                 },
                 {
                     "name": "WireGuard",
                     "id": "WireGuard.WireGuard",
-                    "install": false
+                    "install": false,
+                    "category:": "vpn"
+                },
+                {
+                    "name": "OpenVPN",
+                    "id": "OpenVPNTechnologies.OpenVPN",
+                    "install": false,
+                    "category:": "vpn"
                 },
                 {
                     "name": "OpenVPN Connect",
                     "id": "OpenVPNTechnologies.OpenVPNConnect",
-                    "install": false
+                    "install": false,
+                    "category:": "vpn"
                 },
                 {
                     "name": "Tailscale",
                     "id": "tailscale.tailscale",
-                    "install": false
+                    "install": false,
+                    "category:": "vpn"
+                },
+                {
+                    "name": "ExpressVPN",
+                    "id": "ExpressVPN.ExpressVPN",
+                    "install": false,
+                    "category:": "vpn"
+                },
+                {
+                    "name": "Mullvad VPN",
+                    "id": "MullvadVPN.MullvadVPN",
+                    "install": false,
+                    "category:": "vpn"
+                },
+                {
+                    "name": "NordVPN",
+                    "id": "NordVPN.NordVPN",
+                    "install": false,
+                    "category:": "vpn"
                 },
                 {
                     "name": "Webroot SecureAnywhere",
                     "id": "Webroot.SecureAnywhere",
-                    "install": false
+                    "install": false,
+                    "category:": "security"
                 },
                 {
                     "name": "VLC media player",
                     "id": "VideoLAN.VLC",
-                    "install": false
+                    "install": false,
+                    "category:": "media"
                 },
                 {
                     "name": "FreeTube",
                     "id": "PrestonN.FreeTube",
-                    "install": false
+                    "install": false,
+                    "category:": "media"
                 },
                 {
                     "name": "CORSAIR iCUE 4 Software",
                     "id": "Corsair.iCUE.4",
-                    "install": false
+                    "install": false,
+                    "category:": "proprietary"
                 },
                 {
                     "name": "Elgato Stream Deck",
                     "id": "Elgato.StreamDeck",
-                    "install": false
+                    "install": false,
+                    "category:": "proprietary"
                 },
                 {
                     "name": "Logitech G HUB",
                     "id": "Logitech.GHUB",
-                    "install": false
+                    "install": false,
+                    "category:": "proprietary"
                 },
                 {
                     "name": "Logitech Gaming Software",
                     "id": "Logitech.LGS",
-                    "install": false
+                    "install": false,
+                    "category:": "proprietary"
+                },
+                {
+                    "name": "SteelSeries GG",
+                    "id": "SteelSeries.GG",
+                    "install": false,
+                    "category:": "proprietary"
+                },
+                {
+                    "name": "SteelSeries Engine",
+                    "id": "SteelSeries.SteelSeriesEngine",
+                    "install": false,
+                    "category:": "proprietary"
                 },
                 {
                     "name": "Steam",
                     "id": "Valve.Steam",
-                    "install": false
+                    "install": false,
+                    "category:": "gaming"
                 },
                 {
                     "name": "Epic Games Launcher",
                     "id": "EpicGames.EpicGamesLauncher",
-                    "install": false
+                    "install": false,
+                    "category:": "gaming"
                 },
                 {
                     "name": "Ubisoft Connect",
                     "id": "Ubisoft.Connect",
-                    "install": false
+                    "install": false,
+                    "category:": "gaming"
+                },
+                {
+                    "name": "EA app",
+                    "id": "ElectronicArts.EADesktop",
+                    "install": false,
+                    "category:": "gaming"
+                },
+                {
+                    "name": "Bethesda.net Launcher",
+                    "id": "Bethesda.Launcher",
+                    "install": false,
+                    "category:": "gaming"
+                },
+                {
+                    "name": "GOG GALAXY",
+                    "id": "GOG.Galaxy",
+                    "install": false,
+                    "category:": "gaming"
+                },
+                {
+                    "name": "NVIDIA GeForce Experience",
+                    "id": "Nvidia.GeForceExperience",
+                    "install": false,
+                    "category:": "gaming"
+                },
+                {
+                    "name": "NVIDIA GeForce NOW",
+                    "id": "Nvidia.GeForceNow",
+                    "install": false,
+                    "category:": "gaming"
                 },
                 {
                     "name": "Microsoft Visual C++ 2008 Redist",
                     "id": "Microsoft.VC++2008Redist-x64",
-                    "install": false
+                    "install": false,
+                    "category:": "windows tools"
                 },
                 {
                     "name": "Microsoft Visual C++ 2010  x64 Redist",
                     "id": "Microsoft.VC++2010Redist-x64",
-                    "install": false
+                    "install": false,
+                    "category:": "windows tools"
                 },
                 {
                     "name": "Microsoft Visual C++ 2012 x64 Redist",
                     "id": "Microsoft.VC++2012Redist-x64",
-                    "install": false
+                    "install": false,
+                    "category:": "windows tools"
                 },
                 {
                     "name": "Microsoft Visual C++ 2013 x64 Redist",
                     "id": "Microsoft.VC++2013Redist-x64",
-                    "install": false
+                    "install": false,
+                    "category:": "windows tools"
                 },
                 {
                     "name": "Microsoft Visual C++ 2015-2022 x64 Redist",
                     "id": "Microsoft.VC++2015-2022Redist-x64",
-                    "install": false
+                    "install": false,
+                    "category:": "windows tools"
                 },
                 {
                     "name": "Microsoft ASP.NET Core",
                     "id": "Microsoft.DotNet.AspNetCore.3_1",
-                    "install": false
+                    "install": false,
+                    "category:": "windows tools"
                 },
                 {
                     "name": "Microsoft Windows Desktop Runtime",
                     "id": "Microsoft.DotNet.DesktopRuntime.6",
-                    "install": false
+                    "install": false,
+                    "category:": "windows tools"
                 },
                 {
-                    "name": "Microsoft Web Deploy 4.0",
+                    "name": "Microsoft Web Deploy",
                     "id": "Microsoft.WebDeploy",
-                    "install": false
+                    "install": false,
+                    "category:": "windows tools"
                 },
                 {
                     "name": "Windows Software Development Kit - SDK",
                     "id": "Microsoft.WindowsSDK",
-                    "install": false
+                    "install": false,
+                    "category:": "windows tools"
                 },
                 {
                     "name": "Microsoft .NET SDK",
                     "id": "Microsoft.DotNet.SDK.6",
-                    "install": false
+                    "install": false,
+                    "category:": "windows tools"
                 },
                 {
                     "name": "Microsoft .NET Core SDK 3.1",
                     "id": "Microsoft.DotNet.SDK.3_1",
-                    "install": false
+                    "install": false,
+                    "category:": "windows tools"
+                },
+                {
+                    "name": "Microsoft SQL Server Management Studio",
+                    "id": "Microsoft.SQLServerManagementStudio",
+                    "install": false,
+                    "category:": "db"
+                },
+                {
+                    "name": "MongoDB",
+                    "id": "MongoDB.Server",
+                    "install": false,
+                    "category:": "db"
+                },
+                {
+                    "name": "MongoDB Compass",
+                    "id": "MongoDB.Compass.Full",
+                    "install": false,
+                    "category:": "db"
+                },
+                {
+                    "name": "MongoDB Compass Community",
+                    "id": "MongoDB.Compass.Community",
+                    "install": false,
+                    "category:": "db"
+                },
+                {
+                    "name": "MongoDB Tools",
+                    "id": "MongoDB.DatabaseTools",
+                    "install": false,
+                    "category:": "db"
+                },
+                {
+                    "name": "MongoDB Shell",
+                    "id": "MongoDB.Shell",
+                    "install": false,
+                    "category:": "db"
+                },
+                {
+                    "name": "MySQL",
+                    "id": "Oracle.MySQL",
+                    "install": false,
+                    "category:": "db"
+                },
+                {
+                    "name": "PostgreSQL",
+                    "id": "PostgreSQL.PostgreSQL",
+                    "install": false,
+                    "category:": "db"
+                },
+                {
+                    "name": "MariaDB",
+                    "id": "MariaDB.Server",
+                    "install": false,
+                    "category:": "db"
+                },
+                {
+                    "name": "DataGrip",
+                    "id": "JetBrains.DataGrip",
+                    "install": false,
+                    "category:": "db"
+                },
+                {
+                    "name": "Kubectl",
+                    "id": "Kubernetes.kubectl",
+                    "install": false,
+                    "category:": "cli"
+                },
+                {
+                    "name": "Azure Data CLI",
+                    "id": "Microsoft.AzureDataCLI",
+                    "install": false,
+                    "category:": "cli"
+                },
+                {
+                    "name": "AWS Command Line Interface",
+                    "id": "Amazon.AWSCLI",
+                    "install": false,
+                    "category:": "cli"
+                },
+                {
+                    "name": "GitHub CLI",
+                    "id": "GitHub.cli",
+                    "install": false,
+                    "category:": "cli"
+                },
+                {
+                    "name": "MongoDB CLI",
+                    "id": "MongoDB.MongoDBCLI",
+                    "install": false,
+                    "category:": "cli"
+                },
+                {
+                    "name": "Pandoc",
+                    "id": "JohnMacFarlane.Pandoc",
+                    "install": false,
+                    "category:": "cli"
+                },
+                {
+                    "name": "Microsoft PowerApps CLI",
+                    "id": "Microsoft.PowerAppsCLI",
+                    "install": false,
+                    "category:": "cli"
+                },
+                {
+                    "name": "PowerShell Universal Desktop",
+                    "id": "IronmanSoftware.PowerShellUniversal.Desktop",
+                    "install": false,
+                    "category:": "automation"
+                },
+                {
+                    "name": "AutoHotkey",
+                    "id": "Lexikos.AutoHotkey",
+                    "install": false,
+                    "category:": "automation"
+                },
+                {
+                    "name": "Power Automate Desktop",
+                    "id": "Microsoft.PowerAutomateDesktop",
+                    "install": false,
+                    "category:": "automation"
+                },
+                {
+                    "name": "OBS Studio",
+                    "id": "OBSProject.OBSStudio",
+                    "install": false,
+                    "category:": "streaming"
+                },
+                {
+                    "name": "Streamlabs Desktop",
+                    "id": "Streamlabs.Streamlabs",
+                    "install": false,
+                    "category:": "streaming"
+                },
+                {
+                    "name": "StreamlabsOBS",
+                    "id": "Streamlabs.StreamlabsOBS",
+                    "install": false,
+                    "category:": "streaming"
+                },
+                {
+                    "name": "Binance",
+                    "id": "BinanceTech.Binance",
+                    "install": false,
+                    "category:": "finance"
+                },
+                {
+                    "name": "Nextcloud",
+                    "id": "Nextcloud.NextcloudDesktop",
+                    "install": false,
+                    "category:": "cloud"
+                },
+                {
+                    "name": "OwnCloud",
+                    "id": "ownCloud.ownCloudDesktop",
+                    "install": false,
+                    "category:": "cloud"
+                },
+                {
+                    "name": "Google Drive",
+                    "id": "Google.Drive",
+                    "install": false,
+                    "category:": "cloud"
+                },
+                {
+                    "name": "Microsoft OneDrive",
+                    "id": "Microsoft.OneDrive",
+                    "install": false,
+                    "category:": "cloud"
+                },
+                {
+                    "name": "Dropbox",
+                    "id": "Dropbox.Dropbox",
+                    "install": false,
+                    "category:": "cloud"
+                },
+                {
+                    "name": "Box",
+                    "id": "Box.Box",
+                    "install": false,
+                    "category:": "cloud"
                 }
+
+
             ]
         }
