@@ -10,7 +10,7 @@ const progressbar = document.getElementById("progressbar");
 
 const progressbarHtml = `
 <div class="w-full pt-4">
-    <span class="text-white text-xs">Installing software, please wait...</span>
+    <span class="text-white text-sm">Installing software, please wait...</span>
     <div class="w-full overflow-hidden">
     <div class="w-1/2 inline-block relative fluentProgressBar-waiting"></div>
     </div>
@@ -46,9 +46,13 @@ const wingetApi = document.getElementById("wingetApi");
 
 const github = document.getElementById("github");
 
+const cat = document.getElementById("cat");
+
+const backup = document.getElementById("back");
+
 qrc.innerHTML = qrcodeSvg;
 
-let installing, appCount, itemsList, checkboxes, matches
+let installing, appCount, itemsList, checkboxes, matches, category, jsonData
 
 function loadFromConfig(configData, load=true) {
 
@@ -202,4 +206,3 @@ toggle.addEventListener('click', function(e) {
   }
 
 });
-

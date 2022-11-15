@@ -548,6 +548,10 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -562,10 +566,6 @@ h2 {
 
 .mb-0 {
   margin-bottom: 0px;
-}
-
-.mt-4 {
-  margin-top: 1rem;
 }
 
 .block {
@@ -734,11 +734,6 @@ h2 {
   padding-bottom: 0.25rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -874,7 +869,6 @@ html, body {
   background-position: center;
   background-size: contain;
   word-break: break-word;
-  opacity: .7;
   height: 260px;
   max-height: 260px;
   min-height: 260px;
@@ -1013,6 +1007,17 @@ input[type="checkbox"] {
 
 .program:last-child {
   border-bottom: none;
+}
+
+.code-bg {
+  background-image: url('../assets/bash.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.w-35 {
+  width: 35%;
 }
 
 .hover\:bg-blue-700:hover {

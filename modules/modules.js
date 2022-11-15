@@ -157,7 +157,7 @@ function appList(id, data) {
 
     data.forEach(app => {
 
-        id.innerHTML += ` <label class="program mb-2 py-2 text-gray-800" for="${app.id}">
+        id.innerHTML += ` <label class="program py-2 text-gray-800" for="${app.id}">
         <input
         class="install form-check-label inline-block text-gray-800"
         type="checkbox"
@@ -193,6 +193,8 @@ function cmdToRun(data) {
 function installSoftware(checked) {
 
     install.onclick = async function () {
+
+        code.classList.remove("code-bg");
 
         progressbar.classList.remove("invisible");
 
@@ -437,83 +439,11 @@ function clearConsole() {
 
         code.innerHTML = "";
 
+        code.classList.add("code-bg");
+
         code.classList.remove("code-run");
 
     };
 
 }
-
-// function toggleOnlyChecked() {
-
-//     console.log("here");
-
-//     toggle.addEventListener('click', function(e) {
-
-//         e.preventDefault();
-
-//         if (toggle.classList.contains('on')) {
-
-//             toggle.classList.remove('on');
-
-//             toggle.classList.add('off');
-
-//             document.getElementById('toggle-icon').innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-toggle-off mr-2" viewBox="0 0 16 16">
-//             <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z"/><span class="inline-flex self-center">Only checked</span>
-//             </svg>`
-
-//             checkboxes.forEach((checkbox) => {
-
-
-//                 if(checkbox.checked === false) {
-
-//                 checkbox.parentElement.classList.remove("hidden");
-
-//                 }
-
-//             });
-
-//         } else if(toggle.classList.contains('off')) {
-
-//             toggle.classList.remove('off');
-//             toggle.classList.add('on');
-
-//             document.getElementById('toggle-icon').innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-toggle-on mr-2" viewBox="0 0 16 16">
-//             <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
-//             </svg><span class="inline-flex self-center">Only checked</span>
-//             `
-
-//             checkboxes.forEach((checkbox) => {
-
-//                 if(checkbox.checked === false) {
-
-//                 checkbox.parentElement.classList.add("hidden");
-
-//                 }
-
-//             });
-
-//         }
-
-//     });
-
-// }
-
-// function removeChecked(checkboxes) {
-
-
-//     checkboxes.forEach((checkbox) => {
-
-//         checkbox.addEventListener("change", () => {
-
-//             if(checkbox.checked === true) {
-
-//                 checkbox.parentElement.classList.add("hidden");
-
-//             };
-
-//         });
-
-//     });
-
-// }
 

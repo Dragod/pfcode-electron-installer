@@ -72,7 +72,6 @@ html, body {
     background-position: center;
     background-size: contain;
     word-break: break-word;
-    opacity: .7;
     height: 260px;
     max-height: 260px;
     min-height: 260px;
@@ -225,4 +224,18 @@ input[type="checkbox"] {
 
     border-bottom: none;
 
+}
+
+.code-bg {
+
+
+    background-image: url('../assets/bash.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.w-35 {
+    width: 35%;
 }
