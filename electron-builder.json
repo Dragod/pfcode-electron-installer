@@ -1,0 +1,18 @@
+{
+    "appId": "com.pfcode.installer",
+    "productName": "Pfcode Installer",
+    "copyright": "© 2022 Pfcode",
+    "directories": {
+        "app": ".",
+        "output": "out",
+        "buildResources": "build-res"
+    },
+    "files": [
+        "package.json",
+        "app/**/*",
+        "node_modules"
+    ],
+    "win": {
+        "target": "nsis"
+    }
+}

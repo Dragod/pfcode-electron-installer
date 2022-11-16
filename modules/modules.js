@@ -186,7 +186,7 @@ function cmdToRun(data) {
 
     return `winget install -e -h --accept-source-agreements --accept-package-agreements --id ${data
             .map((software) => software)
-            .join(`; winget install -e -h --id=`)}`.replace(/;/g, " &&");
+            .join(`; winget install -e -h --accept-source-agreements --accept-package-agreements --id=`)}`.replace(/;/g, " &&");
 
 }
 

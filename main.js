@@ -7,7 +7,7 @@ const fs = require('fs')
 async function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    title: "Pfcode Installer Electron",
+    title: "Pfcode Installer v1.0.0",
     width: 1000,
     minWidth: 1000,
     maxWidth: 1000,
@@ -16,6 +16,7 @@ async function createWindow () {
     maxHeight: 750,
     fullscreenable: false,
     resizable: false,
+    icon: path.join(__dirname, 'assets/icons/install.ico'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       nodeIntegration: true
@@ -30,7 +31,7 @@ async function createWindow () {
 
   // Open the DevTools.
 
-  mainWindow.webContents.openDevTools()
+  //mainWindow.webContents.openDevTools()
 
 }
 
