@@ -69,6 +69,39 @@ function readCli(cmd, shellType= 'cmd.exe') {
 
             progressbar.classList.add("invisible");
 
+            checkboxes.forEach((checkbox) => (checkbox.disabled = false));
+
+            checkAll.disabled = true;
+
+            uncheckAll.disabled = false;
+
+            toggle.disabled = false;
+
+            //
+
+            toggle.classList.remove('on');
+
+            toggle.classList.add('off');
+
+            checkAll.classList.remove("hidden");
+
+            uncheckAll.classList.remove("hidden");
+
+            toggleIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-toggle-off mr-2" viewBox="0 0 16 16">
+            <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z"/><span class="inline-flex self-center text-xs">Only checked</span>
+            </svg>
+            `;
+
+            checkboxes.forEach((checkbox) => {
+
+                (checkbox.checked === true) ?
+                checkbox.disabled = false :
+                checkbox.parentElement.classList.remove("hidden");
+
+            });
+
+            //
+
         }
         else {
 
@@ -211,6 +244,39 @@ function cmdToRun(data, shellType) {
 function installSoftware(checked, shellType) {
 
     install.onclick = async function () {
+
+        checkboxes.forEach((checkbox) => (checkbox.disabled = true));
+
+        checkAll.disabled = true;
+
+        uncheckAll.disabled = true;
+
+        toggle.disabled = true;
+
+        //
+
+        toggle.classList.remove('off');
+
+        toggle.classList.add('on');
+
+        checkAll.classList.add("hidden");
+
+        uncheckAll.classList.add("hidden");
+
+        toggleIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-toggle-on mr-2" viewBox="0 0 16 16">
+        <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+        </svg><span class="inline-flex self-center text-xs">Only checked</span>
+        `
+
+        checkboxes.forEach((checkbox) => {
+
+        (checkbox.checked === true) ?
+        checkbox.disabled = true :
+        checkbox.parentElement.classList.add("hidden");
+
+        });
+
+        //
 
         code.classList.remove("code-bg");
 
