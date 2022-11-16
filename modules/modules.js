@@ -87,7 +87,7 @@ function readCli(cmd, shellType= 'cmd.exe') {
 
             uncheckAll.classList.remove("hidden");
 
-            toggleIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-toggle-off mr-2" viewBox="0 0 16 16">
+            toggleIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-toggle-off mr-2" viewBox="0 0 16 16">
             <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z"/><span class="inline-flex self-center text-xs">Only checked</span>
             </svg>
             `;
@@ -263,7 +263,7 @@ function installSoftware(checked, shellType) {
 
         uncheckAll.classList.add("hidden");
 
-        toggleIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-toggle-on mr-2" viewBox="0 0 16 16">
+        toggleIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-toggle-on mr-2" viewBox="0 0 16 16">
         <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
         </svg><span class="inline-flex self-center text-xs">Only checked</span>
         `
