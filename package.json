@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Install software using winget",
   "main": "main.js",
+  "icon": "favicon.ico",
+  "company": "pfcode",
   "copyright": "Copyright Pfcode (c) 2022",
   "scripts": {
     "init": "electron .",
@@ -10,7 +12,8 @@
     "style": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "app:dir": "electron-builder --dir",
     "app:dist": "electron-builder",
-    "packager": "electron-packager ./ --platform=win32"
+    "packager": "electron-packager ./ --platform=win32 --overwrite --icon=./favicon.ico --out=release-builds",
+    "packager:all": "electron-packager ./ --all"
   },
   "repository": "https://github.com/Dragod/pfcode-electron-installer.git",
   "keywords": [
@@ -39,6 +42,8 @@
   "build": {
     "appId": "com.pfcode.installer",
     "productName": "pfcode-installer",
+    "companyName": "pfcode",
+    "icon": "favicon.ico",
     "directories": {
       "output": "build"
     },
@@ -51,6 +56,7 @@
     "files": [
       "*.js",
       "build",
+      "config",
       "node_modules"
     ]
   }

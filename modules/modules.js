@@ -2,7 +2,11 @@ function loadConfig(configPath = null) {
 
     let data
 
-    let defaultConfig = () => JSON.parse(fs.readFileSync('./config/default.json'));
+    let jsonPath = path.join('./config/default.json')
+
+    console.log("Loaded config from default path: ", jsonPath)
+
+    let defaultConfig = () => JSON.parse(fs.readFileSync(path.join('./config/default.json'), 'utf8'));
 
     (configPath === null) ? data = defaultConfig() : data = JSON.parse(fs.readFileSync(configPath));
 
@@ -182,11 +186,21 @@ function appList(id, data) {
 
 function toInstall(input) { return [...document.querySelectorAll(input)].map((e) => e.value); }
 
-function cmdToRun(data) {
+function cmdToRun(data, simplified= false) {
+
+    if(simplified === true) {
+
+        return `winget install --id ${data
+            .map((software) => software)
+            .join(`; winget install --id=`)}`.replace(/;/g, " &&");
+
+    }
+    else {
 
     return `winget install -e -h --accept-source-agreements --accept-package-agreements --id ${data
             .map((software) => software)
             .join(`; winget install -e -h --accept-source-agreements --accept-package-agreements --id=`)}`.replace(/;/g, " &&");
+    }
 
 }
 
@@ -204,7 +218,7 @@ function installSoftware(checked) {
 
         const data = toInstall(checked);
 
-        const cmd = cmdToRun(data);
+        const cmd = cmdToRun(data,false);
 
         console.log(cmd);
 
@@ -234,7 +248,7 @@ function generateQrCode(checked,canvasId,qrId) {
 
         const data = toInstall(checked);
 
-        const cmd = cmdToRun(data);
+        const cmd = cmdToRun(data,true);
 
         console.log(cmd);
 
@@ -252,7 +266,7 @@ function copyCommand(checked) {
 
         const data = toInstall(checked);
 
-        const cmd = cmdToRun(data);
+        const cmd = cmdToRun(data, true);
 
         console.log(cmd);
 

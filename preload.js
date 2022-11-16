@@ -10,6 +10,14 @@ const Toastify = require('toastify-js');
 
 const qrCode = require("qrcode");
 
+const path = require("path");
+
+contextBridge.exposeInMainWorld("path", {
+
+	join: (filePath) => { return path.join(__dirname, filePath) },
+
+});
+
 contextBridge.exposeInMainWorld("link", {
 
 	wingetRun: () => {

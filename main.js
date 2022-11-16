@@ -16,7 +16,7 @@ async function createWindow () {
     maxHeight: 750,
     fullscreenable: false,
     resizable: false,
-    icon: path.join(__dirname, 'assets/icons/install.ico'),
+    icon: __dirname + './favicon.ico',
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       nodeIntegration: true
