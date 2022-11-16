@@ -1,10 +1,6 @@
 function loadConfig(configPath = null) {
 
-    let data
-
-    let jsonPath = path.join('./config/default.json')
-
-    console.log("Loaded config from default path: ", jsonPath)
+    let data = null;
 
     let defaultConfig = () => JSON.parse(fs.readFileSync(path.join('./config/default.json'), 'utf8'));
 
@@ -21,6 +17,7 @@ function alertError(message) {
         duration: 5000,
         close: false,
         style: {
+
             background: 'red',
             color: 'white',
             textAlign: 'center',
@@ -30,9 +27,29 @@ function alertError(message) {
 
 }
 
-function readCli(cmd) {
+function consoleLog(id,data) {
 
-    Spawn.spawn("cmd.exe", ["/c", cmd], { shell: true, stdio: "inherit" });
+    let code = document.querySelector(id);
+
+    const unwanted_chars_regex = /[^a-zA-Z0-9,:;\-.?! ]/g;
+
+    const clean_string = data.toString().replace(unwanted_chars_regex, "");
+
+    if (clean_string !== "-" && clean_string !== "   -" && clean_string !== "") {
+
+        code.innerHTML += `<p id="data" class="flex">${clean_string}</p>`;
+
+    }
+
+    //Scroll output div when new content is added dynamically
+
+    code.scrollTop = code.scrollHeight;
+
+}
+
+function readCli(cmd, shellType= 'cmd.exe') {
+
+    Spawn.spawn(shellType, ["/c", cmd], { shell: true, stdio: "inherit" });
 
     Spawn.onStdOut()
 
@@ -41,8 +58,6 @@ function readCli(cmd) {
     Spawn.onExit()
 
     window.addEventListener("message", (event) => {
-
-        console.log(event.data)
 
         if (event.data === "Exit") {
 
@@ -57,33 +72,13 @@ function readCli(cmd) {
         }
         else {
 
-            consoleLog("code", event.data)
+            console.log(event.data)
+
+            consoleLog("#code", event.data)
 
         }
 
     })
-
-}
-
-function consoleLog(id,data) {
-
-    let code = document.getElementById(id);
-
-    let cData = data.toString();
-
-    const unwanted_chars_regex = /[^a-zA-Z0-9,:;\-.?! ]/g;
-
-    const clean_string = cData.replace(unwanted_chars_regex, "");
-
-    if (clean_string !== "-" && clean_string !== "   -" && clean_string !== "") {
-
-        code.innerHTML += `<p id="data" class="flex">${clean_string}</p>`;
-
-    }
-
-    //Scroll output div when new content is added dynamically
-
-    code.scrollTop = code.scrollHeight;
 
 }
 
@@ -122,46 +117,39 @@ function chkChecked(checked) {
 
 }
 
-function filterList() {
+function filterList(appList,input) {
 
-    let valueInput = document
-        .querySelector("#myInput")
-        .value.toLowerCase()
-        .trim();
+    let inputValue = input.value.toLowerCase().trim();
 
-    for (let i = 0; i < itemsList.length; i++) {
+    for (let i = 0; i < appList.length; i++) {
 
-        let item = itemsList[i];
+        let item = appList[i];
 
         let value = item.innerText.toLowerCase().trim();
 
-        item.style.display =
-            value.search(new RegExp(valueInput.replace(/\s+/, "|"))) != -1
-            ? ""
-            : "none";
+        item.style.display = value.search(new RegExp(inputValue.replace(/\s+/, "|"))) != -1? "": "none";
+
     }
 
 }
 
 function qrcode(id, qrcode, cmd) {
 
-    let canvas = document.getElementById(id);
+    const canvas = document.querySelector(id)
 
-    let qr = document.getElementById(qrcode);
+    canvas.classList.remove("hidden")
 
-    canvas.classList.remove("hidden");
-
-    qr.classList.add("hidden");
+    document.querySelector(qrcode).classList.add("hidden");
 
     QrCode.generate(canvas, cmd);
 
 }
 
-function appList(id, data) {
+function appList(id, data, className) {
 
     data.forEach(app => {
 
-        id.innerHTML += ` <label class="program py-2 text-gray-800" for="${app.id}">
+        id.innerHTML += `<label class="${className} py-2 text-gray-800" for="${app.id}">
         <input
         class="install form-check-label inline-block text-gray-800"
         type="checkbox"
@@ -174,37 +162,53 @@ function appList(id, data) {
 
     });
 
-    itemsList = document.querySelectorAll("label.program");
-
-    filter.addEventListener("keyup", filterList);
-
-    checkboxes = document.querySelectorAll('input[type="checkbox"]');
-
-    matches = document.querySelectorAll('input[type="checkbox"]:not(:checked)')
-
 }
 
+/**
+ * It takes a CSS selector as input, and returns an array of all the values of the elements that match
+ * the selector
+ * @param input - The CSS selector for the input elements.
+ * @returns An array of all the values of the elements that match the input.
+ */
 function toInstall(input) { return [...document.querySelectorAll(input)].map((e) => e.value); }
 
-function cmdToRun(data, simplified= false) {
+/**
+ * It takes an array of strings and a string and returns a string.
+ * @param data - An array of strings that are the names of the apps you want to install.
+ * @param shellType - The type of shell you want to use.
+ * @returns a string that is a command to run in the shell.
+ */
+function cmdToRun(data, shellType) {
 
-    if(simplified === true) {
+    const winget =`winget install -e -h --accept-source-agreements --accept-package-agreements --id`
 
-        return `winget install --id ${data
-            .map((software) => software)
-            .join(`; winget install --id=`)}`.replace(/;/g, " &&");
+    let concat;
 
+    if (shellType === "cmd") {
+
+        concat = " &&";
+    }
+    else if (shellType === "powershell") {
+
+        concat = ";";
     }
     else {
 
-    return `winget install -e -h --accept-source-agreements --accept-package-agreements --id ${data
-            .map((software) => software)
-            .join(`; winget install -e -h --accept-source-agreements --accept-package-agreements --id=`)}`.replace(/;/g, " &&");
+        throw new Error("Shell type not supported");
+
     }
+
+    return `${winget} ${data.map((app) => app).join(`${concat} ${winget}=`)}`
 
 }
 
-function installSoftware(checked) {
+/**
+ * It takes two arguments, one is an array of strings and the other is a string. It then returns a
+ * string.
+ * @param checked - an array of the software to install
+ * @param shellType - bash or zsh
+ */
+function installSoftware(checked, shellType) {
 
     install.onclick = async function () {
 
@@ -218,7 +222,7 @@ function installSoftware(checked) {
 
         const data = toInstall(checked);
 
-        const cmd = cmdToRun(data,false);
+        const cmd = cmdToRun(data, shellType);
 
         console.log(cmd);
 
@@ -242,13 +246,22 @@ function installSoftware(checked) {
 
 }
 
-function generateQrCode(checked,canvasId,qrId) {
+/**
+ * It takes the checked array, and passes it to the toInstall function, which returns a string of the
+ * checked array, then it passes that string to the cmdToRun function, which returns a string of the
+ * command to run, then it passes that string to the qrcode function, which generates a QR code.
+ * @param checked - an array of the checked checkboxes
+ * @param canvasId - the id of the canvas element in the html
+ * @param qrId - the id of the div where the qr code will be generated
+ * @param shellType - the type of shell you want to use, cmd or powershell
+ */
+function generateQrCode(checked,canvasId,qrId, shellType) {
 
     generateQr.onclick = function () {
 
         const data = toInstall(checked);
 
-        const cmd = cmdToRun(data,true);
+        const cmd = cmdToRun(data, shellType);
 
         console.log(cmd);
 
@@ -260,13 +273,19 @@ function generateQrCode(checked,canvasId,qrId) {
 
 }
 
-function copyCommand(checked) {
+/**
+ * It takes two arguments, the first is an array of checked checkboxes, the second is the shell type.
+ * It then returns a string of the command to run
+ * @param checked - an array of the checked checkboxes
+ * @param shellType - The type of shell you want to use, cmd or powershell
+ */
+function copyCommand(checked, shellType) {
 
     copyCmd.onclick = () => {
 
         const data = toInstall(checked);
 
-        const cmd = cmdToRun(data, true);
+        const cmd = cmdToRun(data, shellType);
 
         console.log(cmd);
 
@@ -282,6 +301,11 @@ function copyCommand(checked) {
 
 }
 
+/**
+ * @param id - the id of the button
+ * @param installCount - The total number of apps that are available to install.
+ * @param appCount - This is the number of apps that are available.
+ */
 function installButton(id,installCount,appCount) {
 
     if (installCount.length !== undefined){
@@ -297,6 +321,15 @@ function installButton(id,installCount,appCount) {
 
 }
 
+/**
+ * The function listens for a change in the checkbox, then it checks if the checkbox is checked or not,
+ * if it is checked it pushes the value of the checkbox into an array, then it checks if the array is
+ * empty or not, if it is empty it disables the uncheckAll button, if the array is not empty it enables
+ * the uncheckAll button, then it checks if the length of the array is equal to the length of the
+ * checkboxes, if it is equal it disables the checkAll button, if it is not equal it enables the
+ * checkAll button, then it calls the installButton function.
+ * @param checkboxes - the checkboxes that are being checked/unchecked
+ */
 function listenForChange(checkboxes) {
 
     checkboxes.forEach((checkbox) => {

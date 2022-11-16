@@ -1,0 +1,1 @@
+Remove global var "itemsList" in filterList function

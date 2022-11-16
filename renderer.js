@@ -1,12 +1,12 @@
-const apps = document.getElementById("apps");
+const apps = document.querySelector("#apps");
 
-const filter = document.getElementById("myInput");
+const filter = document.querySelector("#filterInput");
 
-const loadConfigBtn = document.getElementById("loadConfig");
+const loadConfigBtn = document.querySelector("#loadConfig");
 
-const install = document.getElementById("install");
+const install = document.querySelector("#install");
 
-const progressbar = document.getElementById("progressbar");
+const progressbar = document.querySelector("#progressbar");
 
 const progressbarHtml = `
 <div class="w-full pt-4">
@@ -16,39 +16,39 @@ const progressbarHtml = `
     </div>
 </div>`;
 
-const code = document.getElementById("code");
+const code = document.querySelector("#code");
 
-const canvas = document.getElementById("canvas");
+const canvas = document.querySelector("#canvas");
 
-const qrc = document.getElementById("qrcode");
+const qrc = document.querySelector("#qrcode");
 
-const generateQr = document.getElementById("generateQr")
+const generateQr = document.querySelector("#generateQr")
 
-const copyCmd = document.getElementById("copyCmd")
+const copyCmd = document.querySelector("#copyCmd")
 
 const qrcodeSvg = `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"></path></svg>`;
 
+qrc.innerHTML = qrcodeSvg;
+
 const isntallBtn = document.querySelector(".install-btn span");
 
-const checkAll = document.getElementById("checkAll");
+const checkAll = document.querySelector("#checkAll");
 
-const uncheckAll = document.getElementById("uncheckAll");
+const uncheckAll = document.querySelector("#uncheckAll");
 
-const preset = document.getElementById("preset");
+const preset = document.querySelector("#preset");
 
-const clear = document.getElementById("clearOutput");
+const clear = document.querySelector("#clearOutput");
 
 let toggle = document.querySelector('#toggle');
 
-const undo = document.getElementById("undoOnly");
+const toggleIcon = document.querySelector('#toggle-icon')
 
-const wingetApi = document.getElementById("wingetApi");
+const wingetApi = document.querySelector("#wingetApi");
 
-const github = document.getElementById("github");
+const github = document.querySelector("#github");
 
-qrc.innerHTML = qrcodeSvg;
-
-let installing, appCount, itemsList, checkboxes, matches, category, jsonData
+let installing, appCount, applicationList, checkboxes, matches, jsonPath;
 
 function loadFromConfig(configData, load=true) {
 
@@ -60,15 +60,29 @@ function loadFromConfig(configData, load=true) {
 
   installing = configData.winget.filter((app) => app.install === true);
 
-  appList(apps, configData.winget)
+  appList(apps, configData.winget, "program")
+
+  applicationList = document.querySelectorAll(".program");
+
+  checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+  filter.addEventListener("keyup", (e) => {
+
+    e.preventDefault();
+
+    filterList(applicationList,filter);
+
+  });
+
+  //matches = document.querySelectorAll('input[type="checkbox"]:not(:checked)')
 
   showHide(installing, appCount);
 
-  installSoftware(".install:checked");
+  installSoftware(".install:checked", "cmd");
 
-  generateQrCode(".install:checked", "canvas", "qrcode");
+  generateQrCode(".install:checked", "#canvas", "#qrcode", "cmd");
 
-  copyCommand(".install:checked");
+  copyCommand(".install:checked", "cmd");
 
   installButton(isntallBtn, installing, appCount);
 
@@ -96,27 +110,15 @@ loadConfigBtn.addEventListener("click", async () => {
 
 });
 
-wingetApi.addEventListener("click", () => {
+wingetApi.addEventListener("click", () => { link.wingetRun(); });
 
-  link.wingetRun();
-
-});
-
-github.addEventListener("click", () => {
-
-  link.github();
-
-});
+github.addEventListener("click", () => { link.github(); });
 
 document.addEventListener('keydown',async (event) => {
 
   const keyName = event.key;
 
-  if (keyName === 'Control') {
-
-    return;
-
-  }
+  if (keyName === 'Control') { return; }
 
   if (event.ctrlKey && event.key === 'o') {
 
@@ -126,11 +128,7 @@ document.addEventListener('keydown',async (event) => {
 
   }
 
-  if (event.ctrlKey && event.key === 'l') {
-
-    link.wingetRun();
-
-}
+  if (event.ctrlKey && event.key === 'l') { link.wingetRun(); }
 
 }, false);
 
@@ -140,64 +138,49 @@ toggle.addEventListener('click', function(e) {
 
   if (toggle.classList.contains('on')) {
 
-      toggle.classList.remove('on');
+    toggle.classList.remove('on');
 
-      toggle.classList.add('off');
+    toggle.classList.add('off');
 
-      checkAll.classList.remove("hidden");
+    checkAll.classList.remove("hidden");
 
-      uncheckAll.classList.remove("hidden");
+    uncheckAll.classList.remove("hidden");
 
-      document.getElementById('toggle-icon').innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-toggle-off mr-2" viewBox="0 0 16 16">
-      <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z"/><span class="inline-flex self-center text-xs">Only checked</span>
-    </svg>`
+    toggleIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-toggle-off mr-2" viewBox="0 0 16 16">
+    <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z"/><span class="inline-flex self-center text-xs">Only checked</span>
+    </svg>
+    `;
 
-      checkboxes.forEach((checkbox) => {
+    checkboxes.forEach((checkbox) => {
 
-        if(checkbox.checked === true) {
+      (checkbox.checked === true) ?
+      checkbox.disabled = false :
+      checkbox.parentElement.classList.remove("hidden");
 
-          checkbox.disabled = false;
+    });
 
-        }
+  } else if (toggle.classList.contains('off')) {
 
-        if(checkbox.checked === false) {
+    toggle.classList.remove('off');
 
-          checkbox.parentElement.classList.remove("hidden");
+    toggle.classList.add('on');
 
-        }
+    checkAll.classList.add("hidden");
 
-      });
+    uncheckAll.classList.add("hidden");
 
-  } else if(toggle.classList.contains('off')) {
-
-      toggle.classList.remove('off');
-
-      toggle.classList.add('on');
-
-      checkAll.classList.add("hidden");
-
-      uncheckAll.classList.add("hidden");
-
-      document.getElementById('toggle-icon').innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-toggle-on mr-2" viewBox="0 0 16 16">
-      <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+    toggleIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-toggle-on mr-2" viewBox="0 0 16 16">
+    <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
     </svg><span class="inline-flex self-center text-xs">Only checked</span>
     `
 
-      checkboxes.forEach((checkbox) => {
+    checkboxes.forEach((checkbox) => {
 
-        if(checkbox.checked === true) {
+      (checkbox.checked === true) ?
+      checkbox.disabled = true :
+      checkbox.parentElement.classList.add("hidden");
 
-          checkbox.disabled = true;
-
-        }
-
-        if(checkbox.checked === false) {
-
-          checkbox.parentElement.classList.add("hidden");
-
-      }
-
-      });
+    });
 
   }
 

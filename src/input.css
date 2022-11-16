@@ -120,19 +120,6 @@ canvas{
     text-decoration: underline;
 }
 
-/* Demonstrate a "mostly customized" scrollbar
- * (won't be visible otherwise if width/height is specified) */
-/* .mostly-customized-scrollbar::-webkit-scrollbar {
-    width: 4px;
-    height: 8px;
-    background-color: var(--white);
-} */
-
-  /* Add a thumb */
-/* .mostly-customized-scrollbar::-webkit-scrollbar-thumb {
-    background: var(--primary);
-} */
-
 button:disabled {
     cursor: default;
     opacity: 0.6;

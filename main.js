@@ -1,6 +1,5 @@
 // Modules to control application life and create native browser window
-
-const {app, BrowserWindow, Menu, ipcMain, dialog, shell} = require('electron')
+const {app, BrowserWindow, Menu, ipcMain, dialog} = require('electron')
 const path = require('path')
 const fs = require('fs')
 
@@ -22,6 +21,11 @@ async function createWindow () {
       nodeIntegration: true
 
     },
+    backgroundColor: '#222436',
+    darkTheme: true,
+    center: true,
+    maximizable: false,
+    minimizable: true,
 
   })
 
@@ -31,7 +35,7 @@ async function createWindow () {
 
   // Open the DevTools.
 
-  //mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 
 }
 
