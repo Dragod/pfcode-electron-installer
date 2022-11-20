@@ -204,6 +204,7 @@ input[type="checkbox"] {
 
     border-bottom-width: 1px;
     border-bottom-style: solid;
+    transition: ease-in-out 0.2s;
 
 }
 
@@ -228,10 +229,9 @@ input[type="checkbox"] {
 }
 
 .unselectable {
-
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
+}
+
+.program:hover {
+    background-color: rgb(226 232 240);
 }
