@@ -521,7 +521,8 @@
                     "name": "LibreWolf",
                     "id": "LibreWolf.LibreWolf",
                     "install": false,
-                    "category": "browser"
+                    "category": "browser",
+                    "description": "LibreWolf is a privacy-oriented web browser based on Firefox. It is designed to be fast, lightweight, and secure."
                 },
                 {
                     "name": "Firefox Developer Edition",
