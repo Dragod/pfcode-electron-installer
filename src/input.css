@@ -226,3 +226,12 @@ input[type="checkbox"] {
 .w-35 {
     width: 35%;
 }
+
+.unselectable {
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
