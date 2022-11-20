@@ -130,6 +130,20 @@ document.addEventListener('keydown',async (event) => {
 
   if (event.ctrlKey && event.key === 'l') { link.wingetRun(); }
 
+  if (event.ctrlKey && event.key === 'f') {  filter.focus(); }
+
+  if (event.ctrlKey && event.key === 'c') {  checkAll.click(); }
+
+  if (event.ctrlKey && event.key === 'u') {  uncheckAll.click(); }
+
+  if (event.ctrlKey && event.key === 'y') {  toggle.click(); }
+
+  if (event.ctrlKey && event.key === 'i') {  isntallBtn.click(); }
+
+  if (event.ctrlKey && event.key === 'q') {  generateQr.click(); }
+
+  if (event.ctrlKey && event.key === 'g') {  copyCmd.click(); }
+
 }, false);
 
 toggle.addEventListener('click', function(e) {

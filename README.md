@@ -16,6 +16,7 @@ The app is only meant to work on Windows 11 by default and Windows 10 (require t
 - Show only checked apps
 - Check all apps with one click
 - Uncheck all apps with one click
+- Keyboard shortcuts
 
 ![alt text](./assets/app-1.png)
 
