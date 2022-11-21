@@ -859,6 +859,10 @@ html, body {
   min-height: 260px;
 }
 
+.code p {
+  word-break: break-word;
+}
+
 .code-run
 {
   opacity: 1;
@@ -1003,6 +1007,19 @@ input[type="checkbox"] {
   white-space: nowrap;
 }
 
+.right-col {
+  max-width: 400px;
+  min-width: 400px;
+}
+
+input::-moz-placeholder {
+  font-size: 14px;
+}
+
+input::placeholder {
+  font-size: 14px;
+}
+
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
@@ -1068,3 +1085,4 @@ input[type="checkbox"] {
     background-color: rgb(55 65 81 / var(--tw-bg-opacity));
   }
 }
+

@@ -78,6 +78,11 @@ html, body {
     min-height: 260px;
 }
 
+.code p {
+
+    word-break: break-word;
+}
+
 .code-run
 {
     opacity: 1;
@@ -237,3 +242,15 @@ input[type="checkbox"] {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+.right-col {
+
+    max-width: 400px;
+    min-width: 400px;
+
+}
+
+input::placeholder {
+    font-size: 14px;
+}
+
