@@ -8,14 +8,6 @@ const install = document.querySelector("#install");
 
 const progressbar = document.querySelector("#progressbar");
 
-const progressbarHtml = `
-<div class="w-full pt-4">
-    <span class="text-white text-sm">Installing software, please wait...</span>
-    <div class="w-full overflow-hidden">
-    <div class="w-1/2 inline-block relative fluentProgressBar-waiting"></div>
-    </div>
-</div>`;
-
 const code = document.querySelector("#code");
 
 const generateQr = document.querySelector("#generateQr")
