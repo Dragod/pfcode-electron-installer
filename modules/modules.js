@@ -140,10 +140,6 @@ function chkChecked(checked) {
 
         toggle.disabled = true;
 
-        canvas.classList.add("hidden");
-
-        qrc.classList.remove("hidden");
-
         copyCmd.classList.remove("hidden");
 
     }
@@ -166,17 +162,7 @@ function filterList(appList,input) {
 
 }
 
-function qrcode(id, qrcode, cmd) {
-
-    const canvas = document.querySelector(id)
-
-    canvas.classList.remove("hidden")
-
-    document.querySelector(qrcode).classList.add("hidden");
-
-    QrCode.generate(canvas, cmd);
-
-}
+function qrcode(id, cmd) {QrCode.generate(document.querySelector(id), cmd);}
 
 function appList(id, data, className) {
 
@@ -299,42 +285,11 @@ function installSoftware(checked, shellType) {
 
         copyCmd.disabled = true;
 
-        canvas.classList.add("hidden");
-
-        qrc.classList.remove("hidden");
-
         copyCmd.classList.remove("hidden");
 
         progressbar.innerHTML = progressbarHtml;
 
         readCli(cmd);
-
-    };
-
-}
-
-/**
- * It takes the checked array, and passes it to the toInstall function, which returns a string of the
- * checked array, then it passes that string to the cmdToRun function, which returns a string of the
- * command to run, then it passes that string to the qrcode function, which generates a QR code.
- * @param checked - an array of the checked checkboxes
- * @param canvasId - the id of the canvas element in the html
- * @param qrId - the id of the div where the qr code will be generated
- * @param shellType - the type of shell you want to use, cmd or powershell
- */
-function generateQrCode(checked,canvasId,qrId, shellType) {
-
-    generateQr.onclick = function () {
-
-        const data = toInstall(checked);
-
-        const cmd = cmdToRun(data, shellType);
-
-        console.log(cmd);
-
-        (checked.length <= 25) ?
-        qrcode(canvasId, qrId, cmd) :
-        alert('Data is too big to generate a QR Code, please select 25 or less apps.')
 
     };
 

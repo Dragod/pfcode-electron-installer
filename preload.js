@@ -8,9 +8,28 @@ let spawn = require("child_process").spawn,child;
 
 const Toastify = require('toastify-js');
 
-const qrCode = require("qrcode");
-
 const path = require("path");
+
+function toInstall(input) { return [...document.querySelectorAll(input)].map((e) => e.value); }
+
+document.addEventListener("DOMContentLoaded", () => {
+
+	document.querySelector("#generateQr").addEventListener("click", () => {
+
+		let programs = toInstall(".install:checked");
+
+		ipcRenderer.send("request-update-label-in-second-window", programs);
+
+	});
+
+
+}, false);
+
+contextBridge.exposeInMainWorld("qrWindow", {
+
+	open: () => { ipcRenderer.send("open-qr") }
+
+});
 
 contextBridge.exposeInMainWorld("path", {
 
@@ -35,19 +54,6 @@ contextBridge.exposeInMainWorld("link", {
 		shell.openExternal(url);
 
 	},
-});
-
-contextBridge.exposeInMainWorld("QrCode", {
-
-	generate: (id,cmd) => { qrCode.toCanvas(id, cmd, function (error) {
-
-			if(error) { ipcRenderer.send("open-error-dialog", error) }
-
-			console.log('QrCode created');
-
-		})
-	},
-
 });
 
 contextBridge.exposeInMainWorld('fs', {

@@ -105,10 +105,8 @@ input[type="checkbox"] {
 }
 
 canvas{
-    height: 156px;
-    width: 156px;
-    max-width: 156px;
-    max-height: 156px;
+    height: 500px !important;
+    width: 500px !important;
 }
 
 .link {

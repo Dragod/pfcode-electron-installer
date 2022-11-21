@@ -1,11 +1,17 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow, Menu, ipcMain, dialog} = require('electron')
+
 const path = require('path')
+
 const fs = require('fs')
 
+let mainWindow, secondaryWindow
+
 async function createWindow () {
+
   // Create the browser window.
-  const mainWindow = new BrowserWindow({
+
+  mainWindow = new BrowserWindow({
     title: "Pfcode Installer v1.0.0",
     width: 1000,
     minWidth: 1000,
@@ -29,40 +35,136 @@ async function createWindow () {
 
   })
 
+  // secondaryWindow = new BrowserWindow({
+  //   title: "Pfcode Installer v1.0.0",
+  //   width: 503,
+  //   height: 522,
+  //   fullscreenable: false,
+  //   resizable: false,
+  //   icon: __dirname + './favicon.ico',
+  //   webPreferences: {
+  //     preload: path.join(__dirname, 'preload1.js'),
+  //     nodeIntegration: true
+
+  //   },
+  //   backgroundColor: '#222436',
+  //   darkTheme: true,
+  //   center: true,
+  //   maximizable: false,
+  //   minimizable: false,
+  //   alwaysOnTop: true,
+  //   show: false,
+
+  // });
+
+
+  // ipcMain.on('open-qr', () => { createWindow()})
+
   //mainWindow.setMenu(null)
 
   mainWindow.loadFile('./src/index.html')
+
+  //secondaryWindow.loadFile('./src/secondary.html');
+
+  //secondaryWindow.setMenu(null)
+
+  // ipcMain.on('request-update-label-in-second-window', (event, arg) => {
+
+  //   secondaryWindow.show()
+
+  //   secondaryWindow.webContents.send('action-update-label', arg);
+
+  // });
 
   // Open the DevTools.
 
   mainWindow.webContents.openDevTools()
 
+  mainWindow.on('close',  () => {
+
+    mainWindow = null
+
+  })
+
+  mainWindow.on('closed', () => {
+
+    mainWindow = null
+
+  })
+
 }
 
-ipcMain.on('open-error-dialog', function (event) {
+async function createQrWindow(){
+
+  secondaryWindow = new BrowserWindow({
+    title: "Pfcode Installer v1.0.0",
+    width: 503,
+    height: 522,
+    fullscreenable: false,
+    resizable: false,
+    icon: __dirname + './favicon.ico',
+    webPreferences: {
+      preload: path.join(__dirname, 'preload1.js'),
+      nodeIntegration: true
+
+    },
+    backgroundColor: '#222436',
+    darkTheme: true,
+    center: true,
+    maximizable: false,
+    minimizable: false,
+    alwaysOnTop: true,
+    show: false,
+
+  });
+
+  secondaryWindow.loadFile('./src/secondary.html');
+
+  secondaryWindow.setMenu(null)
+
+
+  ipcMain.on('request-update-label-in-second-window', (event, arg) => {
+
+    secondaryWindow.show()
+
+    secondaryWindow.webContents.send('action-update-label', arg);
+
+  });
+
+  secondaryWindow.on('close',  () => {
+
+    //secondaryWindow.hide()
+
+    //secondaryWindow = null
+
+  })
+
+}
+
+ipcMain.on('open-error-dialog',  () => {
 
   dialog.showErrorBox('Qrcode error', 'Data is too big to generate a QR Code, max 25 apps.')
 })
 
-ipcMain.on('config-winget', function (event) {
+ipcMain.on('config-winget', () => {
 
   dialog.showErrorBox('Config file error', 'The config file does not contain a winget array. Please check the config file.')
 
 })
 
-ipcMain.on('config-winget-empty', function (event) {
+ipcMain.on('config-winget-empty', () => {
 
   dialog.showErrorBox('Config file error', 'The config file does not contain any app/s, the array is empty. Please check the config file.')
 
 })
 
-ipcMain.on('config-preset-empty', function (event) {
+ipcMain.on('config-preset-empty', () => {
 
   dialog.showErrorBox('Config file error', 'The config file need to specify a preset name. Please check the config file.')
 
 })
 
-ipcMain.on('config-preset-undefined', function (event) {
+ipcMain.on('config-preset-undefined', () => {
 
   dialog.showErrorBox('Config file error', 'The config file need a preset. Please check the config file.')
 
@@ -113,6 +215,8 @@ app.whenReady().then(() => {
 
   createWindow()
 
+  createQrWindow()
+
   // const mainMenu = Menu.buildFromTemplate(menu)
 
   // Menu.setApplicationMenu(mainMenu)
@@ -141,7 +245,9 @@ app.whenReady().then(() => {
 // for applications and their menu bar to stay active until the user quits
 // explicitly with Cmd + Q.
 app.on('window-all-closed', function () {
+
   if (process.platform !== 'darwin') app.quit()
+
 })
 
 // In this file you can include the rest of your app's specific main process
