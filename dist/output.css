@@ -591,10 +591,6 @@ h2 {
   height: 1px;
 }
 
-.h-3\/6 {
-  height: 50%;
-}
-
 .max-h-80 {
   max-height: 20rem;
 }
@@ -854,9 +850,9 @@ html, body {
   background-position: center;
   background-size: contain;
   word-break: break-word;
-  height: 260px;
-  max-height: 260px;
-  min-height: 260px;
+  /* height: 260px;
+    max-height: 260px;
+    min-height: 260px; */
 }
 
 .code p {
@@ -876,19 +872,19 @@ input[type="checkbox"] {
   display: none;
 }
 
-.qrcode {
-  height: 156px;
-  width: 156px;
-  max-width: 156px;
-  max-height: 156px;
+/* .qrcode {
+    height: 156px;
+    width: 156px;
+    max-width: 156px;
+    max-height: 156px;
 }
 
 .qrcode svg {
-  height: 156px;
-  width: 156px;
-  max-width: 156px;
-  max-height: 156px;
-}
+    height: 156px;
+    width: 156px;
+    max-width: 156px;
+    max-height: 156px;
+} */
 
 canvas{
   height: 500px !important;

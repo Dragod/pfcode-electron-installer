@@ -73,9 +73,9 @@ html, body {
     background-position: center;
     background-size: contain;
     word-break: break-word;
-    height: 260px;
+    /* height: 260px;
     max-height: 260px;
-    min-height: 260px;
+    min-height: 260px; */
 }
 
 .code p {
@@ -96,7 +96,7 @@ input[type="checkbox"] {
     display: none;
 }
 
-.qrcode {
+/* .qrcode {
     height: 156px;
     width: 156px;
     max-width: 156px;
@@ -108,7 +108,7 @@ input[type="checkbox"] {
     width: 156px;
     max-width: 156px;
     max-height: 156px;
-}
+} */
 
 canvas{
     height: 500px !important;
