@@ -1016,6 +1016,10 @@ input::placeholder {
   font-size: 14px;
 }
 
+.apps {
+  font-size: 14px;
+}
+
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
