@@ -18,7 +18,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		let programs = toInstall(".install:checked");
 
-		ipcRenderer.send("request-update-label-in-second-window", programs);
+		console.log("this is programs length:",programs.length);
+
+		(programs.length <= 20) ?
+
+		ipcRenderer.send("request-update-label-in-second-window", programs) :
+
+		ipcRenderer.send("open-error-dialog")
+
 
 	});
 

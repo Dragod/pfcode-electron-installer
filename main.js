@@ -35,62 +35,13 @@ async function createWindow () {
 
   })
 
-  // secondaryWindow = new BrowserWindow({
-  //   title: "Pfcode Installer v1.0.0",
-  //   width: 503,
-  //   height: 522,
-  //   fullscreenable: false,
-  //   resizable: false,
-  //   icon: __dirname + './favicon.ico',
-  //   webPreferences: {
-  //     preload: path.join(__dirname, 'preload1.js'),
-  //     nodeIntegration: true
-
-  //   },
-  //   backgroundColor: '#222436',
-  //   darkTheme: true,
-  //   center: true,
-  //   maximizable: false,
-  //   minimizable: false,
-  //   alwaysOnTop: true,
-  //   show: false,
-
-  // });
-
-
-  // ipcMain.on('open-qr', () => { createWindow()})
-
   //mainWindow.setMenu(null)
 
   mainWindow.loadFile('./src/index.html')
 
-  //secondaryWindow.loadFile('./src/secondary.html');
-
-  //secondaryWindow.setMenu(null)
-
-  // ipcMain.on('request-update-label-in-second-window', (event, arg) => {
-
-  //   secondaryWindow.show()
-
-  //   secondaryWindow.webContents.send('action-update-label', arg);
-
-  // });
-
   // Open the DevTools.
 
   mainWindow.webContents.openDevTools()
-
-  mainWindow.on('close',  () => {
-
-    mainWindow = null
-
-  })
-
-  mainWindow.on('closed', () => {
-
-    mainWindow = null
-
-  })
 
 }
 
@@ -103,6 +54,8 @@ async function createQrWindow(){
     fullscreenable: false,
     resizable: false,
     icon: __dirname + './favicon.ico',
+    parent: mainWindow,
+    modal: true,
     webPreferences: {
       preload: path.join(__dirname, 'preload1.js'),
       nodeIntegration: true
@@ -131,11 +84,10 @@ async function createQrWindow(){
 
   });
 
-  secondaryWindow.on('close',  () => {
+  secondaryWindow.on('close',  (e) => {
 
-    //secondaryWindow.hide()
-
-    //secondaryWindow = null
+    e.preventDefault();    // This will cancel the close
+    secondaryWindow.hide();
 
   })
 
@@ -143,7 +95,8 @@ async function createQrWindow(){
 
 ipcMain.on('open-error-dialog',  () => {
 
-  dialog.showErrorBox('Qrcode error', 'Data is too big to generate a QR Code, max 25 apps.')
+  dialog.showErrorBox('Qrcode error', 'Data is too big to generate a QR Code, max 20 apps.')
+
 })
 
 ipcMain.on('config-winget', () => {

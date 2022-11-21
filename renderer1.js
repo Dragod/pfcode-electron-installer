@@ -10,9 +10,8 @@ function generateQrCode(appData,canvasId, shellType) {
 
     console.log(cmd);
 
-    (data.length <= 25) ?
-    qrcode(canvasId, cmd) :
-    alert('Data is too big to generate a QR Code, please select 25 or less apps.')
+    qrcode(canvasId, cmd)
+
 
 }
 
