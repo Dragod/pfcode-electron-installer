@@ -452,7 +452,7 @@
                     "id": "Insecure.Nmap",
                     "install": false,
                     "category": "devOps",
-                    "description": "Nmap (\"Network Mapper\") is a free and open source (license) utility for network discovery and security auditing."
+                    "description": "Nmap (Network Mapper) is a free and open source (license) utility for network discovery and security auditing."
                 },
                 {
                     "name": "Wireshark",
