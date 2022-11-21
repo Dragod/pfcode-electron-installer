@@ -215,16 +215,11 @@ input[type="checkbox"] {
 
 .code-bg {
 
-
     background-image: url('../assets/bash.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 
-}
-
-.w-35 {
-    width: 35%;
 }
 
 .unselectable {
@@ -233,4 +228,12 @@ input[type="checkbox"] {
 
 .program:hover {
     background-color: rgb(226 232 240);
+}
+
+.ellipsis {
+    width: 345px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

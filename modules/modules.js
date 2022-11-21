@@ -177,7 +177,7 @@ function appList(id, data, className) {
         name="${app.name}"
         value="${app.id}"
         />
-        ${app.name}
+        <span class="ellipsis">${app.name}</span>
         </label>`;
 
     });

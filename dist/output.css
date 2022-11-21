@@ -583,10 +583,6 @@ h2 {
   display: inline-flex;
 }
 
-.hidden {
-  display: none;
-}
-
 .h-screen {
   height: 100vh;
 }
@@ -989,10 +985,6 @@ input[type="checkbox"] {
   background-size: contain;
 }
 
-.w-35 {
-  width: 35%;
-}
-
 .unselectable {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -1001,6 +993,14 @@ input[type="checkbox"] {
 
 .program:hover {
   background-color: rgb(226 232 240);
+}
+
+.ellipsis {
+  width: 345px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .hover\:bg-blue-700:hover {
