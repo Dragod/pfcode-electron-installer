@@ -30,8 +30,6 @@
             <span text-xs>CTRL+L</span>
           </button>
 
-          <button id="asd">Asd</button>
-
         </nav>
       </div>
 
@@ -127,7 +125,7 @@
       </div>
 
 
-      <div class="w-35 flex w-1/4 flex-col vscode">
+      <div class="flex  flex-1 flex-col vscode">
 
         <div class ="flex flex-row items-center px-4 text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-terminal-fill text-white" viewBox="0 0 16 16">
@@ -146,15 +144,16 @@
 
           <div id="code" class="code-bg flex flex-1 flex-col p-4 bg-slate-50 rounded code overflow-auto max-h-80 scrollbar-code"></div>
 
-          <div id="progressbar" class="progressbar-fixed-height"></div>
+          <div id="progressbar" class="w-full pt-4 invisible">
+            <span class="text-white text-sm">Installing software, please wait...</span>
+            <div class="w-full overflow-hidden">
+            <div class="w-1/2 inline-block relative fluentProgressBar-waiting"></div>
+            </div>
+        </div>
 
         </div>
 
         <div class="flex self-center flex-col h-3/6">
-
-          <!-- <canvas id="canvas" class="hidden self-center"></canvas>
-
-          <div id="qrcode" class="qrcode self-center text-white"></div> -->
 
             <button id="generateQr" class="inline-flex items-center my-2 w-full px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-normal rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" title="Generate Qrcode (CTRL+Q)">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-qr-code mr-2" viewBox="0 0 16 16">

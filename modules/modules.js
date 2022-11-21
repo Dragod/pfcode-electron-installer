@@ -287,7 +287,7 @@ function installSoftware(checked, shellType) {
 
         copyCmd.classList.remove("hidden");
 
-        progressbar.innerHTML = progressbarHtml;
+        //progressbar.innerHTML = progressbarHtml;
 
         readCli(cmd);
 
