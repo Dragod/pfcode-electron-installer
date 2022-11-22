@@ -7,6 +7,7 @@
     "winget": [
 
                 {
+                    "appid": 1,
                     "name": "Visual Studio Code",
                     "id": "Microsoft.VisualStudioCode",
                     "install": false,
@@ -14,6 +15,7 @@
                     "description": "Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications. Visual Studio Code is free and available on your favorite platform - Linux, macOS, and Windows."
                 },
                 {
+                    "appid": 2,
                     "name": "Sublime 4",
                     "id": "SublimeHQ.SublimeText.4",
                     "install": false,
@@ -21,6 +23,7 @@
                     "description": "Sublime Text is a sophisticated text editor for code, markup and prose. You'll love the slick user interface, extraordinary features and amazing performance."
                 },
                 {
+                    "appid": 3,
                     "name": "Sublime 3",
                     "id": "SublimeHQ.SublimeText.3",
                     "install": false,
@@ -28,6 +31,7 @@
                     "description": "Sublime Text is a sophisticated text editor for code, markup and prose. You'll love the slick user interface, extraordinary features and amazing performance."
                 },
                 {
+                    "appid": 4,
                     "name": "Notepad++",
                     "id": "Notepad++.Notepad++",
                     "install": false,
@@ -35,6 +39,7 @@
                     "description": "Notepad++ is a free source code editor and Notepad replacement that supports several languages. Running in the MS Windows environment, its use is governed by GPL License."
                 },
                 {
+                    "appid": 5,
                     "name": "Brackets",
                     "id": "Adobe.Brackets",
                     "install": false,
@@ -42,6 +47,7 @@
                     "description": "With focused visual tools and preprocessor support, Brackets is a modern text editor that makes it easy to design in the browser. It's crafted from the ground up for web designers and front-end developers."
                 },
                 {
+                    "appid": 6,
                     "name": "Vim",
                     "id": "vim.vim",
                     "install": false,
@@ -49,6 +55,7 @@
                     "description": "Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as \"vi\" with most UNIX systems and with Apple OS X."
                 },
                 {
+                    "appid": 7,
                     "name": "Neovim",
                     "id": "Neovim.Neovim",
                     "install": false,
@@ -56,6 +63,7 @@
                     "description": "Neovim is a fork of the venerable text editor Vim, focused on extensibility and usability. It is not a rewrite but a continuation and extension of Vim. Many clones and derivatives exist, some very clever—but none are Vim. Neovim is built for users who want the good parts of Vim, and more. See :help nvim-from-vim for more details."
                 },
                 {
+                    "appid": 8,
                     "name": "Bluefish",
                     "id": "Bluefish.Bluefish",
                     "install": false,
@@ -63,6 +71,7 @@
                     "description": "Bluefish is a powerful editor targeted towards programmers and webdesigners, with many options to write websites, scripts and programming code. Bluefish supports many programming and markup languages."
                 },
                 {
+                    "appid": 9,
                     "name": "Visual Studio Community 2019",
                     "id": "Microsoft.VisualStudio.2019.Community",
                     "install": false,
@@ -70,6 +79,7 @@
                     "description": "Visual Studio Community 2019 is a free, fully-featured, extensible, and cross-platform IDE for creating modern applications for Android, iOS, Windows, as well as web applications and cloud services."
                 },
                 {
+                    "appid": 10,
                     "name": "Visual Studio Professional 2019",
                     "id": "Microsoft.VisualStudio.2019.Professional",
                     "install": false,
@@ -77,6 +87,7 @@
                     "description": "Visual Studio Professional 2019 is a fully-featured, extensible, and cross-platform IDE for creating modern applications for Android, iOS, Windows, as well as web applications and cloud services."
                 },
                 {
+                    "appid": 11,
                     "name": "Visual Studio Community 2022",
                     "id": "Microsoft.VisualStudio.2022.Community",
                     "install": false,
@@ -84,6 +95,7 @@
                     "description": "Visual Studio Community 2022 is a free, fully-featured, extensible, and cross-platform IDE for creating modern applications for Android, iOS, Windows, as well as web applications and cloud services."
                 },
                 {
+                    "appid": 12,
                     "name": "Visual Studio Professional 2022",
                     "id": "Microsoft.VisualStudio.2022.Professional",
                     "install": false,
@@ -91,6 +103,7 @@
                     "description": "Visual Studio Professional 2022 is a fully-featured, extensible, and cross-platform IDE for creating modern applications for Android, iOS, Windows, as well as web applications and cloud services."
                 },
                 {
+                    "appid": 13,
                     "name": "PSpad editor",
                     "id": "JanFiala.PSpad",
                     "install": false,
@@ -98,6 +111,7 @@
                     "description": "PSpad is a programmer's editor with support for multiple syntax highlighting profiles. It offers a variety of features that allow you to edit HTML, PHP, Perl, C, C++, Java, JavaScript, VBScript, Python, Ruby, CSS, ASP, SQL, Delphi, Pascal, Batch, C#, XML, Ini files and user defined languages."
                 },
                 {
+                    "appid": 14,
                     "name": "WebStorm",
                     "id": "JetBrains.WebStorm",
                     "install": false,
@@ -105,6 +119,7 @@
                     "description": "WebStorm is a powerful IDE for JavaScript, TypeScript, CSS and HTML. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for JavaScript, TypeScript, CSS and HTML. It also provides intelligent code assistance for Node.js, React, Angular, Vue.js, and many other frameworks."
                 },
                 {
+                    "appid": 15,
                     "name": "CLion",
                     "id": "JetBrains.CLion",
                     "install": false,
@@ -112,6 +127,7 @@
                     "description": "CLion is a cross-platform IDE for C and C++ development. It provides a complete set of tools for C and C++ development. CLion looks beyond just syntax highlighting and autocomplete to provide smart coding assistance for C and C++."
                 },
                 {
+                    "appid": 16,
                     "name": "IntelliJ IDEA Community Edition",
                     "id": "JetBrains.IntelliJIDEA.Community",
                     "install": false,
@@ -119,6 +135,7 @@
                     "description": "IntelliJ IDEA Community Edition is a free and open-source IDE for Java, Scala, Groovy, and other JVM-based programming languages. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for Java, Scala, Groovy, and other JVM-based languages."
                 },
                 {
+                    "appid": 17,
                     "name": "IntelliJ IDEA Ultimate Edition",
                     "id": "JetBrains.IntelliJIDEA.Ultimate",
                     "install": false,
@@ -126,6 +143,7 @@
                     "description": "IntelliJ IDEA Ultimate Edition is a paid and commercial IDE for Java, Scala, Groovy, and other JVM-based programming languages. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for Java, Scala, Groovy, and other JVM-based languages."
                 },
                 {
+                    "appid": 18,
                     "name": "PhpStorm",
                     "id": "JetBrains.PHPStorm",
                     "install": false,
@@ -133,6 +151,7 @@
                     "description": "PhpStorm is a cross-platform IDE for PHP, HTML, CSS, and JavaScript development. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for PHP, HTML, CSS, and JavaScript."
                 },
                 {
+                    "appid": 19,
                     "name": "PyCharm Professional Edition",
                     "id": "JetBrains.PyCharm.Professional",
                     "install": false,
@@ -140,6 +159,7 @@
                     "description": "PyCharm Professional Edition is a paid and commercial IDE for Python, JavaScript, HTML, CSS, and other web development languages. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for Python, JavaScript, HTML, CSS, and other web development languages."
                 },
                 {
+                    "appid": 20,
                     "name": "GoLand",
                     "id": "JetBrains.GoLand",
                     "install": false,
@@ -147,6 +167,7 @@
                     "description": "GoLand is a cross-platform IDE for Go development. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for Go."
                 },
                 {
+                    "appid": 21,
                     "name": "RubyMine",
                     "id": "JetBrains.RubyMine",
                     "install": false,
@@ -154,6 +175,7 @@
                     "description": "RubyMine is a cross-platform IDE for Ruby and Rails development. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for Ruby and Rails."
                 },
                 {
+                    "appid": 22,
                     "name": "JetBrains Rider",
                     "id": "JetBrains.Rider",
                     "install": false,
@@ -161,6 +183,7 @@
                     "description": "JetBrains Rider is a cross-platform IDE for .NET development. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for .NET."
                 },
                 {
+                    "appid": 23,
                     "name": "Windows Terminal",
                     "id": "Microsoft.WindowsTerminal",
                     "install": false,
@@ -168,6 +191,7 @@
                     "description": "Windows Terminal is a new, modern, fast, efficient, powerful, and productive terminal application for users of command-line tools and shells like Command Prompt, PowerShell, and WSL."
                 },
                 {
+                    "appid": 24,
                     "name": "PowerShell 7",
                     "id": "Microsoft.PowerShell",
                     "install": false,
@@ -175,6 +199,7 @@
                     "description": "PowerShell is a cross-platform (Windows, Linux, and macOS) automation and configuration tool/framework that works well with your existing tools and is optimized for dealing with structured data (e.g. JSON, CSV, XML, etc.), REST APIs, and object models. It includes a command-line shell, an associated scripting language and a framework for processing cmdlets."
                 },
                 {
+                    "appid": 25,
                     "name": "Hyper",
                     "id": "Zeit.Hyper",
                     "install": false,
@@ -182,6 +207,7 @@
                     "description": "Hyper is a terminal built on web technologies."
                 },
                 {
+                    "appid": 26,
                     "name": "Nu",
                     "id": "Nushell.Nushell",
                     "install": false,
@@ -189,6 +215,7 @@
                     "description": "Nu is a shell written in Rust. It is a modern shell that is designed to be easier to use and more powerful than other shells."
                 },
                 {
+                    "appid": 27,
                     "name": "WezTerm",
                     "id": "wez.wezterm",
                     "install": false,
@@ -196,6 +223,7 @@
                     "description": "WezTerm is a GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust."
                 },
                 {
+                    "appid": 28,
                     "name": "Cygwin",
                     "id": "Cygwin.Cygwin",
                     "install": false,
@@ -203,6 +231,7 @@
                     "description": "Cygwin is a Linux-like environment for Windows. It provides a large number of tools which provide functionality similar to a Linux distribution on Windows."
                 },
                 {
+                    "appid": 29,
                     "name": "ConEmu",
                     "id": "Maximus5.ConEmu",
                     "install": false,
@@ -210,6 +239,7 @@
                     "description": "ConEmu is a Windows terminal emulator with tabs, which presents multiple consoles and simple GUI applications as one customizable GUI window with various features."
                 },
                 {
+                    "appid": 30,
                     "name": "Git",
                     "id": "Git.Git",
                     "install": false,
@@ -217,6 +247,7 @@
                     "description": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency."
                 },
                 {
+                    "appid": 31,
                     "name": "WinMerge",
                     "id": "WinMerge.WinMerge",
                     "install": false,
@@ -224,6 +255,7 @@
                     "description": "WinMerge is an open source differencing and merging tool for Windows. WinMerge can compare both folders and files, presenting differences in a visual text format that is easy to understand and handle."
                 },
                 {
+                    "appid": 32,
                     "name": "Git Extensions",
                     "id": "GitExtensionsTeam.GitExtensions",
                     "install": false,
@@ -231,6 +263,7 @@
                     "description": "Git Extensions is a standalone UI tool for managing git repositories. It allows you to control Git without using the commandline."
                 },
                 {
+                    "appid": 33,
                     "name": "TortoiseGit",
                     "id": "TortoiseGit.TortoiseGit",
                     "install": false,
@@ -238,6 +271,7 @@
                     "description": "TortoiseGit is a Windows shell extension for Git. It provides a nice and easy user interface for Git and has the most important Git commands available right from Windows Explorer."
                 },
                 {
+                    "appid": 34,
                     "name": "TortoiseHg",
                     "id": "TortoiseHg.TortoiseHg",
                     "install": false,
@@ -245,6 +279,7 @@
                     "description": "TortoiseHg is a Windows shell extension for Mercurial. It provides a nice and easy user interface for Mercurial and has the most important Mercurial commands available right from Windows Explorer."
                 },
                 {
+                    "appid": 35,
                     "name": "Mercurial",
                     "id": "Mercurial.Mercurial",
                     "install": false,
@@ -252,6 +287,7 @@
                     "description": "Mercurial is a free, distributed source control management tool. It efficiently handles projects of any size and offers an easy and intuitive interface."
                 },
                 {
+                    "appid": 36,
                     "name": "Github Desktop",
                     "id": "GitHub.GitHubDesktop",
                     "install": false,
@@ -259,6 +295,7 @@
                     "description": "GitHub Desktop is a seamless way to contribute to projects on GitHub and GitHub Enterprise. It's a great alternative to the command line for those who are not yet familiar with Git."
                 },
                 {
+                    "appid": 37,
                     "name": "GitKraken",
                     "id": "Axosoft.GitKraken",
                     "install": false,
@@ -266,6 +303,7 @@
                     "description": "GitKraken is a Git GUI client for Windows, Mac and Linux. It is designed to be approachable for beginners, but powerful enough for advanced users."
                 },
                 {
+                    "appid": 38,
                     "name": "Sublime Merge",
                     "id": "SublimeHQ.SublimeMerge",
                     "install": false,
@@ -273,6 +311,7 @@
                     "description": "Sublime Merge is a powerful Git client that provides a clean and intuitive interface for working with Git repositories."
                 },
                 {
+                    "appid": 39,
                     "name": "NVM for Windows",
                     "id": "CoreyButler.NVMforWindows",
                     "install": false,
@@ -280,6 +319,7 @@
                     "description": "NVM for Windows is a node.js version management utility for Windows. It allows you to install multiple versions of node.js and switch between them at will."
                 },
                 {
+                    "appid": 40,
                     "name": "NodeJS LTS",
                     "id": "OpenJS.NodeJS.LTS",
                     "install": false,
@@ -287,6 +327,7 @@
                     "description": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside of a browser."
                 },
                 {
+                    "appid": 41,
                     "name": "JetBrains Toolbox",
                     "id": "JetBrains.Toolbox",
                     "install": false,
@@ -294,6 +335,7 @@
                     "description": "JetBrains Toolbox is a tool that helps you manage and update all JetBrains tools installed on your machine."
                 },
                 {
+                    "appid": 42,
                     "name": "JetBrains TeamCity",
                     "id": "JetBrains.TeamCity",
                     "install": false,
@@ -301,6 +343,7 @@
                     "description": "Powerful continuous integration for DevOps-centric teams from JetBrains."
                 },
                 {
+                    "appid": 43,
                     "name": "JetBrains Space",
                     "id": "JetBrains.Space",
                     "install": false,
@@ -308,6 +351,7 @@
                     "description": "JetBrains Space is a team collaboration platform that helps you manage your projects, track your work, and communicate with your team."
                 },
                 {
+                    "appid": 44,
                     "name": "JetBrains YouTrack",
                     "id": "JetBrains.YouTrack",
                     "install": false,
@@ -315,6 +359,7 @@
                     "description": "YouTrack is a flexible issue tracker that lets you plan, track, and release great software."
                 },
                 {
+                    "appid": 45,
                     "name": "Android Studio",
                     "id": "Google.AndroidStudio",
                     "install": false,
@@ -322,6 +367,7 @@
                     "description": "Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development."
                 },
                 {
+                    "appid": 46,
                     "name": "Java",
                     "id": "Oracle.JavaRuntimeEnvironment",
                     "install": false,
@@ -329,6 +375,7 @@
                     "description": "Java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible."
                 },
                 {
+                    "appid": 47,
                     "name": "Ms Build Tools 2019",
                     "id": "Microsoft.VisualStudio.2019.BuildTools",
                     "install": false,
@@ -336,6 +383,7 @@
                     "description": "Microsoft Build Tools 2019 is a set of tools that developers use to create applications. This includes the compilers, linkers, headers, libraries, code samples, and tools for building Windows applications."
                 },
                 {
+                    "appid": 48,
                     "name": "Ms Build Tools 2022",
                     "id": "Microsoft.VisualStudio.2022.BuildTools",
                     "install": false,
@@ -343,6 +391,7 @@
                     "description": "Microsoft Build Tools 2022 is a set of tools that developers use to create applications. This includes the compilers, linkers, headers, libraries, code samples, and tools for building Windows applications."
                 },
                 {
+                    "appid": 49,
                     "name": "Docker Desktop",
                     "id": "Docker.DockerDesktop",
                     "install": false,
@@ -350,6 +399,7 @@
                     "description": "Docker Desktop is a tool for MacOS and Windows machines for the building and sharing of containerized applications and microservices."
                 },
                 {
+                    "appid": 50,
                     "name": "NuGet",
                     "id": "Microsoft.NuGet",
                     "install": false,
@@ -357,6 +407,7 @@
                     "description": "NuGet is a free and open-source package manager designed for the Microsoft development platform including .NET."
                 },
                 {
+                    "appid": 51,
                     "name": "Vagrant",
                     "id": "Hashicorp.Vagrant",
                     "install": false,
@@ -364,6 +415,7 @@
                     "description": "Vagrant is a tool for building and managing virtual machine environments in a single workflow."
                 },
                 {
+                    "appid": 52,
                     "name": "PuTTY",
                     "id": "PuTTY.PuTTY",
                     "install": false,
@@ -371,6 +423,7 @@
                     "description": "PuTTY is a free and open-source terminal emulator, serial console and network file transfer application."
                 },
                 {
+                    "appid": 53,
                     "name": "Unity",
                     "id": "UnityTechnologies.Unity.2020",
                     "install": false,
@@ -378,6 +431,7 @@
                     "description": "Unity is a cross-platform game engine developed by Unity Technologies, first announced and released in June 2005 at Apple Inc.'s Worldwide Developers Conference as a Mac OS X-exclusive game engine."
                 },
                 {
+                    "appid": 54,
                     "name": "Unity 2021",
                     "id": "UnityTechnologies.Unity.2021",
                     "install": false,
@@ -385,6 +439,7 @@
                     "description": "Unity is a cross-platform game engine developed by Unity Technologies, first announced and released in June 2005 at Apple Inc.'s Worldwide Developers Conference as a Mac OS X-exclusive game engine."
                 },
                 {
+                    "appid": 55,
                     "name": "Google Cloud SDK",
                     "id": "Google.CloudSDK",
                     "install": false,
@@ -392,6 +447,7 @@
                     "description": "The Google Cloud SDK is a set of tools for Google Cloud Platform, which allows you to manage resources and applications hosted on Google Cloud Platform."
                 },
                 {
+                    "appid": 56,
                     "name": "ILSpy",
                     "id": "icsharpcode.ILSpy",
                     "install": false,
@@ -399,6 +455,7 @@
                     "description": "ILSpy is the open-source .NET assembly browser and decompiler."
                 },
                 {
+                    "appid": 57,
                     "name": "JetBrains ReSharper",
                     "id": "JetBrains.ReSharper",
                     "install": false,
@@ -406,6 +463,7 @@
                     "description": "ReSharper is a Visual Studio extension that helps you write better code faster by providing on-the-fly code analysis, quick fixes, refactorings, and more."
                 },
                 {
+                    "appid": 58,
                     "name": "Ruby",
                     "id": "RubyInstallerTeam.Ruby.3.1",
                     "install": false,
@@ -413,6 +471,7 @@
                     "description": "Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write."
                 },
                 {
+                    "appid": 59,
                     "name": "Python 3",
                     "id": "Python.Python.3",
                     "install": false,
@@ -420,6 +479,7 @@
                     "description": "Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace."
                 },
                 {
+                    "appid": 60,
                     "name": "Go 1.19",
                     "id": "GoLang.Go.1.19",
                     "install": false,
@@ -427,6 +487,7 @@
                     "description": "Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."
                 },
                 {
+                    "appid": 61,
                     "name": "Rustup: the Rust toolchain installer",
                     "id": "Rustlang.Rustup",
                     "install": false,
@@ -434,6 +495,7 @@
                     "description": "Rustup is the Rust toolchain installer. It installs the latest stable version of the Rust compiler and its tools, and makes it easy to switch between different versions of Rust."
                 },
                 {
+                    "appid": 62,
                     "name": "Postman",
                     "id": "Postman.Postman",
                     "install": false,
@@ -441,6 +503,7 @@
                     "description": "Postman is a collaboration platform for API development."
                 },
                 {
+                    "appid": 63,
                     "name": "Insomnia",
                     "id": "Insomnia.Insomnia",
                     "install": false,
@@ -448,6 +511,7 @@
                     "description": "Insomnia is a cross-platform GraphQL and REST client, available for Windows, macOS and Linux."
                 },
                 {
+                    "appid": 64,
                     "name": "Nmap",
                     "id": "Insecure.Nmap",
                     "install": false,
@@ -455,6 +519,7 @@
                     "description": "Nmap (Network Mapper) is a free and open source (license) utility for network discovery and security auditing."
                 },
                 {
+                    "appid": 65,
                     "name": "Wireshark",
                     "id": "WiresharkFoundation.Wireshark",
                     "install": false,
@@ -462,6 +527,7 @@
                     "description": "Wireshark is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education."
                 },
                 {
+                    "appid": 66,
                     "name": "Advanced Port Scanner",
                     "id": "Famatech.AdvancedPortScanner",
                     "install": false,
@@ -469,6 +535,7 @@
                     "description": "Advanced Port Scanner is a free, fast and easy-to-use port scanner for the Win32 platform."
                 },
                 {
+                    "appid": 67,
                     "name": "Wget",
                     "id": "JernejSimoncic.Wget",
                     "install": false,
@@ -476,6 +543,7 @@
                     "description": "Wget is a free software package for retrieving files using HTTP, HTTPS and FTP, the most widely-used Internet protocols."
                 },
                 {
+                    "appid": 68,
                     "name": "WinDirStat",
                     "id": "WinDirStat.WinDirStat",
                     "install": false,
@@ -483,6 +551,7 @@
                     "description": "WinDirStat is a disk usage statistics viewer and cleanup tool for various versions of Microsoft Windows."
                 },
                 {
+                    "appid": 69,
                     "name": "Angry IP Scanner",
                     "id": "angryziber.AngryIPScanner",
                     "install": false,
@@ -490,6 +559,7 @@
                     "description": "Angry IP Scanner is an open-source and cross-platform network scanner designed to be fast and simple to use."
                 },
                 {
+                    "appid": 70,
                     "name": "Npcap",
                     "id": "NpcapInst",
                     "install": false,
@@ -497,6 +567,7 @@
                     "description": "Npcap is a packet sniffing library for Windows. It is based on the WinPcap packet sniffing library, but is being actively developed and maintained."
                 },
                 {
+                    "appid": 71,
                     "name": "USBPcap",
                     "id": "USBPcap",
                     "install": false,
@@ -504,6 +575,7 @@
                     "description": "USBPcap is a USB protocol analyzer for Windows. It allows you to capture USB traffic from a live system or from a previously recorded trace."
                 },
                 {
+                    "appid": 72,
                     "name": "Google Chrome",
                     "id": "Google.Chrome",
                     "install": false,
@@ -511,6 +583,7 @@
                     "description": "Google Chrome is a cross-platform web browser developed by Google. It was first released in 2008 for Microsoft Windows, and was later ported to Linux, macOS, iOS and Android."
                 },
                 {
+                    "appid": 73,
                     "name": "Mozilla Firefox",
                     "id": "Mozilla.Firefox",
                     "install": false,
@@ -518,6 +591,7 @@
                     "description": "Mozilla Firefox is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation."
                 },
                 {
+                    "appid": 74,
                     "name": "LibreWolf",
                     "id": "LibreWolf.LibreWolf",
                     "install": false,
@@ -525,6 +599,7 @@
                     "description": "LibreWolf is a privacy-oriented web browser based on Firefox. It is designed to be fast, lightweight, and secure."
                 },
                 {
+                    "appid": 75,
                     "name": "Firefox Developer Edition",
                     "id": "Mozilla.Firefox.DeveloperEdition",
                     "install": false,
@@ -532,6 +607,7 @@
                     "description": "Firefox Developer Edition is a version of Firefox for developers. It includes the latest developer tools and experimental features, which are updated every six weeks."
                 },
                 {
+                    "appid": 76,
                     "name": "Waterfox",
                     "id": "Waterfox.Waterfox",
                     "install": false,
@@ -539,6 +615,7 @@
                     "description": "Waterfox is a 64-bit version of the Firefox web browser, optimized for 64-bit Intel processors."
                 },
                 {
+                    "appid": 77,
                     "name": "Brave",
                     "id": "BraveSoftware.BraveBrowser",
                     "install": false,
@@ -546,6 +623,7 @@
                     "description": "Brave is a free and open-source web browser developed by Brave Software, Inc. based on the Chromium web browser and its Blink rendering engine."
                 },
                 {
+                    "appid": 78,
                     "name": "Brave Dev",
                     "id": "BraveSoftware.BraveBrowser.Dev",
                     "install": false,
@@ -553,6 +631,7 @@
                     "description": "Brave Dev is a free and open-source web browser developed by Brave Software, Inc. based on the Chromium web browser and its Blink rendering engine."
                 },
                 {
+                    "appid": 79,
                     "name": "Edge",
                     "id": "Microsoft.Edge",
                     "install": false,
@@ -560,6 +639,7 @@
                     "description": "Microsoft Edge is a web browser developed by Microsoft. It was first released for Windows 10 and Xbox One in July 2015, and for Android and iOS in August 2017."
                 },
                 {
+                    "appid": 80,
                     "name": "Tor Browser",
                     "id": "TorProject.TorBrowser",
                     "install": false,
@@ -567,6 +647,7 @@
                     "description": "Tor Browser is a web browser based on Mozilla Firefox ESR, configured to protect your anonymity when using the Internet."
                 },
                 {
+                    "appid": 81,
                     "name": "Vivaldi",
                     "id": "VivaldiTechnologies.Vivaldi",
                     "install": false,
@@ -574,6 +655,7 @@
                     "description": "Vivaldi is a web browser developed by Vivaldi Technologies. It is based on Chromium and uses the Blink rendering engine."
                 },
                 {
+                    "appid": 82,
                     "name": "Opera Stable",
                     "id": "Opera.Opera",
                     "install": false,
@@ -581,6 +663,7 @@
                     "description": "Opera is a web browser developed by Opera Software. It uses the Blink rendering engine and the WebKit layout engine."
                 },
                 {
+                    "appid": 83,
                     "name": "WhatsApp Desktop",
                     "id": "WhatsApp.WhatsApp",
                     "install": false,
@@ -588,6 +671,7 @@
                     "description": "WhatsApp Desktop is a desktop client for WhatsApp, a cross-platform instant messaging service owned by Facebook."
                 },
                 {
+                    "appid": 84,
                     "name": "Telegram Desktop",
                     "id": "Telegram.TelegramDesktop",
                     "install": false,
@@ -595,6 +679,7 @@
                     "description": "Telegram Desktop is a messaging app with a focus on speed and security, super-fast, simple and free."
                 },
                 {
+                    "appid": 85,
                     "name": "Signal Desktop",
                     "id": "OpenWhisperSystems.Signal",
                     "install": false,
@@ -602,6 +687,7 @@
                     "description": "Signal Desktop is a desktop client for Signal, a cross-platform encrypted messaging service developed by Open Whisper Systems."
                 },
                 {
+                    "appid": 86,
                     "name": "Element",
                     "id": "Element.Element",
                     "install": false,
@@ -609,6 +695,7 @@
                     "description": "Element is a free and open-source instant messaging platform for the web, desktop, and mobile. It is based on the Matrix protocol."
                 },
                 {
+                    "appid": 87,
                     "name": "Skype",
                     "id": "Microsoft.Skype",
                     "install": false,
@@ -616,6 +703,7 @@
                     "description": "Skype is a telecommunications application software product that specializes in providing video chat and voice calls between computers, tablets, mobile devices, the Xbox One console, and smartwatches via the Internet and to regular telephones."
                 },
                 {
+                    "appid": 88,
                     "name": "Microsoft Teams",
                     "id": "Microsoft.Teams",
                     "install": false,
@@ -623,6 +711,7 @@
                     "description": "Microsoft Teams is a proprietary business communication platform developed by Microsoft. It integrates the people, content, and tools your team needs to be more engaged and effective."
                 },
                 {
+                    "appid": 89,
                     "name": "Slack",
                     "id": "SlackTechnologies.Slack",
                     "install": false,
@@ -630,6 +719,7 @@
                     "description": "Slack is a proprietary business communication platform developed by Slack Technologies. It offers a cloud-based set of proprietary team collaboration tools and services, including a chatbot."
                 },
                 {
+                    "appid": 90,
                     "name": "Discord",
                     "id": "Discord.Discord",
                     "install": false,
@@ -637,6 +727,7 @@
                     "description": "Discord is a proprietary freeware VoIP application and digital distribution platform designed for video gaming communities, that specializes in text, image, video and audio communication between users in a chat channel."
                 },
                 {
+                    "appid": 91,
                     "name": "Mumble Client",
                     "id": "Mumble.Mumble.Client",
                     "install": false,
@@ -644,6 +735,7 @@
                     "description": "Mumble is a free, open source, low-latency, high quality voice chat software primarily intended for use while gaming."
                 },
                 {
+                    "appid": 92,
                     "name": "Mumble Server",
                     "id": "Mumble.Mumble.Server",
                     "install": false,
@@ -651,6 +743,7 @@
                     "description": "Mumble is a free, open source, low-latency, high quality voice chat software primarily intended for use while gaming."
                 },
                 {
+                    "appid": 93,
                     "name": "GoToMeeting",
                     "id": "LogMeIn.GoToMeeting",
                     "install": false,
@@ -658,6 +751,7 @@
                     "description": "GoToMeeting is a web conferencing service that allows users to meet online with up to 150 participants."
                 },
                 {
+                    "appid": 94,
                     "name": "Mozilla Thunderbird",
                     "id": "Mozilla.Thunderbird",
                     "install": false,
@@ -665,6 +759,7 @@
                     "description": "Mozilla Thunderbird is an open-source cross-platform mail and news client developed by the Mozilla Foundation."
                 },
                 {
+                    "appid": 95,
                     "name": "Spotify",
                     "id": "Spotify.Spotify",
                     "install": false,
@@ -672,6 +767,7 @@
                     "description": "Spotify is a music streaming platform developed by Spotify AB. It provides digital rights management-restricted content from record labels and media companies."
                 },
                 {
+                    "appid": 96,
                     "name": "Mattermost",
                     "id": "Mattermost.MattermostDesktop",
                     "install": false,
@@ -679,6 +775,7 @@
                     "description": "Mattermost is an open-source, self-hosted alternative to proprietary SaaS messaging."
                 },
                 {
+                    "appid": 97,
                     "name": "TeamViewer",
                     "id": "TeamViewer.TeamViewer",
                     "install": false,
@@ -686,6 +783,7 @@
                     "description": "TeamViewer is a proprietary computer software package for remote control, desktop sharing, online meetings, web conferencing and file transfer between computers."
                 },
                 {
+                    "appid": 98,
                     "name": "TeamViewer Host",
                     "id": "TeamViewer.TeamViewer.Host",
                     "install": false,
@@ -693,6 +791,7 @@
                     "description": "TeamViewer is a proprietary computer software package for remote control, desktop sharing, online meetings, web conferencing and file transfer between computers."
                 },
                 {
+                    "appid": 99,
                     "name": "KeePass Password Safe 2",
                     "id": "DominikReichl.KeePass",
                     "install": false,
@@ -700,6 +799,7 @@
                     "description": "KeePass is a free, open-source, lightweight, and easy-to-use password manager for Windows, Linux, and macOS."
                 },
                 {
+                    "appid": 100,
                     "name": "Bitwarden",
                     "id": "Bitwarden.Bitwarden",
                     "install": false,
@@ -707,6 +807,7 @@
                     "description": "Bitwarden is a free and open-source password management service that stores sensitive information such as website credentials in an encrypted vault."
                 },
                 {
+                    "appid": 101,
                     "name": "1Password",
                     "id": "AgileBits.1Password",
                     "install": false,
@@ -714,6 +815,7 @@
                     "description": "1Password is a password manager and digital wallet for Windows, macOS, iOS, and Android developed by AgileBits."
                 },
                 {
+                    "appid": 102,
                     "name": "LastPass",
                     "id": "LogMeIn.LastPass",
                     "install": false,
@@ -721,6 +823,7 @@
                     "description": "LastPass is a freemium password management service that stores encrypted passwords in a secure vault."
                 },
                 {
+                    "appid": 103,
                     "name": "Dashlane",
                     "id": "Dashlane.Dashlane",
                     "install": false,
@@ -728,6 +831,7 @@
                     "description": "Dashlane is a freemium password manager and digital wallet for Windows, macOS, iOS, and Android developed by Dashlane."
                 },
                 {
+                    "appid": 104,
                     "name": "KeeWeb",
                     "id": "KeeWeb.KeeWeb",
                     "install": false,
@@ -735,6 +839,7 @@
                     "description": "KeeWeb is a free and open-source password manager compatible with KeePass."
                 },
                 {
+                    "appid": 105,
                     "name": "KeePassXC",
                     "id": "KeePassXCTeam.KeePassXC",
                     "install": false,
@@ -742,6 +847,7 @@
                     "description": "KeePassXC is a free and open-source password manager compatible with KeePass."
                 },
                 {
+                    "appid": 106,
                     "name": "Yubikey Manager",
                     "id": "Yubico.YubikeyManager",
                     "install": false,
@@ -749,6 +855,7 @@
                     "description": "YubiKey Manager is a cross-platform application for configuring your YubiKey."
                 },
                 {
+                    "appid": 107,
                     "name": "Yubiko Authenticator",
                     "id": "Yubico.Authenticator",
                     "install": false,
@@ -756,6 +863,7 @@
                     "description": "Yubico Authenticator is a cross-platform application for managing your YubiKeys."
                 },
                 {
+                    "appid": 108,
                     "name": "YubiKey Personalization Tool",
                     "id": "Yubico.YubiKeyPersonalizationTool",
                     "install": false,
@@ -763,6 +871,7 @@
                     "description": "YubiKey Personalization Tool is a cross-platform application for configuring your YubiKey."
                 },
                 {
+                    "appid": 109,
                     "name": "AdGuard",
                     "id": "AdGuard.AdGuard",
                     "install": false,
@@ -770,6 +879,7 @@
                     "description": "AdGuard is a cross-platform ad blocker and web filter developed by AdGuard Software."
                 },
                 {
+                    "appid": 110,
                     "name": "Malwarebytes",
                     "id": "Malwarebytes.Malwarebytes",
                     "install": false,
@@ -777,6 +887,7 @@
                     "description": "Malwarebytes is a cross-platform anti-malware software developed by Malwarebytes Corporation."
                 },
                 {
+                    "appid": 111,
                     "name": "GIMP",
                     "id": "GIMP.GIMP",
                     "install": false,
@@ -784,6 +895,7 @@
                     "description": "GIMP is a free and open-source raster graphics editor used for image retouching and editing, free-form drawing, converting between different image formats, and more specialized tasks."
                 },
                 {
+                    "appid": 112,
                     "name": "Inkscape",
                     "id": "Inkscape.Inkscape",
                     "install": false,
@@ -791,6 +903,7 @@
                     "description": "Inkscape is a free and open-source vector graphics editor used for creating vector images, illustrations, and more."
                 },
                 {
+                    "appid": 113,
                     "name": "Blender",
                     "id": "BlenderFoundation.Blender",
                     "install": false,
@@ -798,6 +911,7 @@
                     "description": "Blender is a free and open-source 3D computer graphics software product used for creating animated films, visual effects, art, 3D printed models, motion graphics, interactive 3D applications, and computer games."
                 },
                 {
+                    "appid": 114,
                     "name": "Figma",
                     "id": "Figma.Figma",
                     "install": false,
@@ -805,6 +919,7 @@
                     "description": "Figma is a vector graphics editor and prototyping tool which is primarily web-based, with additional offline features enabled by desktop applications for macOS and Windows."
                 },
                 {
+                    "appid": 115,
                     "name": "Everything",
                     "id": "voidtools.Everything",
                     "install": false,
@@ -812,6 +927,7 @@
                     "description": "Everything is search engine that locates files and folders by filename instantly for Windows. Unlike Windows search Everything initially displays every file and folder on your computer (hence the name Everything). You type in a search filter to limit what files and folders are displayed."
                 },
                 {
+                    "appid": 116,
                     "name": "EverythingToolbar",
                     "id": "stnkl.EverythingToolbar",
                     "install": false,
@@ -819,6 +935,7 @@
                     "description": "With EverythingToolbar you can instantly search files and folders by name directly in the Windows taskbar with Everything. It allows quick and easy file indexing and fast searches."
                 },
                 {
+                    "appid": 117,
                     "name": "Calibre",
                     "id": "calibre.calibre",
                     "install": false,
@@ -826,6 +943,7 @@
                     "description": "Calibre is a cross-platform e-book library management application developed by users of e-books for users of e-books."
                 },
                 {
+                    "appid": 118,
                     "name": "Ubuntu 22.04 LTS",
                     "id": "Canonical.Ubuntu.2204",
                     "install": false,
@@ -833,6 +951,7 @@
                     "description": "Ubuntu is a free and open-source Linux distribution based on Debian."
                 },
                 {
+                    "appid": 119,
                     "name": "NTLite",
                     "id": "Nlitesoft.NTLite",
                     "install": false,
@@ -840,6 +959,7 @@
                     "description": "NTLite is a free and open-source Windows customization tool that allows you to remove Windows components, integrate drivers, apply hotfixes, and more."
                 },
                 {
+                    "appid": 120,
                     "name": "Jq",
                     "id": "stedolan.jq",
                     "install": false,
@@ -847,6 +967,7 @@
                     "description": "Jq is a lightweight and flexible command-line JSON processor."
                 },
                 {
+                    "appid": 121,
                     "name": "Process Explorer",
                     "id": "Microsoft.Sysinternals.ProcessExplorer",
                     "install": false,
@@ -854,6 +975,7 @@
                     "description": "Process Explorer is a free and open-source task manager for Windows."
                 },
                 {
+                    "appid": 122,
                     "name": "Process Monitor",
                     "id": "Microsoft.Sysinternals.ProcessMonitor",
                     "install": false,
@@ -861,6 +983,7 @@
                     "description": "Process Monitor is a free and open-source process monitoring tool for Windows."
                 },
                 {
+                    "appid": 123,
                     "name": "Autoruns",
                     "id": "Microsoft.Sysinternals.Autoruns",
                     "install": false,
@@ -868,6 +991,7 @@
                     "description": "Autoruns is a free and open-source tool that displays the programs that automatically run when your system boots and logs in."
                 },
                 {
+                    "appid": 124,
                     "name": "PowerToys (Preview)",
                     "id": "Microsoft.PowerToys",
                     "install": false,
@@ -875,6 +999,7 @@
                     "description": "PowerToys is a set of utilities for power users to tune and streamline their Windows 10 experience for greater productivity."
                 },
                 {
+                    "appid": 125,
                     "name": "SyncTrayzor",
                     "id": "SyncTrayzor.SyncTrayzor",
                     "install": false,
@@ -882,6 +1007,7 @@
                     "description": "SyncTrayzor is a free and open-source Syncthing tray application for Windows."
                 },
                 {
+                    "appid": 126,
                     "name": "7-Zip",
                     "id": "7zip.7zip",
                     "install": false,
@@ -889,6 +1015,7 @@
                     "description": "7-Zip is a free and open-source file archiver, a utility used to place groups of files within compressed containers known as \"archives\"."
                 },
                 {
+                    "appid": 127,
                     "name": "SumatraPDF",
                     "id": "SumatraPDF.SumatraPDF",
                     "install": false,
@@ -896,6 +1023,7 @@
                     "description": "SumatraPDF is a free and open-source PDF, ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR reader for Windows."
                 },
                 {
+                    "appid": 128,
                     "name": "VNC Viewer",
                     "id": "RealVNC.VNCViewer",
                     "install": false,
@@ -903,6 +1031,7 @@
                     "description": "VNC Viewer is a free and open-source remote desktop software application developed by RealVNC."
                 },
                 {
+                    "appid": 129,
                     "name": "VNC Server",
                     "id": "RealVNC.VNCServer",
                     "install": false,
@@ -910,6 +1039,7 @@
                     "description": "VNC Server is a free and open-source remote desktop software application developed by RealVNC."
                 },
                 {
+                    "appid": 130,
                     "name": "TigerVNC",
                     "id": "TigerVNCproject.TigerVNC",
                     "install": false,
@@ -917,6 +1047,7 @@
                     "description": "TigerVNC is a free and open-source remote desktop software application developed by the TigerVNC project."
                 },
                 {
+                    "appid": 131,
                     "name": "LibreOffice",
                     "id": "TheDocumentFoundation.LibreOffice",
                     "install": false,
@@ -924,6 +1055,7 @@
                     "description": "LibreOffice is a free and open-source office suite, a project of The Document Foundation."
                 },
                 {
+                    "appid": 132,
                     "name": "OpenOffice",
                     "id": "Apache.OpenOffice",
                     "install": false,
@@ -931,6 +1063,7 @@
                     "description": "Apache OpenOffice is a free and open-source office suite, a project of The Apache Software Foundation."
                 },
                 {
+                    "appid": 133,
                     "name": "Transmission",
                     "id": "Transmission.Transmission",
                     "install": false,
@@ -938,6 +1071,7 @@
                     "description": "Transmission is a free and open-source BitTorrent client."
                 },
                 {
+                    "appid": 134,
                     "name": "Qbittorrent",
                     "id": "qBittorrent.qBittorrent",
                     "install": false,
@@ -945,6 +1079,7 @@
                     "description": "qBittorrent is a free and open-source BitTorrent client developed by volunteers in their spare time."
                 },
                 {
+                    "appid": 135,
                     "name": "HWiNFO",
                     "id": "REALiX.HWiNFO",
                     "install": false,
@@ -952,6 +1087,7 @@
                     "description": "HWiNFO is a free and open-source hardware information and diagnostic tool for Windows."
                 },
                 {
+                    "appid": 136,
                     "name": "Rufus",
                     "id": "Rufus.Rufus",
                     "install": false,
@@ -959,6 +1095,7 @@
                     "description": "Rufus is a free and open-source utility that helps format and create bootable USB flash drives, such as USB keys/pendrives, memory sticks, etc."
                 },
                 {
+                    "appid": 137,
                     "name": "BalenaEtcher",
                     "id": "Balena.Etcher",
                     "install": false,
@@ -966,6 +1103,7 @@
                     "description": "Etcher is a free and open-source software for flashing OS images to SD cards and USB drives, safely and easily."
                 },
                 {
+                    "appid": 138,
                     "name": "Audacity",
                     "id": "Audacity.Audacity",
                     "install": false,
@@ -973,6 +1111,7 @@
                     "description": "Audacity is a free and open-source cross-platform audio software for multi-track recording and editing."
                 },
                 {
+                    "appid": 139,
                     "name": "HandBrake",
                     "id": "HandBrake.HandBrake",
                     "install": false,
@@ -980,6 +1119,7 @@
                     "description": "HandBrake is a free and open-source video transcoder."
                 },
                 {
+                    "appid": 140,
                     "name": "Streamlink",
                     "id": "Streamlink.Streamlink",
                     "install": false,
@@ -987,6 +1127,7 @@
                     "description": "Streamlink is a free and open-source command-line utility that extracts streams from various services and pipes them into a video player of choice."
                 },
                 {
+                    "appid": 141,
                     "name": "WinSCP",
                     "id": "WinSCP.WinSCP",
                     "install": false,
@@ -994,6 +1135,7 @@
                     "description": "WinSCP is a free and open-source SFTP, SCP, WebDAV, and FTP client for Windows."
                 },
                 {
+                    "appid": 142,
                     "name": "yt-dlp",
                     "id": "yt-dlp.yt-dlp",
                     "install": false,
@@ -1001,6 +1143,7 @@
                     "description": "yt-dlp is a free and open-source command-line program to download videos from YouTube and other video platforms."
                 },
                 {
+                    "appid": 143,
                     "name": "Feeder",
                     "id": "knoopx.feeder",
                     "install": false,
@@ -1008,6 +1151,7 @@
                     "description": "Feeder is a free and open-source RSS reader for Windows."
                 },
                 {
+                    "appid": 144,
                     "name": "Oracle VM VirtualBox",
                     "id": "Oracle.VirtualBox",
                     "install": false,
@@ -1015,6 +1159,7 @@
                     "description": "Oracle VM VirtualBox is a free and open-source hosted hypervisor for x86 virtualization, developed by Oracle Corporation."
                 },
                 {
+                    "appid": 145,
                     "name": "ShareX",
                     "id": "ShareX.ShareX",
                     "install": false,
@@ -1022,6 +1167,7 @@
                     "description": "ShareX is a lightweight free and open source program that allows you to capture or record any area of your screen and share it with a single press of a key. ShareX offers numerous methods of capture including full screen, monitor, freehand and so much more. It also features plenty of customizable after-capture tasks and supports more than 80 different image, text, and file hosting services, as well as many URL shortening and sharing services."
                 },
                 {
+                    "appid": 146,
                     "name": "Greenshot",
                     "id": "Greenshot.Greenshot",
                     "install": false,
@@ -1029,6 +1175,7 @@
                     "description": "Greenshot is a free and open-source screenshot tool optimized for productivity."
                 },
                 {
+                    "appid": 147,
                     "name": "Bandicam",
                     "id": "BandicamCompany.Bandicam",
                     "install": false,
@@ -1036,6 +1183,7 @@
                     "description": "Bandicam is a free and open-source screen recorder for Windows."
                 },
                 {
+                    "appid": 148,
                     "name": "Obsidian",
                     "id": "Obsidian.Obsidian",
                     "install": false,
@@ -1043,6 +1191,7 @@
                     "description": "Obsidian is a powerful knowledge base on top of a local folder of plain text Markdown files."
                 },
                 {
+                    "appid": 149,
                     "name": "Notion",
                     "id": "Notion.Notion",
                     "install": false,
@@ -1050,6 +1199,7 @@
                     "description": "All-in-one workspace. One tool for your whole team. Write, plan, and get organized."
                 },
                 {
+                    "appid": 150,
                     "name": "Joplin",
                     "id": "Joplin.Joplin",
                     "install": false,
@@ -1057,6 +1207,7 @@
                     "description": "Joplin is a free and open-source note-taking and to-do application, which can handle a large number of notes organised into notebooks."
                 },
                 {
+                    "appid": 151,
                     "name": "WireGuard",
                     "id": "WireGuard.WireGuard",
                     "install": false,
@@ -1064,6 +1215,7 @@
                     "description": "WireGuard is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner, and more useful than IPsec, while avoiding the massive headache. It intends to be considerably more performant than OpenVPN. WireGuard is designed as a general purpose VPN for running on embedded interfaces and super computers alike, fit for many different circumstances. Initially released for the Linux kernel, it is now cross-platform (Windows, macOS, BSD, iOS, Android) and widely deployable. It is currently under heavy development, but already it might be regarded as the most secure, easiest to use, and simplest VPN solution in the industry."
                 },
                 {
+                    "appid": 152,
                     "name": "OpenVPN",
                     "id": "OpenVPNTechnologies.OpenVPN",
                     "install": false,
@@ -1071,6 +1223,7 @@
                     "description": "OpenVPN provides flexible VPN solutions to secure your data communications, whether its for Internet privacy, remote access for employees, securing IoT, or for networking Cloud data centers."
                 },
                 {
+                    "appid": 153,
                     "name": "OpenVPN Connect",
                     "id": "OpenVPNTechnologies.OpenVPNConnect",
                     "install": false,
@@ -1078,6 +1231,7 @@
                     "description": "The official OpenVPN Connect client software developed and maintained by OpenVPN Inc."
                 },
                 {
+                    "appid": 154,
                     "name": "Tailscale",
                     "id": "tailscale.tailscale",
                     "install": false,
@@ -1085,6 +1239,7 @@
                     "description": "Tailscale a WireGuard based mesh VPN, used to connect your computers and other devices together securely without proxies."
                 },
                 {
+                    "appid": 155,
                     "name": "ExpressVPN",
                     "id": "ExpressVPN.ExpressVPN",
                     "install": false,
@@ -1092,6 +1247,7 @@
                     "description": "ExpressVPN is an easy-to-use, high-speed and secure VPN available for all major platforms, including desktop and mobile platforms. It works on Windows, Mac, Linux, Android, iOS and routers. It allows accessing any website and helps bypass network restrictions."
                 },
                 {
+                    "appid": 156,
                     "name": "Mullvad VPN",
                     "id": "MullvadVPN.MullvadVPN",
                     "install": false,
@@ -1099,6 +1255,7 @@
                     "description": "Mullvad is an open-source commercial virtual private network service based in Sweden."
                 },
                 {
+                    "appid": 157,
                     "name": "NordVPN",
                     "id": "NordVPN.NordVPN",
                     "install": false,
@@ -1106,6 +1263,7 @@
                     "description": "NordVPN encrypts your internet traffic and hides your IP and physical location. Works on 6 devices at once, on every major platform. With NordVPN, encrypt your online activity to protect your private data from hackers or snoopy advertisers. Enjoy global connectivity along with high-performance speed and secure access to streaming websites, censored content and social networks."
                 },
                 {
+                    "appid": 158,
                     "name": "Webroot SecureAnywhere",
                     "id": "Webroot.SecureAnywhere",
                     "install": false,
@@ -1114,6 +1272,7 @@
 
                 },
                 {
+                    "appid": 159,
                     "name": "VLC media player",
                     "id": "VideoLAN.VLC",
                     "install": false,
@@ -1121,6 +1280,7 @@
                     "description": "VLC media player is a free and open-source cross-platform multimedia player that plays most multimedia files as well as discs, devices, and network streaming protocols."
                 },
                 {
+                    "appid": 160,
                     "name": "FreeTube",
                     "id": "PrestonN.FreeTube",
                     "install": false,
@@ -1128,6 +1288,7 @@
                     "description": "FreeTube is a free and open-source desktop YouTube player built with privacy in mind."
                 },
                 {
+                    "appid": 161,
                     "name": "CORSAIR iCUE 4 Software",
                     "id": "Corsair.iCUE.4",
                     "install": false,
@@ -1135,6 +1296,7 @@
                     "description": "CORSAIR iCUE 4 Software is a proprietary software application for CORSAIR iCUE 4 devices."
                 },
                 {
+                    "appid": 162,
                     "name": "Elgato Stream Deck",
                     "id": "Elgato.StreamDeck",
                     "install": false,
@@ -1142,6 +1304,7 @@
                     "description": "Elgato Stream Deck is a proprietary software application for Elgato Stream Deck devices."
                 },
                 {
+                    "appid": 163,
                     "name": "Logitech G HUB",
                     "id": "Logitech.GHUB",
                     "install": false,
@@ -1149,6 +1312,7 @@
                     "description": "Logitech G HUB is a proprietary software application for Logitech G devices."
                 },
                 {
+                    "appid": 164,
                     "name": "Logitech Gaming Software",
                     "id": "Logitech.LGS",
                     "install": false,
@@ -1156,6 +1320,7 @@
                     "description": "Logitech Gaming Software is a proprietary software application for Logitech devices."
                 },
                 {
+                    "appid": 165,
                     "name": "SteelSeries GG",
                     "id": "SteelSeries.GG",
                     "install": false,
@@ -1163,6 +1328,7 @@
                     "description": "SteelSeries GG is a proprietary software application for SteelSeries devices."
                 },
                 {
+                    "appid": 166,
                     "name": "SteelSeries Engine",
                     "id": "SteelSeries.SteelSeriesEngine",
                     "install": false,
@@ -1170,6 +1336,7 @@
                     "description": "SteelSeries Engine is a proprietary software application for SteelSeries devices."
                 },
                 {
+                    "appid": 167,
                     "name": "Steam",
                     "id": "Valve.Steam",
                     "install": false,
@@ -1177,6 +1344,7 @@
                     "description": "Steam is a proprietary digital distribution platform for video games, social networking, video streaming, and social networking services."
                 },
                 {
+                    "appid": 168,
                     "name": "Epic Games Launcher",
                     "id": "EpicGames.EpicGamesLauncher",
                     "install": false,
@@ -1184,6 +1352,7 @@
                     "description": "Epic Games Launcher is a proprietary digital distribution platform for video games, social networking, video streaming, and social networking services."
                 },
                 {
+                    "appid": 169,
                     "name": "Ubisoft Connect",
                     "id": "Ubisoft.Connect",
                     "install": false,
@@ -1191,6 +1360,7 @@
                     "description": "Ubisoft Connect is a proprietary digital distribution platform for video games, social networking, video streaming, and social networking services."
                 },
                 {
+                    "appid": 170,
                     "name": "EA app",
                     "id": "ElectronicArts.EADesktop",
                     "install": false,
@@ -1198,6 +1368,7 @@
                     "description": "EA app is a proprietary digital distribution platform for video games, social networking, video streaming, and social networking services."
                 },
                 {
+                    "appid": 171,
                     "name": "Bethesda.net Launcher",
                     "id": "Bethesda.Launcher",
                     "install": false,
@@ -1205,6 +1376,7 @@
                     "description": "Bethesda.net Launcher is a proprietary digital distribution platform for video games, social networking, video streaming, and social networking services."
                 },
                 {
+                    "appid": 172,
                     "name": "GOG GALAXY",
                     "id": "GOG.Galaxy",
                     "install": false,
@@ -1212,6 +1384,7 @@
                     "description": "GOG GALAXY is a proprietary digital distribution platform for video games, social networking, video streaming, and social networking services."
                 },
                 {
+                    "appid": 173,
                     "name": "NVIDIA GeForce Experience",
                     "id": "Nvidia.GeForceExperience",
                     "install": false,
@@ -1219,6 +1392,7 @@
                     "description": "NVIDIA GeForce Experience is a proprietary digital distribution platform for video games, social networking, video streaming, and social networking services."
                 },
                 {
+                    "appid": 174,
                     "name": "NVIDIA GeForce NOW",
                     "id": "Nvidia.GeForceNow",
                     "install": false,
@@ -1226,6 +1400,7 @@
                     "description": "NVIDIA GeForce NOW is a proprietary digital distribution platform for video games, social networking, video streaming, and social networking services."
                 },
                 {
+                    "appid": 175,
                     "name": "Microsoft Visual C++ 2008 Redist",
                     "id": "Microsoft.VC++2008Redist-x64",
                     "install": false,
@@ -1233,6 +1408,7 @@
                     "description": "Microsoft Visual C++ 2008 Redist is a proprietary software application for Microsoft Windows."
                 },
                 {
+                    "appid": 176,
                     "name": "Microsoft Visual C++ 2010  x64 Redist",
                     "id": "Microsoft.VC++2010Redist-x64",
                     "install": false,
@@ -1240,6 +1416,7 @@
                     "description": "Microsoft Visual C++ 2010  x64 Redist is a proprietary software application for Microsoft Windows."
                 },
                 {
+                    "appid": 177,
                     "name": "Microsoft Visual C++ 2012 x64 Redist",
                     "id": "Microsoft.VC++2012Redist-x64",
                     "install": false,
@@ -1247,6 +1424,7 @@
                     "description": "Microsoft Visual C++ 2012 x64 Redist is a proprietary software application for Microsoft Windows."
                 },
                 {
+                    "appid": 178,
                     "name": "Microsoft Visual C++ 2013 x64 Redist",
                     "id": "Microsoft.VC++2013Redist-x64",
                     "install": false,
@@ -1254,6 +1432,7 @@
                     "description": "Microsoft Visual C++ 2013 x64 Redist is a proprietary software application for Microsoft Windows."
                 },
                 {
+                    "appid": 179,
                     "name": "Microsoft Visual C++ 2015-2022 x64 Redist",
                     "id": "Microsoft.VC++2015-2022Redist-x64",
                     "install": false,
@@ -1261,6 +1440,7 @@
                     "description": "Microsoft Visual C++ 2015-2022 x64 Redist is a proprietary software application for Microsoft Windows."
                 },
                 {
+                    "appid": 180,
                     "name": "Microsoft ASP.NET Core",
                     "id": "Microsoft.DotNet.AspNetCore.3_1",
                     "install": false,
@@ -1268,6 +1448,7 @@
                     "description": "Microsoft ASP.NET Core is a proprietary software application for Microsoft Windows."
                 },
                 {
+                    "appid": 181,
                     "name": "Microsoft Windows Desktop Runtime",
                     "id": "Microsoft.DotNet.DesktopRuntime.6",
                     "install": false,
@@ -1275,6 +1456,7 @@
                     "description": "Microsoft Windows Desktop Runtime is a proprietary software application for Microsoft Windows."
                 },
                 {
+                    "appid": 182,
                     "name": "Microsoft Web Deploy",
                     "id": "Microsoft.WebDeploy",
                     "install": false,
@@ -1282,6 +1464,7 @@
                     "description": "Microsoft Web Deploy is a proprietary software application for Microsoft Windows."
                 },
                 {
+                    "appid": 183,
                     "name": "Windows Software Development Kit - SDK",
                     "id": "Microsoft.WindowsSDK",
                     "install": false,
@@ -1289,6 +1472,7 @@
                     "description": "Windows Software Development Kit - SDK is a proprietary software application for Microsoft Windows."
                 },
                 {
+                    "appid": 184,
                     "name": "Microsoft .NET SDK",
                     "id": "Microsoft.DotNet.SDK.6",
                     "install": false,
@@ -1296,6 +1480,7 @@
                     "description": "Microsoft .NET SDK is a proprietary software application for Microsoft Windows."
                 },
                 {
+                    "appid": 185,
                     "name": "Microsoft .NET Core SDK 3.1",
                     "id": "Microsoft.DotNet.SDK.3_1",
                     "install": false,
@@ -1303,6 +1488,7 @@
                     "description": "Microsoft .NET Core SDK 3.1 is a proprietary software application for Microsoft Windows."
                 },
                 {
+                    "appid": 186,
                     "name": "Microsoft SQL Server Management Studio",
                     "id": "Microsoft.SQLServerManagementStudio",
                     "install": false,
@@ -1310,6 +1496,7 @@
                     "description": "Microsoft SQL Server Management Studio is a proprietary software application for Microsoft Windows."
                 },
                 {
+                    "appid": 187,
                     "name": "MongoDB",
                     "id": "MongoDB.Server",
                     "install": false,
@@ -1317,6 +1504,7 @@
                     "description": "MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era."
                 },
                 {
+                    "appid": 188,
                     "name": "MongoDB Compass",
                     "id": "MongoDB.Compass.Full",
                     "install": false,
@@ -1324,6 +1512,7 @@
                     "description": "The GUI for MongoDB. Visually explore your data. Run ad hoc queries in seconds. Interact with your data with full CRUD functionality. View and optimize your query performance. Available on Linux, Mac, or Windows. Compass empowers you to make smarter decisions about indexing, document validation, and more."
                 },
                 {
+                    "appid": 189,
                     "name": "MongoDB Compass Community",
                     "id": "MongoDB.Compass.Community",
                     "install": false,
@@ -1331,6 +1520,7 @@
                     "description": "The GUI for MongoDB. Visually explore your data. Run ad hoc queries in seconds. Interact with your data with full CRUD functionality. View and optimize your query performance. Available on Linux, Mac, or Windows. Compass empowers you to make smarter decisions about indexing, document validation, and more."
                 },
                 {
+                    "appid": 190,
                     "name": "MongoDB Tools",
                     "id": "MongoDB.DatabaseTools",
                     "install": false,
@@ -1338,6 +1528,7 @@
                     "description": "The MongoDB Database Tools are a collection of command-line utilities for working with a MongoDB deployment."
                 },
                 {
+                    "appid": 191,
                     "name": "MongoDB Shell",
                     "id": "MongoDB.Shell",
                     "install": false,
@@ -1345,6 +1536,7 @@
                     "description": "The mongo shell is an interactive JavaScript interface to MongoDB. You can use the mongo shell to query and update data as well as perform administrative operations."
                 },
                 {
+                    "appid": 192,
                     "name": "MySQL",
                     "id": "Oracle.MySQL",
                     "install": false,
@@ -1352,6 +1544,7 @@
                     "description": "MySQL is a relational database management system (RDBMS) based on Structured Query Language (SQL)."
                 },
                 {
+                    "appid": 193,
                     "name": "PostgreSQL",
                     "id": "PostgreSQL.PostgreSQL",
                     "install": false,
@@ -1359,6 +1552,7 @@
                     "description": "PostgreSQL is a powerful, open source object-relational database system."
                 },
                 {
+                    "appid": 194,
                     "name": "MariaDB",
                     "id": "MariaDB.Server",
                     "install": false,
@@ -1366,6 +1560,7 @@
                     "description": "MariaDB is a community-developed fork of the MySQL relational database management system."
                 },
                 {
+                    "appid": 195,
                     "name": "DataGrip",
                     "id": "JetBrains.DataGrip",
                     "install": false,
@@ -1373,6 +1568,7 @@
                     "description": "A powerful IDE from JetBrains for SQL on macOS, Windows, and Linux."
                 },
                 {
+                    "appid": 196,
                     "name": "Kubectl",
                     "id": "Kubernetes.kubectl",
                     "install": false,
@@ -1380,6 +1576,7 @@
                     "description": "Kubectl is a command-line tool for controlling Kubernetes clusters."
                 },
                 {
+                    "appid": 197,
                     "name": "Azure Data CLI",
                     "id": "Microsoft.AzureDataCLI",
                     "install": false,
@@ -1387,6 +1584,7 @@
                     "description": "Azure Data CLI is a command-line tool for controlling Azure Data."
                 },
                 {
+                    "appid": 198,
                     "name": "AWS Command Line Interface",
                     "id": "Amazon.AWSCLI",
                     "install": false,
@@ -1394,6 +1592,7 @@
                     "description": "AWS Command Line Interface is a command-line tool for controlling AWS."
                 },
                 {
+                    "appid": 199,
                     "name": "GitHub CLI",
                     "id": "GitHub.cli",
                     "install": false,
@@ -1401,6 +1600,7 @@
                     "description": "GitHub CLI is a command-line tool for controlling GitHub."
                 },
                 {
+                    "appid": 200,
                     "name": "MongoDB CLI",
                     "id": "MongoDB.MongoDBCLI",
                     "install": false,
@@ -1408,6 +1608,7 @@
                     "description": "MongoDB CLI is a command-line tool for controlling MongoDB."
                 },
                 {
+                    "appid": 201,
                     "name": "Pandoc",
                     "id": "JohnMacFarlane.Pandoc",
                     "install": false,
@@ -1415,6 +1616,7 @@
                     "description": "Pandoc is a universal command-line tool document converter."
                 },
                 {
+                    "appid": 202,
                     "name": "Microsoft PowerApps CLI",
                     "id": "Microsoft.PowerAppsCLI",
                     "install": false,
@@ -1422,6 +1624,7 @@
                     "description": "Microsoft PowerApps CLI is a command-line tool for controlling Microsoft PowerApps."
                 },
                 {
+                    "appid": 203,
                     "name": "PowerShell Universal Desktop",
                     "id": "IronmanSoftware.PowerShellUniversal.Desktop",
                     "install": false,
@@ -1429,6 +1632,7 @@
                     "description": "PowerShell Universal is a PowerShell based automation platform that allows you to run PowerShell scripts, modules, and functions in a web browser."
                 },
                 {
+                    "appid": 204,
                     "name": "AutoHotkey",
                     "id": "Lexikos.AutoHotkey",
                     "install": false,
@@ -1436,6 +1640,7 @@
                     "description": "AutoHotkey is a free, open-source custom scripting language for Microsoft Windows, initially aimed at providing easy keyboard shortcuts or hotkeys, fast macro-creation and software automation that allows users of most levels of computer skill to automate repetitive tasks in any Windows application."
                 },
                 {
+                    "appid": 205,
                     "name": "Power Automate Desktop",
                     "id": "Microsoft.PowerAutomateDesktop",
                     "install": false,
@@ -1443,6 +1648,7 @@
                     "description": "Power Automate Desktop is a free, open-source custom scripting language for Microsoft Windows, initially aimed at providing easy keyboard shortcuts or hotkeys, fast macro-creation and software automation that allows users of most levels of computer skill to automate repetitive tasks in any Windows application."
                 },
                 {
+                    "appid": 206,
                     "name": "OBS Studio",
                     "id": "OBSProject.OBSStudio",
                     "install": false,
@@ -1450,6 +1656,7 @@
                     "description": "OBS Studio is a free and open source software for video recording and live streaming."
                 },
                 {
+                    "appid": 207,
                     "name": "Streamlabs Desktop",
                     "id": "Streamlabs.Streamlabs",
                     "install": false,
@@ -1457,6 +1664,7 @@
                     "description": "Streamlabs Desktop is a free and open source software for video recording and live streaming."
                 },
                 {
+                    "appid": 208,
                     "name": "StreamlabsOBS",
                     "id": "Streamlabs.StreamlabsOBS",
                     "install": false,
@@ -1464,6 +1672,7 @@
                     "description": "StreamlabsOBS is a free and open source software for video recording and live streaming."
                 },
                 {
+                    "appid": 209,
                     "name": "Binance",
                     "id": "BinanceTech.Binance",
                     "install": false,
@@ -1471,6 +1680,7 @@
                     "description": "Binance is a cryptocurrency exchange."
                 },
                 {
+                    "appid": 210,
                     "name": "Nextcloud",
                     "id": "Nextcloud.NextcloudDesktop",
                     "install": false,
@@ -1478,6 +1688,7 @@
                     "description": "Nextcloud is a suite of client-server software for creating and using file hosting services."
                 },
                 {
+                    "appid": 211,
                     "name": "OwnCloud",
                     "id": "ownCloud.ownCloudDesktop",
                     "install": false,
@@ -1485,6 +1696,7 @@
                     "description": "OwnCloud is a suite of client-server software for creating and using file hosting services."
                 },
                 {
+                    "appid": 212,
                     "name": "Google Drive",
                     "id": "Google.Drive",
                     "install": false,
@@ -1492,6 +1704,7 @@
                     "description": "Google Drive is a file storage and synchronization service developed by Google."
                 },
                 {
+                    "appid": 213,
                     "name": "Microsoft OneDrive",
                     "id": "Microsoft.OneDrive",
                     "install": false,
@@ -1499,6 +1712,7 @@
                     "description": "Microsoft OneDrive is a file storage and synchronization service developed by Microsoft."
                 },
                 {
+                    "appid": 214,
                     "name": "Dropbox",
                     "id": "Dropbox.Dropbox",
                     "install": false,
@@ -1506,6 +1720,7 @@
                     "description": "Dropbox is a file hosting service operated by American company Dropbox, Inc., headquartered in San Francisco, California."
                 },
                 {
+                    "appid": 215,
                     "name": "Box",
                     "id": "Box.Box",
                     "install": false,

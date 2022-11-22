@@ -166,6 +166,8 @@ function qrcode(id, cmd) {QrCode.generate(document.querySelector(id), cmd);}
 
 function appList(id, data, className) {
 
+    id.innerHTML = "";
+
     data.forEach(app => {
 
         id.innerHTML += `<label class="${className} inline-flex unselectable cursor-pointer px-4 py-2" for="${app.name}" title="${app.description}">
@@ -516,3 +518,127 @@ function clearConsole() {
 
 }
 
+function sortAz(id, data, className) {
+
+    document.querySelector("#sortAZ").onclick = () => {
+
+        console.log("sortAZ");
+
+        id.innerHTML = "";
+
+        // sort array alphabetically of objects by property
+
+        data.sort((a, b) => (a.name > b.name) ? 1 : -1);
+
+        data.forEach(app => {
+
+            id.innerHTML += `<label class="${className} inline-flex unselectable cursor-pointer px-4 py-2" for="${app.name}" title="${app.description}">
+            <input
+            id="${app.name}"
+            class="install form-check-label inline-block text-gray-800 mr-2"
+            type="checkbox"
+            ${app.install === true ? "checked" : ""}
+            name="${app.name}"
+            value="${app.id}"
+            />
+            <span class="ellipsis">${app.name}</span>
+            </label>`;
+
+        });
+
+    };
+
+}
+
+function sortZA(id, data, className) {
+
+    document.querySelector("#sortZA").onclick = () => {
+
+        console.log("sortZA");
+
+        id.innerHTML = "";
+
+        // sort array alphabetically Z-A of objects by property
+
+        data.sort((a, b) => (a.name < b.name) ? 1 : -1);
+
+        data.forEach(app => {
+
+            id.innerHTML += `<label class="${className} inline-flex unselectable cursor-pointer px-4 py-2" for="${app.name}" title="${app.description}">
+            <input
+            id="${app.name}"
+            class="install form-check-label inline-block text-gray-800 mr-2"
+            type="checkbox"
+            ${app.install === true ? "checked" : ""}
+            name="${app.name}"
+            value="${app.id}"
+            />
+            <span class="ellipsis">${app.name}</span>
+            </label>`;
+
+        });
+
+    };
+
+}
+
+function noSort(id, data, className) {
+
+    document.querySelector("#noSort").onclick = () => {
+
+        console.log("no sort");
+
+        id.innerHTML = "";
+
+        // remove array sort
+
+        data.sort((a, b) => (a.appid > b.appid) ? 1 : -1);
+
+        console.log(data);
+
+        data.forEach(app => {
+
+            id.innerHTML += `<label class="${className} inline-flex unselectable cursor-pointer px-4 py-2" for="${app.name}" title="${app.description}">
+            <input
+            id="${app.name}"
+            class="install form-check-label inline-block text-gray-800 mr-2"
+            type="checkbox"
+            ${app.install === true ? "checked" : ""}
+            name="${app.name}"
+            value="${app.id}"
+            />
+            <span class="ellipsis">${app.name}</span>
+            </label>`;
+
+        });
+
+    };
+}
+
+// function sortAZ(id) {
+
+//     id.onclick = function () {
+
+//         console.log("sortAZ");
+
+//         const list = document.querySelector("#apps");
+
+//         const listItems = list.querySelector(".program");
+
+//         const listArray = Array.prototype.slice.call(listItems);
+
+//         listArray.sort(function (a, b) {
+
+//             return a.innerHTML.localeCompare(b.innerHTML);
+
+//         });
+
+//         listArray.forEach(function (item) {
+
+//             list.appendChild(item);
+
+//         });
+
+//     };
+
+// }

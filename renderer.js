@@ -76,6 +76,12 @@ function loadFromConfig(configData, load=true) {
 
   clearConsole();
 
+  sortAz(apps, configData.winget, "program");
+
+  sortZA(apps, configData.winget, "program");
+
+  noSort(apps, configData.winget, "program");
+
 }
 
 let data = loadConfig()
