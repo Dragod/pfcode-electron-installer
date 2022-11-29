@@ -44,6 +44,12 @@ function loadFromConfig(configData, load=true) {
 
   installing = configData.winget.filter((app) => app.install === true);
 
+  sortAz(apps, configData.winget, "program");
+
+  sortZA(apps, configData.winget, "program");
+
+  noSort(apps, configData.winget, "program");
+
   appList(apps, configData.winget, "program")
 
   applicationList = document.querySelectorAll(".program");
@@ -75,12 +81,6 @@ function loadFromConfig(configData, load=true) {
   checkUncheck(false, uncheckAll, checkboxes);
 
   clearConsole();
-
-  sortAz(apps, configData.winget, "program");
-
-  sortZA(apps, configData.winget, "program");
-
-  noSort(apps, configData.winget, "program");
 
 }
 

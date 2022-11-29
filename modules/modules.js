@@ -1,3 +1,10 @@
+/**
+ * If the configPath argument is null, then load the default config file, otherwise load the config
+ * file at the path specified by the configPath argument.
+ * @param [configPath=null] - The path to the config file. If null, the default config file will be
+ * used.
+ * @returns The data variable is being returned.
+ */
 function loadConfig(configPath = null) {
 
     let data = null;
@@ -9,6 +16,10 @@ function loadConfig(configPath = null) {
     return data
 }
 
+/**
+ * It displays a toast message with a red background and white text.
+ * @param message - The message to display in the toast.
+ */
 function alertError(message) {
 
     Toastify.toast({
@@ -27,6 +38,16 @@ function alertError(message) {
 
 }
 
+/**
+ * It takes two arguments, the first is the id of the div you want to output to, the second is the data
+ * you want to output.
+ *
+ * The function then checks if the data is valid, and if it is, it outputs it to the div.
+ *
+ * The function also scrolls the div to the bottom when new content is added.
+ * @param id - The id of the div you want to output to.
+ * @param data - The data to be logged to the console.
+ */
 function consoleLog(id,data) {
 
     let code = document.querySelector(id);
@@ -47,6 +68,11 @@ function consoleLog(id,data) {
 
 }
 
+/**
+ * It takes a command as a string and executes it in the command line
+ * @param cmd - The command to be executed
+ * @param [shellType=cmd.exe] - The type of shell you want to use.
+ */
 function readCli(cmd, shellType= 'cmd.exe') {
 
     Spawn.spawn(shellType, ["/c", cmd], { shell: true, stdio: "inherit" });
@@ -115,6 +141,11 @@ function readCli(cmd, shellType= 'cmd.exe') {
 
 }
 
+/**
+ * If the length of the array returned by the toInstall function is greater than 0, then enable the
+ * install, generateQr, copyCmd, and toggle buttons. Otherwise, disable them.
+ * @param checked - the checkbox that was clicked
+ */
 function chkChecked(checked) {
 
     const chk = toInstall(checked);
@@ -146,6 +177,11 @@ function chkChecked(checked) {
 
 }
 
+/**
+ * It takes a list of items and a search input, and hides the items that don't match the search input.
+ * @param appList - The list of items to filter.
+ * @param input - The input element that the user is typing into.
+ */
 function filterList(appList,input) {
 
     let inputValue = input.value.toLowerCase().trim();
@@ -162,27 +198,25 @@ function filterList(appList,input) {
 
 }
 
-function qrcode(id, cmd) {QrCode.generate(document.querySelector(id), cmd);}
+/**
+ * It generates a QR code from the command line.
+ * @param id - The id of the element you want to generate the QR code in.
+ * @param cmd - The command to be executed.
+ */
+function qrcode(id, cmd) { QrCode.generate(document.querySelector(id), cmd); }
 
+/**
+ * The appList function takes in an id, data, and className, and then sets the innerHTML of the id to
+ * an empty string, and then calls the appData function with the data, id, and className.
+ * @param id - the id of the element you want to append the data to
+ * @param data - the data you want to display
+ * @param className - the class name of the element you want to create
+ */
 function appList(id, data, className) {
 
     id.innerHTML = "";
 
-    data.forEach(app => {
-
-        id.innerHTML += `<label class="${className} inline-flex unselectable cursor-pointer px-4 py-2" for="${app.name}" title="${app.description}">
-        <input
-        id="${app.name}"
-        class="install form-check-label inline-block text-gray-800 mr-2"
-        type="checkbox"
-        ${app.install === true ? "checked" : ""}
-        name="${app.name}"
-        value="${app.id}"
-        />
-        <span class="ellipsis">${app.name}</span>
-        </label>`;
-
-    });
+    appData(data, id, className)
 
 }
 
@@ -407,6 +441,14 @@ function listenForChange(checkboxes) {
 
 }
 
+/**
+ * It checks if the checkboxes are checked or not, and if they are, it disables the check all button
+ * and enables the uncheck all button, and if they are not, it enables the check all button and
+ * disables the uncheck all button.
+ * @param check - boolean
+ * @param checkUncheck - the checkbox that will be clicked to check or uncheck all the checkboxes
+ * @param checkboxes - the checkboxes to be checked or unchecked
+ */
 function checkUncheck(check, checkUncheck, checkboxes) {
 
     if (check === true) {
@@ -414,6 +456,8 @@ function checkUncheck(check, checkUncheck, checkboxes) {
         checkUncheck.onclick = () => {
 
             checkboxes.forEach((checkbox) => {
+
+                console.log(checkbox);
 
                 checkbox.checked = true;
 
@@ -460,7 +504,12 @@ function checkUncheck(check, checkUncheck, checkboxes) {
 
 }
 
-function showHide(installing,appCount){
+/**
+ * If the length of the array is greater than 0, enable the buttons, else disable them
+ * @param installing - the array of apps that are checked
+ * @param appCount - The number of apps in the list.
+ */
+function showHide(installing,appCount) {
 
     if (installing.length > 0) {
 
@@ -504,6 +553,9 @@ function showHide(installing,appCount){
     }
 }
 
+/**
+ * It clears the console when the clear button is clicked
+ */
 function clearConsole() {
 
     clear.onclick = function () {
@@ -518,6 +570,69 @@ function clearConsole() {
 
 }
 
+/**
+ * It sorts the data based on the type of sort you want.
+ * @param data - The data you want to sort.
+ * @param type - The type of sorting you want to do.
+ * @returns The sorted data.
+ */
+function sortType(data, type) {
+
+    if (type === "Az") {
+
+        return data.sort((a, b) => (a.name > b.name) ? 1 : -1);
+
+    }
+    else if (type === "Za") {
+
+        return data.sort((a, b) => (a.name < b.name) ? 1 : -1);
+
+    }
+    else if (type === "none") {
+
+        return data.sort((a, b) => (a.appid > b.appid) ? 1 : -1);
+
+    }
+    else {
+
+        return data.sort((a, b) => (a.appid > b.appid) ? 1 : -1);
+
+    }
+
+}
+
+/**
+ * It takes an array of objects, loops through them, and creates a label for each object.
+ * @param data - The data that you want to loop through.
+ * @param id - The id of the element you want to append the data to.
+ * @param className - The class name of the label element.
+ */
+function appData(data,id,className) {
+
+    data.forEach(app => {
+
+        id.innerHTML += `<label class="${className} inline-flex unselectable cursor-pointer px-4 py-2" for="${app.name}" title="${app.description}">
+        <input
+        id="${app.name}"
+        class="install form-check-label inline-block text-gray-800 mr-2"
+        type="checkbox"
+        ${app.install === true ? "checked" : ""}
+        name="${app.name}"
+        value="${app.id}"
+        />
+        <span class="ellipsis">${app.name}</span>
+        </label>`;
+
+    });
+
+}
+
+/**
+ * This function sorts the data alphabetically and then passes it to the appData function.
+ * @param id - the id of the element you want to append the data to
+ * @param data - the array of objects
+ * @param className - the class name of the element you want to append the data to
+ */
 function sortAz(id, data, className) {
 
     document.querySelector("#sortAZ").onclick = () => {
@@ -528,28 +643,20 @@ function sortAz(id, data, className) {
 
         // sort array alphabetically of objects by property
 
-        data.sort((a, b) => (a.name > b.name) ? 1 : -1);
-
-        data.forEach(app => {
-
-            id.innerHTML += `<label class="${className} inline-flex unselectable cursor-pointer px-4 py-2" for="${app.name}" title="${app.description}">
-            <input
-            id="${app.name}"
-            class="install form-check-label inline-block text-gray-800 mr-2"
-            type="checkbox"
-            ${app.install === true ? "checked" : ""}
-            name="${app.name}"
-            value="${app.id}"
-            />
-            <span class="ellipsis">${app.name}</span>
-            </label>`;
-
-        });
+        appData(sortType(data, "Az"),id, className);
 
     };
 
 }
 
+/**
+ * When the user clicks the sortZA button, the innerHTML of the id is set to an empty string, and the
+ * appData function is called with the sortType function as an argument, which sorts the data
+ * alphabetically Z-A by property, and the id and className are also passed as arguments.
+ * @param id - the id of the div you want to append the data to
+ * @param data - the array of objects
+ * @param className - the class name of the element you want to create
+ */
 function sortZA(id, data, className) {
 
     document.querySelector("#sortZA").onclick = () => {
@@ -560,28 +667,20 @@ function sortZA(id, data, className) {
 
         // sort array alphabetically Z-A of objects by property
 
-        data.sort((a, b) => (a.name < b.name) ? 1 : -1);
-
-        data.forEach(app => {
-
-            id.innerHTML += `<label class="${className} inline-flex unselectable cursor-pointer px-4 py-2" for="${app.name}" title="${app.description}">
-            <input
-            id="${app.name}"
-            class="install form-check-label inline-block text-gray-800 mr-2"
-            type="checkbox"
-            ${app.install === true ? "checked" : ""}
-            name="${app.name}"
-            value="${app.id}"
-            />
-            <span class="ellipsis">${app.name}</span>
-            </label>`;
-
-        });
+        appData(sortType(data, "Za"),id, className);
 
     };
 
 }
 
+/**
+ * The noSort function is a function that takes in three parameters, id, data, and className, and when
+ * the noSort button is clicked, it removes the array sort and calls the appData function with the
+ * sortType function and the three parameters.
+ * @param id - the id of the element you want to append the data to
+ * @param data - the array of objects
+ * @param className - the class name of the element you want to add the data to
+ */
 function noSort(id, data, className) {
 
     document.querySelector("#noSort").onclick = () => {
@@ -592,53 +691,8 @@ function noSort(id, data, className) {
 
         // remove array sort
 
-        data.sort((a, b) => (a.appid > b.appid) ? 1 : -1);
-
-        console.log(data);
-
-        data.forEach(app => {
-
-            id.innerHTML += `<label class="${className} inline-flex unselectable cursor-pointer px-4 py-2" for="${app.name}" title="${app.description}">
-            <input
-            id="${app.name}"
-            class="install form-check-label inline-block text-gray-800 mr-2"
-            type="checkbox"
-            ${app.install === true ? "checked" : ""}
-            name="${app.name}"
-            value="${app.id}"
-            />
-            <span class="ellipsis">${app.name}</span>
-            </label>`;
-
-        });
+        appData(sortType(data, "none"),id, className);
 
     };
+
 }
-
-// function sortAZ(id) {
-
-//     id.onclick = function () {
-
-//         console.log("sortAZ");
-
-//         const list = document.querySelector("#apps");
-
-//         const listItems = list.querySelector(".program");
-
-//         const listArray = Array.prototype.slice.call(listItems);
-
-//         listArray.sort(function (a, b) {
-
-//             return a.innerHTML.localeCompare(b.innerHTML);
-
-//         });
-
-//         listArray.forEach(function (item) {
-
-//             list.appendChild(item);
-
-//         });
-
-//     };
-
-// }
