@@ -32,25 +32,37 @@ const wingetApi = document.querySelector("#wingetApi");
 
 const github = document.querySelector("#github");
 
-let installing, appCount, applicationList, checkboxes, matches, jsonPath;
+let installing,
+    appCount,
+    applicationList,
+    checkboxes,
+    matches,
+    jsonPath,
+    data;
 
-function loadFromConfig(configData, load=true) {
+function loadFromConfig(configData, load = true) {
 
-  (load === true) ? preset.innerHTML = configData.preset : preset.innerHTML = "Default";
+  if (configData === false) {
 
-  apps.innerHTML = "";
+    console.log("configData is false");
 
-  appCount = configData.winget.length;
+    return;
 
-  installing = configData.winget.filter((app) => app.install === true);
+  }
 
-  sortAz(apps, configData.winget, "program");
+  // Do not override preset if it's empty
 
-  sortZA(apps, configData.winget, "program");
+  (configData.preset !== undefined) ?  (load === true) ? preset.innerHTML = configData.preset : preset.innerHTML = "Default" : null;
 
-  noSort(apps, configData.winget, "program");
+  // Handle data coming from sorting functions
 
-  appList(apps, configData.winget, "program")
+  data = (configData.winget) ? configData.winget : configData
+
+  appCount = data.length;
+
+  installing = data.filter((app) => app.install === true);
+
+  appList(apps, data, "program")
 
   applicationList = document.querySelectorAll(".program");
 
@@ -84,17 +96,26 @@ function loadFromConfig(configData, load=true) {
 
 }
 
-let data = loadConfig()
+loadFromConfig(loadConfig(), false);
 
-loadFromConfig(data, false);
+sortAZ(apps, data, "program", false);
+
+sortZA(apps, data, "program", false);
+
+noSort(apps, data, "program", false);
+
 
 // Display apps from config file
 
 loadConfigBtn.addEventListener("click", async () => {
 
-  const configData = await window.config.json();
+  loadFromConfig(await window.config.json(), true);
 
-  loadFromConfig(configData, true);
+  sortAZ(apps, data, "program", true);
+
+  sortZA(apps, data, "program", true);
+
+  noSort(apps, data, "program", true);
 
 });
 
@@ -187,3 +208,18 @@ toggle.addEventListener('click', function(e) {
   }
 
 });
+
+// document.querySelector("#sortAZ").onclick = async () => {
+
+//   console.log("sortAZ");
+
+//   apps.innerHTML = "";
+
+//   loadFromConfig(await appData(sortType(data, "Az"),apps, ".program"), load=true)
+
+
+// };
+
+
+
+

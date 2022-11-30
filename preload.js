@@ -135,13 +135,37 @@ contextBridge.exposeInMainWorld("config", {
 
 	json: async () => ipcRenderer.invoke("dialog:openFile").then(result => {
 
-		if(result.winget === undefined) { ipcRenderer.send("config-winget", "Invalid file");}
+		if (result.winget === undefined) {
 
-		else if(result.winget.length === 0) { ipcRenderer.send("config-winget-empty", "Invalid file"); }
+			ipcRenderer.send("config-winget", "Invalid file");
 
-		else if(result.preset === "") { ipcRenderer.send("config-preset-empty", "Invalid file"); }
+			return false;
 
-		else if(result.preset === undefined) { ipcRenderer.send("config-preset-undefined", "Invalid file"); }
+		}
+
+		else if (result.winget.length === 0) {
+
+			ipcRenderer.send("config-winget-empty", "Invalid file");
+
+			return false;
+
+		}
+
+		else if (result.preset === "") {
+
+			ipcRenderer.send("config-preset-empty", "Invalid file");
+
+			return false;
+
+		}
+
+		else if (result.preset === undefined) {
+
+			ipcRenderer.send("config-preset-undefined", "Invalid file");
+
+			return false;
+
+		}
 
 		else {
 
@@ -149,6 +173,12 @@ contextBridge.exposeInMainWorld("config", {
 
 		}
 
+
+	}).catch(err => {
+
+		console.log(`You clicked cancel, will not load config file.`);
+
+		return false;
 
 	})
 

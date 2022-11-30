@@ -607,7 +607,7 @@ function sortType(data, type) {
  * @param id - The id of the element you want to append the data to.
  * @param className - The class name of the label element.
  */
-function appData(data,id,className) {
+async function appData(data, id, className) {
 
     data.forEach(app => {
 
@@ -625,6 +625,8 @@ function appData(data,id,className) {
 
     });
 
+    return await data;
+
 }
 
 /**
@@ -633,21 +635,17 @@ function appData(data,id,className) {
  * @param data - the array of objects
  * @param className - the class name of the element you want to append the data to
  */
-function sortAz(id, data, className) {
+function sortAZ(id, data, className, load) {
 
-    document.querySelector("#sortAZ").onclick = () => {
+    document.querySelector("#sortAZ").onclick = async () => {
 
         console.log("sortAZ");
 
-        id.innerHTML = "";
-
-        // sort array alphabetically of objects by property
-
-        appData(sortType(data, "Az"),id, className);
+        loadFromConfig(await appData(sortType(data, "Az"),id, className), load)
 
     };
 
-}
+};
 
 /**
  * When the user clicks the sortZA button, the innerHTML of the id is set to an empty string, and the
@@ -657,41 +655,44 @@ function sortAz(id, data, className) {
  * @param data - the array of objects
  * @param className - the class name of the element you want to create
  */
-function sortZA(id, data, className) {
+function sortZA(id, data, className, load) {
 
-    document.querySelector("#sortZA").onclick = () => {
+    document.querySelector("#sortZA").onclick = async () => {
 
         console.log("sortZA");
 
-        id.innerHTML = "";
-
         // sort array alphabetically Z-A of objects by property
 
-        appData(sortType(data, "Za"),id, className);
+        loadFromConfig(await appData(sortType(data, "Za"),id, className), load)
+
+        //appData(sortType(data, "Za"),id, className);
 
     };
 
 }
 
-/**
- * The noSort function is a function that takes in three parameters, id, data, and className, and when
- * the noSort button is clicked, it removes the array sort and calls the appData function with the
- * sortType function and the three parameters.
- * @param id - the id of the element you want to append the data to
- * @param data - the array of objects
- * @param className - the class name of the element you want to add the data to
- */
-function noSort(id, data, className) {
 
-    document.querySelector("#noSort").onclick = () => {
+/**
+ * "When the user clicks the button, the function will sort the data by the sortType function, and then
+ * load the data into the DOM."
+ *
+ * The function is called in the following way:
+ * @param id - the id of the div you want to load the data into
+ * @param data - the data to be sorted
+ * @param className - the class name of the element you want to sort
+ * @param [load=true] - true/false
+ */
+function noSort(id, data, className, load = true) {
+
+    document.querySelector("#noSort").onclick = async () => {
 
         console.log("no sort");
 
-        id.innerHTML = "";
-
         // remove array sort
 
-        appData(sortType(data, "none"),id, className);
+        loadFromConfig(await appData(sortType(data, "none"),id, className), load)
+
+        //appData(sortType(data, "none"),id, className);
 
     };
 

@@ -7,36 +7,43 @@
     "winget": [
 
                 {
+                    "appid": 1,
                     "name": "Visual Studio Code",
                     "id": "Microsoft.VisualStudioCode",
                     "install": true
                 },
                 {
+                    "appid": 2,
                     "name": "Sublime 4",
                     "id": "SublimeHQ.SublimeText.4",
                     "install": true
                 },
                 {
+                    "appid": 3,
                     "name": "Sublime 3",
                     "id": "SublimeHQ.SublimeText.3",
                     "install": true
                 },
                 {
+                    "appid": 4,
                     "name": "Notepad++",
                     "id": "Notepad++.Notepad++",
                     "install": true
                 },
                 {
+                    "appid": 5,
                     "name": "Brackets",
                     "id": "Adobe.Brackets",
                     "install": true
                 },
                 {
+                    "appid": 6,
                     "name": "Visual Studio Community 2022",
                     "id": "Microsoft.VisualStudio.2022.Community",
                     "install": true
                 },
                 {
+                    "appid": 7,
                     "name": "WebStorm",
                     "id": "JetBrains.WebStorm",
                     "install": true
