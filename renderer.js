@@ -208,18 +208,3 @@ toggle.addEventListener('click', function(e) {
   }
 
 });
-
-// document.querySelector("#sortAZ").onclick = async () => {
-
-//   console.log("sortAZ");
-
-//   apps.innerHTML = "";
-
-//   loadFromConfig(await appData(sortType(data, "Az"),apps, ".program"), load=true)
-
-
-// };
-
-
-
-
