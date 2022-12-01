@@ -1569,6 +1569,14 @@
                 },
                 {
                     "appid": 196,
+                    "name": "Dbeaver",
+                    "id": "dbeaver.dbeaver",
+                    "install": false,
+                    "category": "db",
+                    "description": "Free multi-platform database tool for developers, database administrators, analysts and all people who need to work with databases. Supports all popular databases (MySQL, PostgreSQL, SQLite, Oracle, DB2, SQL Server, Sybase, MS Access, Teradata, Firebird, Apache Hive, Phoenix, Presto, etc)."
+                },
+                {
+                    "appid": 197,
                     "name": "Kubectl",
                     "id": "Kubernetes.kubectl",
                     "install": false,
@@ -1576,7 +1584,7 @@
                     "description": "Kubectl is a command-line tool for controlling Kubernetes clusters."
                 },
                 {
-                    "appid": 197,
+                    "appid": 198,
                     "name": "Azure Data CLI",
                     "id": "Microsoft.AzureDataCLI",
                     "install": false,
@@ -1584,7 +1592,7 @@
                     "description": "Azure Data CLI is a command-line tool for controlling Azure Data."
                 },
                 {
-                    "appid": 198,
+                    "appid": 199,
                     "name": "AWS Command Line Interface",
                     "id": "Amazon.AWSCLI",
                     "install": false,
@@ -1592,7 +1600,7 @@
                     "description": "AWS Command Line Interface is a command-line tool for controlling AWS."
                 },
                 {
-                    "appid": 199,
+                    "appid": 200,
                     "name": "GitHub CLI",
                     "id": "GitHub.cli",
                     "install": false,
@@ -1600,7 +1608,7 @@
                     "description": "GitHub CLI is a command-line tool for controlling GitHub."
                 },
                 {
-                    "appid": 200,
+                    "appid": 201,
                     "name": "MongoDB CLI",
                     "id": "MongoDB.MongoDBCLI",
                     "install": false,
@@ -1608,7 +1616,7 @@
                     "description": "MongoDB CLI is a command-line tool for controlling MongoDB."
                 },
                 {
-                    "appid": 201,
+                    "appid": 202,
                     "name": "Pandoc",
                     "id": "JohnMacFarlane.Pandoc",
                     "install": false,
@@ -1616,7 +1624,7 @@
                     "description": "Pandoc is a universal command-line tool document converter."
                 },
                 {
-                    "appid": 202,
+                    "appid": 203,
                     "name": "Microsoft PowerApps CLI",
                     "id": "Microsoft.PowerAppsCLI",
                     "install": false,
@@ -1624,7 +1632,7 @@
                     "description": "Microsoft PowerApps CLI is a command-line tool for controlling Microsoft PowerApps."
                 },
                 {
-                    "appid": 203,
+                    "appid": 204,
                     "name": "PowerShell Universal Desktop",
                     "id": "IronmanSoftware.PowerShellUniversal.Desktop",
                     "install": false,
@@ -1632,7 +1640,7 @@
                     "description": "PowerShell Universal is a PowerShell based automation platform that allows you to run PowerShell scripts, modules, and functions in a web browser."
                 },
                 {
-                    "appid": 204,
+                    "appid": 205,
                     "name": "AutoHotkey",
                     "id": "Lexikos.AutoHotkey",
                     "install": false,
@@ -1640,7 +1648,7 @@
                     "description": "AutoHotkey is a free, open-source custom scripting language for Microsoft Windows, initially aimed at providing easy keyboard shortcuts or hotkeys, fast macro-creation and software automation that allows users of most levels of computer skill to automate repetitive tasks in any Windows application."
                 },
                 {
-                    "appid": 205,
+                    "appid": 206,
                     "name": "Power Automate Desktop",
                     "id": "Microsoft.PowerAutomateDesktop",
                     "install": false,
@@ -1648,7 +1656,7 @@
                     "description": "Power Automate Desktop is a free, open-source custom scripting language for Microsoft Windows, initially aimed at providing easy keyboard shortcuts or hotkeys, fast macro-creation and software automation that allows users of most levels of computer skill to automate repetitive tasks in any Windows application."
                 },
                 {
-                    "appid": 206,
+                    "appid": 207,
                     "name": "OBS Studio",
                     "id": "OBSProject.OBSStudio",
                     "install": false,
@@ -1656,7 +1664,7 @@
                     "description": "OBS Studio is a free and open source software for video recording and live streaming."
                 },
                 {
-                    "appid": 207,
+                    "appid": 208,
                     "name": "Streamlabs Desktop",
                     "id": "Streamlabs.Streamlabs",
                     "install": false,
@@ -1664,7 +1672,7 @@
                     "description": "Streamlabs Desktop is a free and open source software for video recording and live streaming."
                 },
                 {
-                    "appid": 208,
+                    "appid": 209,
                     "name": "StreamlabsOBS",
                     "id": "Streamlabs.StreamlabsOBS",
                     "install": false,
@@ -1672,7 +1680,7 @@
                     "description": "StreamlabsOBS is a free and open source software for video recording and live streaming."
                 },
                 {
-                    "appid": 209,
+                    "appid": 210,
                     "name": "Binance",
                     "id": "BinanceTech.Binance",
                     "install": false,
@@ -1680,7 +1688,7 @@
                     "description": "Binance is a cryptocurrency exchange."
                 },
                 {
-                    "appid": 210,
+                    "appid": 211,
                     "name": "Nextcloud",
                     "id": "Nextcloud.NextcloudDesktop",
                     "install": false,
@@ -1688,7 +1696,7 @@
                     "description": "Nextcloud is a suite of client-server software for creating and using file hosting services."
                 },
                 {
-                    "appid": 211,
+                    "appid": 212,
                     "name": "OwnCloud",
                     "id": "ownCloud.ownCloudDesktop",
                     "install": false,
@@ -1696,7 +1704,7 @@
                     "description": "OwnCloud is a suite of client-server software for creating and using file hosting services."
                 },
                 {
-                    "appid": 212,
+                    "appid": 213,
                     "name": "Google Drive",
                     "id": "Google.Drive",
                     "install": false,
@@ -1704,7 +1712,7 @@
                     "description": "Google Drive is a file storage and synchronization service developed by Google."
                 },
                 {
-                    "appid": 213,
+                    "appid": 214,
                     "name": "Microsoft OneDrive",
                     "id": "Microsoft.OneDrive",
                     "install": false,
@@ -1712,7 +1720,7 @@
                     "description": "Microsoft OneDrive is a file storage and synchronization service developed by Microsoft."
                 },
                 {
-                    "appid": 214,
+                    "appid": 215,
                     "name": "Dropbox",
                     "id": "Dropbox.Dropbox",
                     "install": false,
@@ -1720,7 +1728,7 @@
                     "description": "Dropbox is a file hosting service operated by American company Dropbox, Inc., headquartered in San Francisco, California."
                 },
                 {
-                    "appid": 215,
+                    "appid": 216,
                     "name": "Box",
                     "id": "Box.Box",
                     "install": false,
