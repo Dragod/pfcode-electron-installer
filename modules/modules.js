@@ -618,7 +618,7 @@ async function appData(data, id, className) {
         name="${app.name}"
         value="${app.id}"
         />
-        <span class="ellipsis">${app.name}</span>
+        <span class="ellipsis app-max-width">${app.name}</span>
         </label>`;
 
     });

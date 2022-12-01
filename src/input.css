@@ -236,11 +236,21 @@ input[type="checkbox"] {
 }
 
 .ellipsis {
-    width: 345px;
     display: inline-block;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.app-max-with {
+
+    width: 345px;
+}
+
+.max-preset-width {
+
+    max-width: 170px;
+
 }
 
 .right-col {
