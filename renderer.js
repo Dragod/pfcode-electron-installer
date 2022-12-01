@@ -50,6 +50,8 @@ let installing,
     jsonPath,
     data;
 
+sortId.classList.add("active");
+
 async function loadFromConfig(configData, load = true) {
 
   if (configData === false) {
@@ -125,7 +127,7 @@ loadConfigBtn.addEventListener("click", async () => {
 
   sortZA(sortZa,apps, data, "program", true);
 
-  noSort(sortId, data, "program", true);
+  noSort(sortId,apps, data, "program", true);
 
 });
 

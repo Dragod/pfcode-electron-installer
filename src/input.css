@@ -260,3 +260,27 @@ input::placeholder {
 
 }
 
+.active.active.active.active {
+
+    --tw-bg-opacity: 1;
+    background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+
+}
+
+.toast {
+
+    position: absolute;
+    padding: .5rem;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to right, #00b09b, #96c93d);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 20rem;
+    max-width: 20rem;
+    transition: ease-in-out 0.2s;
+}
+

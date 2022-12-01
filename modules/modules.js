@@ -20,20 +20,16 @@ function loadConfig(configPath = null) {
  * It displays a toast message with a red background and white text.
  * @param message - The message to display in the toast.
  */
-function alertError(message) {
+function toast(message) {
 
     Toastify.toast({
 
         text: message,
         duration: 5000,
         close: false,
-        style: {
-
-            background: 'red',
-            color: 'white',
-            textAlign: 'center',
-        },
-
+        gravity: "bottom",
+        position: "center",
+        className: "toast"
     });
 
 }
@@ -355,6 +351,8 @@ function copyCommand(checked, shellType) {
             }
         );
 
+        toast(`Command copied to clipboard: ${cmd}`);
+
     };
 
 }
@@ -641,16 +639,14 @@ function sortAZ(buttonId, id, data, className, load) {
 
         console.log("sortAZ");
 
-        buttonId.disabled = true;
+        sortZa.classList.remove("active");
+        sortId.classList.remove("active");
+        buttonId.classList.add("active");
 
         loadFromConfig(await appData(sortType(data, "Az"),id, className), load).then(() => {
 
             console.log("sortAZ done");
 
-            buttonId.classList.add("bg-blue-800");
-            buttonId.disabled = false;
-            sortZa.classList.remove("bg-blue-800");
-            sortId.classList.remove("bg-blue-800");
 
         }).catch((err) => {
 
@@ -676,18 +672,15 @@ function sortZA(buttonId, id, data, className, load) {
 
         console.log("sortZA");
 
-        buttonId.disabled = true;
+        sortZa.classList.add("active");
+        sortAz.classList.remove("active");
+        sortId.classList.remove("active");
 
         // sort array alphabetically Z-A of objects by property
 
         loadFromConfig(await appData(sortType(data, "Za"),id, className), load).then(() => {
 
             console.log("sortZA done");
-
-            sortZa.classList.add("bg-blue-800");
-            buttonId.disabled = false;
-            sortAz.classList.remove("bg-blue-800");
-            sortId.classList.remove("bg-blue-800");
 
         }).catch((err) => {
 
@@ -716,16 +709,13 @@ function noSort(buttonId, id, data, className, load = true) {
 
         console.log("no sort");
 
-        buttonId.disabled = true;
+        sortId.classList.add("active");
+        sortAz.classList.remove("active");
+        sortZa.classList.remove("active");
 
         loadFromConfig(await appData(sortType(data, "none"),id, className), load).then(() => {
 
             console.log("no sort done");
-
-            sortId.classList.add("bg-blue-800");
-            buttonId.disabled = false;
-            sortAz.classList.remove("bg-blue-800");
-            sortZa.classList.remove("bg-blue-800");
 
         }).catch((err) => {
 
