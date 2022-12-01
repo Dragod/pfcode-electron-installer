@@ -351,7 +351,7 @@ function copyCommand(checked, shellType) {
             }
         );
 
-        toast(`Command copied to clipboard: ${cmd}`);
+        toast(`Winget command copied to clipboard.`);
 
     };
 
