@@ -32,6 +32,16 @@ const wingetApi = document.querySelector("#wingetApi");
 
 const github = document.querySelector("#github");
 
+const sortAz = document.querySelector("#sortAZ");
+
+const sortZa = document.querySelector("#sortZA");
+
+const sortId = document.querySelector("#noSort");
+
+// Default sort button active class
+
+sortId.classList.add("bg-blue-800");
+
 let installing,
     appCount,
     applicationList,
@@ -40,7 +50,7 @@ let installing,
     jsonPath,
     data;
 
-function loadFromConfig(configData, load = true) {
+async function loadFromConfig(configData, load = true) {
 
   if (configData === false) {
 
@@ -98,11 +108,11 @@ function loadFromConfig(configData, load = true) {
 
 loadFromConfig(loadConfig(), false);
 
-sortAZ(apps, data, "program", false);
+sortAZ(sortAz,apps, data, "program", false);
 
-sortZA(apps, data, "program", false);
+sortZA(sortZa,apps, data, "program", false);
 
-noSort(apps, data, "program", false);
+noSort(sortId,apps, data, "program", false);
 
 
 // Display apps from config file
@@ -111,11 +121,11 @@ loadConfigBtn.addEventListener("click", async () => {
 
   loadFromConfig(await window.config.json(), true);
 
-  sortAZ(apps, data, "program", true);
+  sortAZ(sortAz,apps, data, "program", true);
 
-  sortZA(apps, data, "program", true);
+  sortZA(sortZa,apps, data, "program", true);
 
-  noSort(apps, data, "program", true);
+  noSort(sortId, data, "program", true);
 
 });
 

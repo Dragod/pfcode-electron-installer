@@ -635,13 +635,28 @@ async function appData(data, id, className) {
  * @param data - the array of objects
  * @param className - the class name of the element you want to append the data to
  */
-function sortAZ(id, data, className, load) {
+function sortAZ(buttonId, id, data, className, load) {
 
-    document.querySelector("#sortAZ").onclick = async () => {
+    buttonId.onclick = async () => {
 
         console.log("sortAZ");
 
-        loadFromConfig(await appData(sortType(data, "Az"),id, className), load)
+        buttonId.disabled = true;
+
+        loadFromConfig(await appData(sortType(data, "Az"),id, className), load).then(() => {
+
+            console.log("sortAZ done");
+
+            buttonId.classList.add("bg-blue-800");
+            buttonId.disabled = false;
+            sortZa.classList.remove("bg-blue-800");
+            sortId.classList.remove("bg-blue-800");
+
+        }).catch((err) => {
+
+            console.log(`Error is sortAz: ${err}`);
+
+        });
 
     };
 
@@ -655,22 +670,35 @@ function sortAZ(id, data, className, load) {
  * @param data - the array of objects
  * @param className - the class name of the element you want to create
  */
-function sortZA(id, data, className, load) {
+function sortZA(buttonId, id, data, className, load) {
 
-    document.querySelector("#sortZA").onclick = async () => {
+    buttonId.onclick = async () => {
 
         console.log("sortZA");
 
+        buttonId.disabled = true;
+
         // sort array alphabetically Z-A of objects by property
 
-        loadFromConfig(await appData(sortType(data, "Za"),id, className), load)
+        loadFromConfig(await appData(sortType(data, "Za"),id, className), load).then(() => {
 
-        //appData(sortType(data, "Za"),id, className);
+            console.log("sortZA done");
+
+            sortZa.classList.add("bg-blue-800");
+            buttonId.disabled = false;
+            sortAz.classList.remove("bg-blue-800");
+            sortId.classList.remove("bg-blue-800");
+
+        }).catch((err) => {
+
+            console.log(`Error is sortZA: ${err}`);
+
+        });
+
 
     };
 
 }
-
 
 /**
  * "When the user clicks the button, the function will sort the data by the sortType function, and then
@@ -682,17 +710,28 @@ function sortZA(id, data, className, load) {
  * @param className - the class name of the element you want to sort
  * @param [load=true] - true/false
  */
-function noSort(id, data, className, load = true) {
+function noSort(buttonId, id, data, className, load = true) {
 
-    document.querySelector("#noSort").onclick = async () => {
+    buttonId.onclick = async () => {
 
         console.log("no sort");
 
-        // remove array sort
+        buttonId.disabled = true;
 
-        loadFromConfig(await appData(sortType(data, "none"),id, className), load)
+        loadFromConfig(await appData(sortType(data, "none"),id, className), load).then(() => {
 
-        //appData(sortType(data, "none"),id, className);
+            console.log("no sort done");
+
+            sortId.classList.add("bg-blue-800");
+            buttonId.disabled = false;
+            sortAz.classList.remove("bg-blue-800");
+            sortZa.classList.remove("bg-blue-800");
+
+        }).catch((err) => {
+
+            console.log(`Error is noSort: ${err}`);
+
+        });
 
     };
 
