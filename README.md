@@ -22,7 +22,7 @@ The app is only meant to work on Windows 11 by default and Windows 10 (require t
 
 # Installing packages
 
-![alt text](./assets/app-2.png)
+![alt text](./assets/app-6.png)
 
 # Filtering apps
 
