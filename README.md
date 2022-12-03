@@ -6,16 +6,16 @@ The app is only meant to work on Windows 11 by default and Windows 10 (require t
 
 ### App functionality
 
-- Select from a wide range of apps 200+
-- Console Output
-- Clear console output
+- Select from a wide range of apps 220+
 - Load custom app config (json)
+- 7 preset ready to use
+- Sort app by AZ,ZA,ID
+- Console Output
 - Generate QR code (maximum selected apps, 25)
-- Generate install command to clipoard to use on cmd.exe
+- Generate install command to clipoard to use on powershell
 - Filter apps by name
+- Check, uncheck all apps in a click
 - Show only checked apps
-- Check all apps with one click
-- Uncheck all apps with one click
 - Keyboard shortcuts
 
 ![alt text](./assets/app-1.png)
