@@ -12,7 +12,7 @@ The app is only meant to work on Windows 11 by default and Windows 10 (require t
 - Sort app by AZ, ZA, ID
 - Console Output
 - Generate QR code (maximum selected apps, 25)
-- Generate install command to clipoard to use on powershell
+- Generate install command to clipoard to use on cmd.exe
 - Filter apps by name
 - Check, uncheck all apps in a click
 - Show only checked apps
