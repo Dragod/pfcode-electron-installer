@@ -18,7 +18,7 @@ The app is only meant to work on Windows 11 by default and Windows 10 (require t
 - Show only checked apps
 - Keyboard shortcuts
 
-![alt text](./assets/app-1.png)
+![alt text](./assets/app-5.png)
 
 # Installing packages
 
