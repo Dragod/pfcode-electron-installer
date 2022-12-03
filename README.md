@@ -9,7 +9,7 @@ The app is only meant to work on Windows 11 by default and Windows 10 (require t
 - Select from a wide range of apps 220+
 - Load custom app config (json)
 - 7 preset ready to use
-- Sort app by AZ,ZA,ID
+- Sort app by AZ, ZA, ID
 - Console Output
 - Generate QR code (maximum selected apps, 25)
 - Generate install command to clipoard to use on powershell
