@@ -123,7 +123,7 @@
                     "name": "CLion",
                     "id": "JetBrains.CLion",
                     "install": false,
-                    "category": "editor",
+                    "category": "ide",
                     "description": "CLion is a cross-platform IDE for C and C++ development. It provides a complete set of tools for C and C++ development. CLion looks beyond just syntax highlighting and autocomplete to provide smart coding assistance for C and C++."
                 },
                 {
@@ -131,7 +131,7 @@
                     "name": "IntelliJ IDEA Community Edition",
                     "id": "JetBrains.IntelliJIDEA.Community",
                     "install": false,
-                    "category": "editor",
+                    "category": "ide",
                     "description": "IntelliJ IDEA Community Edition is a free and open-source IDE for Java, Scala, Groovy, and other JVM-based programming languages. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for Java, Scala, Groovy, and other JVM-based languages."
                 },
                 {
@@ -139,7 +139,7 @@
                     "name": "IntelliJ IDEA Ultimate Edition",
                     "id": "JetBrains.IntelliJIDEA.Ultimate",
                     "install": false,
-                    "category": "editor",
+                    "category": "ide",
                     "description": "IntelliJ IDEA Ultimate Edition is a paid and commercial IDE for Java, Scala, Groovy, and other JVM-based programming languages. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for Java, Scala, Groovy, and other JVM-based languages."
                 },
                 {
@@ -147,7 +147,7 @@
                     "name": "PhpStorm",
                     "id": "JetBrains.PHPStorm",
                     "install": false,
-                    "category": "editor",
+                    "category": "ide",
                     "description": "PhpStorm is a cross-platform IDE for PHP, HTML, CSS, and JavaScript development. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for PHP, HTML, CSS, and JavaScript."
                 },
                 {
@@ -155,7 +155,7 @@
                     "name": "PyCharm Professional Edition",
                     "id": "JetBrains.PyCharm.Professional",
                     "install": false,
-                    "category": "editor",
+                    "category": "ide",
                     "description": "PyCharm Professional Edition is a paid and commercial IDE for Python, JavaScript, HTML, CSS, and other web development languages. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for Python, JavaScript, HTML, CSS, and other web development languages."
                 },
                 {
@@ -163,7 +163,7 @@
                     "name": "GoLand",
                     "id": "JetBrains.GoLand",
                     "install": false,
-                    "category": "editor",
+                    "category": "ide",
                     "description": "GoLand is a cross-platform IDE for Go development. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for Go."
                 },
                 {
@@ -171,7 +171,7 @@
                     "name": "RubyMine",
                     "id": "JetBrains.RubyMine",
                     "install": false,
-                    "category": "editor",
+                    "category": "ide",
                     "description": "RubyMine is a cross-platform IDE for Ruby and Rails development. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for Ruby and Rails."
                 },
                 {
@@ -179,7 +179,7 @@
                     "name": "JetBrains Rider",
                     "id": "JetBrains.Rider",
                     "install": false,
-                    "category": "editor",
+                    "category": "ide",
                     "description": "JetBrains Rider is a cross-platform IDE for .NET development. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for .NET."
                 },
                 {
@@ -1734,8 +1734,64 @@
                     "install": false,
                     "category": "cloud",
                     "description": "Box is a cloud content management and file sharing service for businesses."
-                }
+                },
+                {
+                    "appid": 217,
+                    "name": "Runjs",
+                    "id": "lukehaas.RunJS",
+                    "install": false,
+                    "category": "development",
+                    "description": "RunJS is an JavaScript playground that auto-evaluates your code as you type and outputs the results to a console pane."
+                },
+                {
+                    "appid": 218,
+                    "name": "Cacher",
+                    "id": "PenguinLabs.Cacher",
+                    "install": false,
+                    "category": "development",
+                    "description": "Cacher is the code snippet organizer that empowers professional developers and their teams to get more coding done, faster."
+                },
+                {
+                    "appid": 219,
+                    "name": "CutePDF Writer",
+                    "id": "AcroSoftware.CutePDFWriter",
+                    "install": false,
+                    "category": "tools",
+                    "description": "CutePDF Writer, Create PDFs from almost any application."
+                },
+                {
+                    "appid": 220,
+                    "name": "Adobe Acrobat Reader DC (64-bit)",
+                    "id": "Adobe.Acrobat.Reader.64-bit",
+                    "install": false,
+                    "category": "tools",
+                    "description": "Adobe Acrobat Reader DC software is the free, trusted global standard for viewing, printing, signing, sharing, and annotating PDFs. It's the only PDF viewer that can open and interact with all types of PDF content, including forms and multimedia."
+                },
+                {
+                    "appid": 221,
+                    "name": "Qalculate!",
+                    "id": "Qalculate.Qalculate",
+                    "install": false,
+                    "category": "tools",
+                    "description": "A highly versatile desktop calculator, with support for units, physical constants, uncertainty propagation, symbolic calculations, etc."
+                },
+                {
+                    "appid": 222,
+                    "name": "Evernote",
+                    "id": "evernote.evernote",
+                    "install": false,
+                    "category": "notes",
+                    "description": "Evernote helps you focus on what matters most and have access to your information when you need it. Input typed notes or scan handwritten notes. Add to-dos, photos, images, web pages, or audio."
+                },
+                {
+                    "appid": 223,
+                    "name": "Keeper® Password Manager",
+                    "id": "Keeper.KeeperDesktop",
+                    "install": false,
+                    "category": "security",
+                    "description": "Keeper is the top-rated password manager for protecting you, your family and your business from password-related data breaches and cyberthreats."
 
+                }
 
             ]
         }

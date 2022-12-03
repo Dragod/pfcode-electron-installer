@@ -1,0 +1,98 @@
+{
+    "preset": "Browsers",
+    "last-updated": "14/08/2022",
+    "wingetInstall": "winget install -e -h --id=",
+    "wingetQuerySearch": "winget search -q",
+    "wingetApi": "https://winget.run",
+    "winget": [
+                {
+                    "appid": 1,
+                    "name": "Google Chrome",
+                    "id": "Google.Chrome",
+                    "install": false,
+                    "category": "browser",
+                    "description": "Google Chrome is a cross-platform web browser developed by Google. It was first released in 2008 for Microsoft Windows, and was later ported to Linux, macOS, iOS and Android."
+                },
+                {
+                    "appid": 2,
+                    "name": "Mozilla Firefox",
+                    "id": "Mozilla.Firefox",
+                    "install": false,
+                    "category": "browser",
+                    "description": "Mozilla Firefox is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation."
+                },
+                {
+                    "appid": 3,
+                    "name": "LibreWolf",
+                    "id": "LibreWolf.LibreWolf",
+                    "install": false,
+                    "category": "browser",
+                    "description": "LibreWolf is a privacy-oriented web browser based on Firefox. It is designed to be fast, lightweight, and secure."
+                },
+                {
+                    "appid": 4,
+                    "name": "Firefox Developer Edition",
+                    "id": "Mozilla.Firefox.DeveloperEdition",
+                    "install": false,
+                    "category": "browser",
+                    "description": "Firefox Developer Edition is a version of Firefox for developers. It includes the latest developer tools and experimental features, which are updated every six weeks."
+                },
+                {
+                    "appid": 5,
+                    "name": "Waterfox",
+                    "id": "Waterfox.Waterfox",
+                    "install": false,
+                    "category": "browser",
+                    "description": "Waterfox is a 64-bit version of the Firefox web browser, optimized for 64-bit Intel processors."
+                },
+                {
+                    "appid": 6,
+                    "name": "Brave",
+                    "id": "BraveSoftware.BraveBrowser",
+                    "install": false,
+                    "category": "browser",
+                    "description": "Brave is a free and open-source web browser developed by Brave Software, Inc. based on the Chromium web browser and its Blink rendering engine."
+                },
+                {
+                    "appid": 7,
+                    "name": "Brave Dev",
+                    "id": "BraveSoftware.BraveBrowser.Dev",
+                    "install": false,
+                    "category": "browser",
+                    "description": "Brave Dev is a free and open-source web browser developed by Brave Software, Inc. based on the Chromium web browser and its Blink rendering engine."
+                },
+                {
+                    "appid": 8,
+                    "name": "Edge",
+                    "id": "Microsoft.Edge",
+                    "install": false,
+                    "category": "browser",
+                    "description": "Microsoft Edge is a web browser developed by Microsoft. It was first released for Windows 10 and Xbox One in July 2015, and for Android and iOS in August 2017."
+                },
+                {
+                    "appid": 9,
+                    "name": "Tor Browser",
+                    "id": "TorProject.TorBrowser",
+                    "install": false,
+                    "category": "browser",
+                    "description": "Tor Browser is a web browser based on Mozilla Firefox ESR, configured to protect your anonymity when using the Internet."
+                },
+                {
+                    "appid": 10,
+                    "name": "Vivaldi",
+                    "id": "VivaldiTechnologies.Vivaldi",
+                    "install": false,
+                    "category": "browser",
+                    "description": "Vivaldi is a web browser developed by Vivaldi Technologies. It is based on Chromium and uses the Blink rendering engine."
+                },
+                {
+                    "appid": 11,
+                    "name": "Opera Stable",
+                    "id": "Opera.Opera",
+                    "install": false,
+                    "category": "browser",
+                    "description": "Opera is a web browser developed by Opera Software. It uses the Blink rendering engine and the WebKit layout engine."
+                }
+
+            ]
+        }

@@ -1,0 +1,43 @@
+{
+    "preset": "Notes",
+    "last-updated": "14/08/2022",
+    "wingetInstall": "winget install -e -h --id=",
+    "wingetQuerySearch": "winget search -q",
+    "wingetApi": "https://winget.run",
+    "winget": [
+
+                {
+                    "appid": 1,
+                    "name": "Obsidian",
+                    "id": "Obsidian.Obsidian",
+                    "install": false,
+                    "category": "notes",
+                    "description": "Obsidian is a powerful knowledge base on top of a local folder of plain text Markdown files."
+                },
+                {
+                    "appid": 2,
+                    "name": "Notion",
+                    "id": "Notion.Notion",
+                    "install": false,
+                    "category": "notes",
+                    "description": "All-in-one workspace. One tool for your whole team. Write, plan, and get organized."
+                },
+                {
+                    "appid": 3,
+                    "name": "Joplin",
+                    "id": "Joplin.Joplin",
+                    "install": false,
+                    "category": "notes",
+                    "description": "Joplin is a free and open-source note-taking and to-do application, which can handle a large number of notes organised into notebooks."
+                },
+                {
+                    "appid": 4,
+                    "name": "Evernote",
+                    "id": "evernote.evernote",
+                    "install": false,
+                    "category": "notes",
+                    "description": "Evernote helps you focus on what matters most and have access to your information when you need it. Input typed notes or scan handwritten notes. Add to-dos, photos, images, web pages, or audio."
+                }
+
+            ]
+        }

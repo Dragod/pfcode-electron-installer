@@ -1,0 +1,300 @@
+{
+    "preset": "Tools",
+    "last-updated": "14/08/2022",
+    "wingetInstall": "winget install -e -h --id=",
+    "wingetQuerySearch": "winget search -q",
+    "wingetApi": "https://winget.run",
+    "winget": [
+
+
+                {
+                    "appid": 1,
+                    "name": "Everything",
+                    "id": "voidtools.Everything",
+                    "install": false,
+                    "category": "tools",
+                    "description": "Everything is search engine that locates files and folders by filename instantly for Windows. Unlike Windows search Everything initially displays every file and folder on your computer (hence the name Everything). You type in a search filter to limit what files and folders are displayed."
+                },
+                {
+                    "appid": 2,
+                    "name": "EverythingToolbar",
+                    "id": "stnkl.EverythingToolbar",
+                    "install": false,
+                    "category": "tools",
+                    "description": "With EverythingToolbar you can instantly search files and folders by name directly in the Windows taskbar with Everything. It allows quick and easy file indexing and fast searches."
+                },
+                {
+                    "appid": 3,
+                    "name": "Calibre",
+                    "id": "calibre.calibre",
+                    "install": false,
+                    "category": "tools",
+                    "description": "Calibre is a cross-platform e-book library management application developed by users of e-books for users of e-books."
+                },
+                {
+                    "appid": 4,
+                    "name": "Ubuntu 22.04 LTS",
+                    "id": "Canonical.Ubuntu.2204",
+                    "install": false,
+                    "category": "tools",
+                    "description": "Ubuntu is a free and open-source Linux distribution based on Debian."
+                },
+                {
+                    "appid": 5,
+                    "name": "NTLite",
+                    "id": "Nlitesoft.NTLite",
+                    "install": false,
+                    "category": "tools",
+                    "description": "NTLite is a free and open-source Windows customization tool that allows you to remove Windows components, integrate drivers, apply hotfixes, and more."
+                },
+                {
+                    "appid": 6,
+                    "name": "Jq",
+                    "id": "stedolan.jq",
+                    "install": false,
+                    "category": "tools",
+                    "description": "Jq is a lightweight and flexible command-line JSON processor."
+                },
+                {
+                    "appid": 7,
+                    "name": "Process Explorer",
+                    "id": "Microsoft.Sysinternals.ProcessExplorer",
+                    "install": false,
+                    "category": "tools",
+                    "description": "Process Explorer is a free and open-source task manager for Windows."
+                },
+                {
+                    "appid": 8,
+                    "name": "Process Monitor",
+                    "id": "Microsoft.Sysinternals.ProcessMonitor",
+                    "install": false,
+                    "category": "tools",
+                    "description": "Process Monitor is a free and open-source process monitoring tool for Windows."
+                },
+                {
+                    "appid": 9,
+                    "name": "Autoruns",
+                    "id": "Microsoft.Sysinternals.Autoruns",
+                    "install": false,
+                    "category": "tools",
+                    "description": "Autoruns is a free and open-source tool that displays the programs that automatically run when your system boots and logs in."
+                },
+                {
+                    "appid": 10,
+                    "name": "PowerToys (Preview)",
+                    "id": "Microsoft.PowerToys",
+                    "install": false,
+                    "category": "tools",
+                    "description": "PowerToys is a set of utilities for power users to tune and streamline their Windows 10 experience for greater productivity."
+                },
+                {
+                    "appid": 11,
+                    "name": "SyncTrayzor",
+                    "id": "SyncTrayzor.SyncTrayzor",
+                    "install": false,
+                    "category": "tools",
+                    "description": "SyncTrayzor is a free and open-source Syncthing tray application for Windows."
+                },
+                {
+                    "appid": 12,
+                    "name": "7-Zip",
+                    "id": "7zip.7zip",
+                    "install": false,
+                    "category": "tools",
+                    "description": "7-Zip is a free and open-source file archiver, a utility used to place groups of files within compressed containers known as \"archives\"."
+                },
+                {
+                    "appid": 13,
+                    "name": "SumatraPDF",
+                    "id": "SumatraPDF.SumatraPDF",
+                    "install": false,
+                    "category": "tools",
+                    "description": "SumatraPDF is a free and open-source PDF, ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR reader for Windows."
+                },
+                {
+                    "appid": 14,
+                    "name": "VNC Viewer",
+                    "id": "RealVNC.VNCViewer",
+                    "install": false,
+                    "category": "tools",
+                    "description": "VNC Viewer is a free and open-source remote desktop software application developed by RealVNC."
+                },
+                {
+                    "appid": 15,
+                    "name": "VNC Server",
+                    "id": "RealVNC.VNCServer",
+                    "install": false,
+                    "category": "tools",
+                    "description": "VNC Server is a free and open-source remote desktop software application developed by RealVNC."
+                },
+                {
+                    "appid": 16,
+                    "name": "TigerVNC",
+                    "id": "TigerVNCproject.TigerVNC",
+                    "install": false,
+                    "category": "tools",
+                    "description": "TigerVNC is a free and open-source remote desktop software application developed by the TigerVNC project."
+                },
+                {
+                    "appid": 17,
+                    "name": "LibreOffice",
+                    "id": "TheDocumentFoundation.LibreOffice",
+                    "install": false,
+                    "category": "tools",
+                    "description": "LibreOffice is a free and open-source office suite, a project of The Document Foundation."
+                },
+                {
+                    "appid": 18,
+                    "name": "OpenOffice",
+                    "id": "Apache.OpenOffice",
+                    "install": false,
+                    "category": "tools",
+                    "description": "Apache OpenOffice is a free and open-source office suite, a project of The Apache Software Foundation."
+                },
+                {
+                    "appid": 19,
+                    "name": "Transmission",
+                    "id": "Transmission.Transmission",
+                    "install": false,
+                    "category": "tools",
+                    "description": "Transmission is a free and open-source BitTorrent client."
+                },
+                {
+                    "appid": 20,
+                    "name": "Qbittorrent",
+                    "id": "qBittorrent.qBittorrent",
+                    "install": false,
+                    "category": "tools",
+                    "description": "qBittorrent is a free and open-source BitTorrent client developed by volunteers in their spare time."
+                },
+                {
+                    "appid": 21,
+                    "name": "HWiNFO",
+                    "id": "REALiX.HWiNFO",
+                    "install": false,
+                    "category": "tools",
+                    "description": "HWiNFO is a free and open-source hardware information and diagnostic tool for Windows."
+                },
+                {
+                    "appid": 22,
+                    "name": "Rufus",
+                    "id": "Rufus.Rufus",
+                    "install": false,
+                    "category": "tools",
+                    "description": "Rufus is a free and open-source utility that helps format and create bootable USB flash drives, such as USB keys/pendrives, memory sticks, etc."
+                },
+                {
+                    "appid": 23,
+                    "name": "BalenaEtcher",
+                    "id": "Balena.Etcher",
+                    "install": false,
+                    "category": "tools",
+                    "description": "Etcher is a free and open-source software for flashing OS images to SD cards and USB drives, safely and easily."
+                },
+                {
+                    "appid": 24,
+                    "name": "Audacity",
+                    "id": "Audacity.Audacity",
+                    "install": false,
+                    "category": "tools",
+                    "description": "Audacity is a free and open-source cross-platform audio software for multi-track recording and editing."
+                },
+                {
+                    "appid": 25,
+                    "name": "HandBrake",
+                    "id": "HandBrake.HandBrake",
+                    "install": false,
+                    "category": "tools",
+                    "description": "HandBrake is a free and open-source video transcoder."
+                },
+                {
+                    "appid": 26,
+                    "name": "Streamlink",
+                    "id": "Streamlink.Streamlink",
+                    "install": false,
+                    "category": "tools",
+                    "description": "Streamlink is a free and open-source command-line utility that extracts streams from various services and pipes them into a video player of choice."
+                },
+                {
+                    "appid": 27,
+                    "name": "WinSCP",
+                    "id": "WinSCP.WinSCP",
+                    "install": false,
+                    "category": "tools",
+                    "description": "WinSCP is a free and open-source SFTP, SCP, WebDAV, and FTP client for Windows."
+                },
+                {
+                    "appid": 28,
+                    "name": "yt-dlp",
+                    "id": "yt-dlp.yt-dlp",
+                    "install": false,
+                    "category": "tools",
+                    "description": "yt-dlp is a free and open-source command-line program to download videos from YouTube and other video platforms."
+                },
+                {
+                    "appid": 29,
+                    "name": "Feeder",
+                    "id": "knoopx.feeder",
+                    "install": false,
+                    "category": "tools",
+                    "description": "Feeder is a free and open-source RSS reader for Windows."
+                },
+                {
+                    "appid": 30,
+                    "name": "Oracle VM VirtualBox",
+                    "id": "Oracle.VirtualBox",
+                    "install": false,
+                    "category": "tools",
+                    "description": "Oracle VM VirtualBox is a free and open-source hosted hypervisor for x86 virtualization, developed by Oracle Corporation."
+                },
+                {
+                    "appid": 31,
+                    "name": "ShareX",
+                    "id": "ShareX.ShareX",
+                    "install": false,
+                    "category": "tools",
+                    "description": "ShareX is a lightweight free and open source program that allows you to capture or record any area of your screen and share it with a single press of a key. ShareX offers numerous methods of capture including full screen, monitor, freehand and so much more. It also features plenty of customizable after-capture tasks and supports more than 80 different image, text, and file hosting services, as well as many URL shortening and sharing services."
+                },
+                {
+                    "appid": 32,
+                    "name": "Greenshot",
+                    "id": "Greenshot.Greenshot",
+                    "install": false,
+                    "category": "tools",
+                    "description": "Greenshot is a free and open-source screenshot tool optimized for productivity."
+                },
+                {
+                    "appid": 33,
+                    "name": "Bandicam",
+                    "id": "BandicamCompany.Bandicam",
+                    "install": false,
+                    "category": "tools",
+                    "description": "Bandicam is a free and open-source screen recorder for Windows."
+                },
+                {
+                    "appid": 34,
+                    "name": "CutePDF Writer",
+                    "id": "AcroSoftware.CutePDFWriter",
+                    "install": false,
+                    "category": "tools",
+                    "description": "CutePDF Writer, Create PDFs from almost any application."
+                },
+                {
+                    "appid": 35,
+                    "name": "Adobe Acrobat Reader DC (64-bit)",
+                    "id": "Adobe.Acrobat.Reader.64-bit",
+                    "install": false,
+                    "category": "tools",
+                    "description": "Adobe Acrobat Reader DC software is the free, trusted global standard for viewing, printing, signing, sharing, and annotating PDFs. It's the only PDF viewer that can open and interact with all types of PDF content, including forms and multimedia."
+                },
+                {
+                    "appid": 36,
+                    "name": "Qalculate!",
+                    "id": "Qalculate.Qalculate",
+                    "install": false,
+                    "category": "tools",
+                    "description": "A highly versatile desktop calculator, with support for units, physical constants, uncertainty propagation, symbolic calculations, etc."
+                }
+
+            ]
+        }

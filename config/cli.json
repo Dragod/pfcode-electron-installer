@@ -1,0 +1,67 @@
+{
+    "preset": "CLI",
+    "last-updated": "14/08/2022",
+    "wingetInstall": "winget install -e -h --id=",
+    "wingetQuerySearch": "winget search -q",
+    "wingetApi": "https://winget.run",
+    "winget": [
+
+                {
+                    "appid": 1,
+                    "name": "Kubectl",
+                    "id": "Kubernetes.kubectl",
+                    "install": false,
+                    "category": "cli",
+                    "description": "Kubectl is a command-line tool for controlling Kubernetes clusters."
+                },
+                {
+                    "appid": 2,
+                    "name": "Azure Data CLI",
+                    "id": "Microsoft.AzureDataCLI",
+                    "install": false,
+                    "category": "cli",
+                    "description": "Azure Data CLI is a command-line tool for controlling Azure Data."
+                },
+                {
+                    "appid": 3,
+                    "name": "AWS Command Line Interface",
+                    "id": "Amazon.AWSCLI",
+                    "install": false,
+                    "category": "cli",
+                    "description": "AWS Command Line Interface is a command-line tool for controlling AWS."
+                },
+                {
+                    "appid": 4,
+                    "name": "GitHub CLI",
+                    "id": "GitHub.cli",
+                    "install": false,
+                    "category": "cli",
+                    "description": "GitHub CLI is a command-line tool for controlling GitHub."
+                },
+                {
+                    "appid": 5,
+                    "name": "MongoDB CLI",
+                    "id": "MongoDB.MongoDBCLI",
+                    "install": false,
+                    "category": "cli",
+                    "description": "MongoDB CLI is a command-line tool for controlling MongoDB."
+                },
+                {
+                    "appid": 6,
+                    "name": "Pandoc",
+                    "id": "JohnMacFarlane.Pandoc",
+                    "install": false,
+                    "category": "cli",
+                    "description": "Pandoc is a universal command-line tool document converter."
+                },
+                {
+                    "appid": 7,
+                    "name": "Microsoft PowerApps CLI",
+                    "id": "Microsoft.PowerAppsCLI",
+                    "install": false,
+                    "category": "cli",
+                    "description": "Microsoft PowerApps CLI is a command-line tool for controlling Microsoft PowerApps."
+                }
+
+            ]
+        }

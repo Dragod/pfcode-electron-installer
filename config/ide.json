@@ -1,0 +1,115 @@
+{
+    "preset": "Ide",
+    "last-updated": "14/08/2022",
+    "wingetInstall": "winget install -e -h --id=",
+    "wingetQuerySearch": "winget search -q",
+    "wingetApi": "https://winget.run",
+    "winget": [
+
+        {
+            "appid": 1,
+            "name": "Visual Studio Community 2019",
+            "id": "Microsoft.VisualStudio.2019.Community",
+            "install": false,
+            "category": "ide",
+            "description": "Visual Studio Community 2019 is a free, fully-featured, extensible, and cross-platform IDE for creating modern applications for Android, iOS, Windows, as well as web applications and cloud services."
+        },
+        {
+            "appid": 2,
+            "name": "Visual Studio Professional 2019",
+            "id": "Microsoft.VisualStudio.2019.Professional",
+            "install": false,
+            "category": "ide",
+            "description": "Visual Studio Professional 2019 is a fully-featured, extensible, and cross-platform IDE for creating modern applications for Android, iOS, Windows, as well as web applications and cloud services."
+        },
+        {
+            "appid": 3,
+            "name": "Visual Studio Community 2022",
+            "id": "Microsoft.VisualStudio.2022.Community",
+            "install": false,
+            "category": "ide",
+            "description": "Visual Studio Community 2022 is a free, fully-featured, extensible, and cross-platform IDE for creating modern applications for Android, iOS, Windows, as well as web applications and cloud services."
+        },
+        {
+            "appid": 4,
+            "name": "Visual Studio Professional 2022",
+            "id": "Microsoft.VisualStudio.2022.Professional",
+            "install": false,
+            "category": "ide",
+            "description": "Visual Studio Professional 2022 is a fully-featured, extensible, and cross-platform IDE for creating modern applications for Android, iOS, Windows, as well as web applications and cloud services."
+        },
+        {
+            "appid": 5,
+            "name": "WebStorm",
+            "id": "JetBrains.WebStorm",
+            "install": false,
+            "category": "ide",
+            "description": "WebStorm is a powerful IDE for JavaScript, TypeScript, CSS and HTML. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for JavaScript, TypeScript, CSS and HTML. It also provides intelligent code assistance for Node.js, React, Angular, Vue.js, and many other frameworks."
+        },
+        {
+            "appid": 6,
+            "name": "CLion",
+            "id": "JetBrains.CLion",
+            "install": false,
+            "category": "ide",
+            "description": "CLion is a cross-platform IDE for C and C++ development. It provides a complete set of tools for C and C++ development. CLion looks beyond just syntax highlighting and autocomplete to provide smart coding assistance for C and C++."
+        },
+        {
+            "appid": 7,
+            "name": "IntelliJ IDEA Community Edition",
+            "id": "JetBrains.IntelliJIDEA.Community",
+            "install": false,
+            "category": "ide",
+            "description": "IntelliJ IDEA Community Edition is a free and open-source IDE for Java, Scala, Groovy, and other JVM-based programming languages. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for Java, Scala, Groovy, and other JVM-based languages."
+        },
+        {
+            "appid": 8,
+            "name": "IntelliJ IDEA Ultimate Edition",
+            "id": "JetBrains.IntelliJIDEA.Ultimate",
+            "install": false,
+            "category": "ide",
+            "description": "IntelliJ IDEA Ultimate Edition is a paid and commercial IDE for Java, Scala, Groovy, and other JVM-based programming languages. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for Java, Scala, Groovy, and other JVM-based languages."
+        },
+        {
+            "appid": 9,
+            "name": "PhpStorm",
+            "id": "JetBrains.PHPStorm",
+            "install": false,
+            "category": "ide",
+            "description": "PhpStorm is a cross-platform IDE for PHP, HTML, CSS, and JavaScript development. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for PHP, HTML, CSS, and JavaScript."
+        },
+        {
+            "appid": 10,
+            "name": "PyCharm Professional Edition",
+            "id": "JetBrains.PyCharm.Professional",
+            "install": false,
+            "category": "ide",
+            "description": "PyCharm Professional Edition is a paid and commercial IDE for Python, JavaScript, HTML, CSS, and other web development languages. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for Python, JavaScript, HTML, CSS, and other web development languages."
+        },
+        {
+            "appid": 11,
+            "name": "GoLand",
+            "id": "JetBrains.GoLand",
+            "install": false,
+            "category": "ide",
+            "description": "GoLand is a cross-platform IDE for Go development. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for Go."
+        },
+        {
+            "appid": 12,
+            "name": "RubyMine",
+            "id": "JetBrains.RubyMine",
+            "install": false,
+            "category": "ide",
+            "description": "RubyMine is a cross-platform IDE for Ruby and Rails development. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for Ruby and Rails."
+        },
+        {
+            "appid": 13,
+            "name": "JetBrains Rider",
+            "id": "JetBrains.Rider",
+            "install": false,
+            "category": "ide",
+            "description": "JetBrains Rider is a cross-platform IDE for .NET development. It provides smart code completion, on-the-fly error detection, and powerful navigation and refactoring for .NET."
+        }
+
+    ]
+}

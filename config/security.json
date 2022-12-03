@@ -1,0 +1,125 @@
+{
+    "preset": "Security",
+    "last-updated": "14/08/2022",
+    "wingetInstall": "winget install -e -h --id=",
+    "wingetQuerySearch": "winget search -q",
+    "wingetApi": "https://winget.run",
+    "winget": [
+
+                {
+                    "appid": 1,
+                    "name": "KeePass Password Safe 2",
+                    "id": "DominikReichl.KeePass",
+                    "install": false,
+                    "category": "security",
+                    "description": "KeePass is a free, open-source, lightweight, and easy-to-use password manager for Windows, Linux, and macOS."
+                },
+                {
+                    "appid": 2,
+                    "name": "Bitwarden",
+                    "id": "Bitwarden.Bitwarden",
+                    "install": false,
+                    "category": "security",
+                    "description": "Bitwarden is a free and open-source password management service that stores sensitive information such as website credentials in an encrypted vault."
+                },
+                {
+                    "appid": 3,
+                    "name": "1Password",
+                    "id": "AgileBits.1Password",
+                    "install": false,
+                    "category": "security",
+                    "description": "1Password is a password manager and digital wallet for Windows, macOS, iOS, and Android developed by AgileBits."
+                },
+                {
+                    "appid": 4,
+                    "name": "LastPass",
+                    "id": "LogMeIn.LastPass",
+                    "install": false,
+                    "category": "security",
+                    "description": "LastPass is a freemium password management service that stores encrypted passwords in a secure vault."
+                },
+                {
+                    "appid": 5,
+                    "name": "Dashlane",
+                    "id": "Dashlane.Dashlane",
+                    "install": false,
+                    "category": "security",
+                    "description": "Dashlane is a freemium password manager and digital wallet for Windows, macOS, iOS, and Android developed by Dashlane."
+                },
+                {
+                    "appid": 6,
+                    "name": "KeeWeb",
+                    "id": "KeeWeb.KeeWeb",
+                    "install": false,
+                    "category": "security",
+                    "description": "KeeWeb is a free and open-source password manager compatible with KeePass."
+                },
+                {
+                    "appid": 7,
+                    "name": "KeePassXC",
+                    "id": "KeePassXCTeam.KeePassXC",
+                    "install": false,
+                    "category": "security",
+                    "description": "KeePassXC is a free and open-source password manager compatible with KeePass."
+                },
+                {
+                    "appid": 8,
+                    "name": "Yubikey Manager",
+                    "id": "Yubico.YubikeyManager",
+                    "install": false,
+                    "category": "security",
+                    "description": "YubiKey Manager is a cross-platform application for configuring your YubiKey."
+                },
+                {
+                    "appid": 9,
+                    "name": "Yubiko Authenticator",
+                    "id": "Yubico.Authenticator",
+                    "install": false,
+                    "category": "security",
+                    "description": "Yubico Authenticator is a cross-platform application for managing your YubiKeys."
+                },
+                {
+                    "appid": 10,
+                    "name": "YubiKey Personalization Tool",
+                    "id": "Yubico.YubiKeyPersonalizationTool",
+                    "install": false,
+                    "category": "security",
+                    "description": "YubiKey Personalization Tool is a cross-platform application for configuring your YubiKey."
+                },
+                {
+                    "appid": 11,
+                    "name": "AdGuard",
+                    "id": "AdGuard.AdGuard",
+                    "install": false,
+                    "category": "security",
+                    "description": "AdGuard is a cross-platform ad blocker and web filter developed by AdGuard Software."
+                },
+                {
+                    "appid": 12,
+                    "name": "Malwarebytes",
+                    "id": "Malwarebytes.Malwarebytes",
+                    "install": false,
+                    "category": "security",
+                    "description": "Malwarebytes is a cross-platform anti-malware software developed by Malwarebytes Corporation."
+                },
+                {
+                    "appid": 13,
+                    "name": "Webroot SecureAnywhere",
+                    "id": "Webroot.SecureAnywhere",
+                    "install": false,
+                    "category": "security",
+                    "description": "Webroot SecureAnywhere® AntiVirus protects you from online threats."
+
+                },
+                {
+                    "appid": 14,
+                    "name": "Keeper® Password Manager",
+                    "id": "Keeper.KeeperDesktop",
+                    "install": false,
+                    "category": "security",
+                    "description": "Keeper is the top-rated password manager for protecting you, your family and your business from password-related data breaches and cyberthreats."
+
+                }
+
+            ]
+        }

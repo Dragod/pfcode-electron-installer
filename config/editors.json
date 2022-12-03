@@ -1,0 +1,83 @@
+{
+    "preset": "Editors",
+    "last-updated": "14/08/2022",
+    "wingetInstall": "winget install -e -h --id=",
+    "wingetQuerySearch": "winget search -q",
+    "wingetApi": "https://winget.run",
+    "winget": [
+
+                {
+                    "appid": 1,
+                    "name": "Visual Studio Code",
+                    "id": "Microsoft.VisualStudioCode",
+                    "install": false,
+                    "category": "editor",
+                    "description": "Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications. Visual Studio Code is free and available on your favorite platform - Linux, macOS, and Windows."
+                },
+                {
+                    "appid": 2,
+                    "name": "Sublime 4",
+                    "id": "SublimeHQ.SublimeText.4",
+                    "install": false,
+                    "category": "editor",
+                    "description": "Sublime Text is a sophisticated text editor for code, markup and prose. You'll love the slick user interface, extraordinary features and amazing performance."
+                },
+                {
+                    "appid": 3,
+                    "name": "Sublime 3",
+                    "id": "SublimeHQ.SublimeText.3",
+                    "install": false,
+                    "category": "editor",
+                    "description": "Sublime Text is a sophisticated text editor for code, markup and prose. You'll love the slick user interface, extraordinary features and amazing performance."
+                },
+                {
+                    "appid": 4,
+                    "name": "Notepad++",
+                    "id": "Notepad++.Notepad++",
+                    "install": false,
+                    "category": "editor",
+                    "description": "Notepad++ is a free source code editor and Notepad replacement that supports several languages. Running in the MS Windows environment, its use is governed by GPL License."
+                },
+                {
+                    "appid": 5,
+                    "name": "Brackets",
+                    "id": "Adobe.Brackets",
+                    "install": false,
+                    "category": "editor",
+                    "description": "With focused visual tools and preprocessor support, Brackets is a modern text editor that makes it easy to design in the browser. It's crafted from the ground up for web designers and front-end developers."
+                },
+                {
+                    "appid": 6,
+                    "name": "Vim",
+                    "id": "vim.vim",
+                    "install": false,
+                    "category": "editor",
+                    "description": "Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as \"vi\" with most UNIX systems and with Apple OS X."
+                },
+                {
+                    "appid": 7,
+                    "name": "Neovim",
+                    "id": "Neovim.Neovim",
+                    "install": false,
+                    "category": "editor",
+                    "description": "Neovim is a fork of the venerable text editor Vim, focused on extensibility and usability. It is not a rewrite but a continuation and extension of Vim. Many clones and derivatives exist, some very clever—but none are Vim. Neovim is built for users who want the good parts of Vim, and more. See :help nvim-from-vim for more details."
+                },
+                {
+                    "appid": 8,
+                    "name": "Bluefish",
+                    "id": "Bluefish.Bluefish",
+                    "install": false,
+                    "category": "editor",
+                    "description": "Bluefish is a powerful editor targeted towards programmers and webdesigners, with many options to write websites, scripts and programming code. Bluefish supports many programming and markup languages."
+                },
+                {
+                    "appid": 9,
+                    "name": "PSpad editor",
+                    "id": "JanFiala.PSpad",
+                    "install": false,
+                    "category": "editor",
+                    "description": "PSpad is a programmer's editor with support for multiple syntax highlighting profiles. It offers a variety of features that allow you to edit HTML, PHP, Perl, C, C++, Java, JavaScript, VBScript, Python, Ruby, CSS, ASP, SQL, Delphi, Pascal, Batch, C#, XML, Ini files and user defined languages."
+                }
+
+            ]
+        }
