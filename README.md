@@ -26,11 +26,11 @@ The app is only meant to work on Windows 11 by default and Windows 10 (require t
 
 # Filtering apps
 
-![alt text](./assets/app-3.png)
+![alt text](./assets/app-7.png)
 
 # Qrcode
 
-![alt text](./assets/app-4.png)
+![alt text](./assets/app-8.png)
 
 # How to use
 
