@@ -30,7 +30,7 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "^25.5.0",
-    "electron-builder": "^23.6.0",
+    "electron-builder": "^24.6.3",
     "electron-packager": "^17.1.1",
     "tailwindcss": "^3.3.3"
   },
