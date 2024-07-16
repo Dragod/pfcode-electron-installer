@@ -29,7 +29,7 @@
   "author": "GitHub",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^29.1.0",
+    "electron": "^31.2.1",
     "electron-builder": "^24.9.1",
     "electron-packager": "^17.1.2",
     "tailwindcss": "^3.3.5"
